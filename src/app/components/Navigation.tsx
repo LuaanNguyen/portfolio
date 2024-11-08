@@ -52,7 +52,7 @@ export default function Navigation(): ReactNode {
           <section className="flex flex-row gap-5 items-center max-sm:hidden">
             <SocialLinks />
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
-            <NavButton name="Resume" />
+            <NavButton name="Resume"/>
           </section>
         </section>
         {mobile && <MobileNav handleMobile={handleMobile} />}

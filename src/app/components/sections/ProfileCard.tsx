@@ -10,19 +10,19 @@ import { BackgroundGradient } from "../ui/background-gradient";
 export default function ProfileCard() {
   return (
     <div
-      className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl py-10 max-md:py-4"
+      className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl p-6 max-md:p-6"
       id="#profile"
     >
-      <div className="flex flex-col gap-5">
-        <BackgroundGradient containerClassName="rounded-[40px] place-self-center mx-4">
+      <div className="flex flex-col gap-7 max-md:gap-5">
+        <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
           <Image
             src="/Luan.jpg"
             alt="Picture of the author"
-            width={300}
-            height={300}
-            objectFit="none" // change to suit your needs
-            className="rounded-[25px] "
-          ></Image>
+            width={400}
+            height={400}
+            objectFit="none"
+            className="rounded-[25px]"
+          />
         </BackgroundGradient>
 
         <PersonalStatement />
@@ -35,8 +35,8 @@ export default function ProfileCard() {
 
 function Location() {
   return (
-    <div className="text-lg px-5">
-      <div className="flex items-center gap-1 font-semibold">
+    <div className="text-lg px-4">
+      <div className="flex items-center gap-2 font-semibold">
         <IoLocationOutline className="text-spotify-green text-2xl" />
         Tempe, AZ
       </div>
@@ -71,21 +71,20 @@ function Booking() {
   };
 
   return (
-    <div className="flex px-6 mt-4 gap-4">
+    <div className="flex px-4 gap-3">
       <button
         type="button"
-        className="flex min-w-12 items-center text-sm gap-1 px-3 py-3 rounded-full bg-spotify-green font-semibold hover:bg-spotify-dark-green text-white "
+        className="flex items-center justify-center text-sm font-bold bg-spotify-green hover:bg-spotify-dark-green hover:scale-105  px-4 py-2.5 rounded-full gap-2 transition-all duration-200"
         onClick={handleCopyNumber}
       >
         <FaRegCopy /> Copy Number
       </button>
       <button
         type="button"
-        className="flex min-w-12 items-center text-sm gap-1 px-5 py-3 rounded-full bg-spotify-dark-gray border border-spotify-gray text-spotify-white font-semibold hover:bg-spotify-gray text-spotify-light-dark"
+        className="flex items-center justify-center text-sm font-bold border border-[#727272] hover:border-white hover:scale-105 text-white px-4 py-2.5 rounded-full gap-2 transition-all duration-200"
         onClick={handleCopyEmail}
       >
-        <FaRegCopy />
-        Copy Email
+        <FaRegCopy /> Copy Email
       </button>
     </div>
   );
@@ -93,20 +92,21 @@ function Booking() {
 
 function PersonalStatement() {
   return (
-    <div className="flex flex-col gap-3 max-md:gap-2 px-6">
-      <h1 className="text-2xl font-semibold">Luan Nguyen</h1>
-      <p className="text-spotify-gray text-sm">Developer • Designer • Artist</p>
+    <div className="flex flex-col gap-3 px-4">
+      <div className="space-y-1.5">
+        <h1 className="text-2xl font-semibold">Luan Nguyen</h1>
+        <p className="text-spotify-gray text-sm">
+          Developer • Designer • Artist
+        </p>
+      </div>
       <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
-        I am a rising <span className="text-spotify-white"> Junior </span>
-        studying{" "}
-        <span className="text-spotify-white"> Computer Science 💻</span> at
-        <span className="text-spotify-white">
-          {" "}
-          Arizona State University 🔱{" "}
-        </span>
+        I am a rising <span className="text-spotify-white">Junior</span>{" "}
+        studying <span className="text-spotify-white">Computer Science 💻</span>{" "}
+        at
+        <span className="text-spotify-white"> Arizona State University 🔱</span>
         . Passionate about{" "}
-        <span className="text-spotify-white"> Full-Stack Development </span>&
-        <span className="text-spotify-white"> UI/UX Design</span>
+        <span className="text-spotify-white">Full-Stack Development</span> &{" "}
+        <span className="text-spotify-white">UI/UX Design</span>
       </h4>
     </div>
   );

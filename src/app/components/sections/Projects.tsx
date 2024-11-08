@@ -9,24 +9,26 @@ import { FaArrowDown } from "react-icons/fa6";
 export default function Projects({ onSetExperienceSection }: ProjectsProps) {
   return (
     <div
-      className="max-md:hidden max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-6 col-start-5 bg-spotify-black rounded-xl"
+      className="max-md:hidden max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-6 col-start-5 bg-spotify-light-dark rounded-xl overflow-hidden"
       id="projects"
     >
-      <div className="flex mb-3 rounded-xl gap-5">
-        <button className="flex text-md text-spotify-black font-semibold bg-spotify-white px-3 gap-1 py-2 rounded-full text-spotify-light-dark items-center justify-center">
-          <p className="flex flex-row ">Featured Projects</p>
-          <FaArrowDown className="text-2xl" />
-        </button>
+      <div className="p-4">
+        <div className="flex gap-3 justify-center">
+          {/* Primary Button (Green) */}
+          <button className="flex items-center justify-center text-sm font-bold bg-spotify-green hover:bg-spotify-dark-green hover:scale-105  px-4 py-2.5 rounded-full gap-2 transition-all duration-200">
+            Featured Projects
+            <FaArrowDown className="text-base" />
+          </button>
 
-        <BackgroundGradient>
+          {/* Secondary Button (White Border) */}
           <button
-            className="text-md text-spotify-white inline-flex items-center px-2 py-2 font-semibold rounded-full text-spotify-light-gray hover:bg-spotify-gray"
+            className="flex items-center justify-center text-sm font-bold border border-[#727272] hover:border-white hover:scale-105 text-white px-4 py-2.5 rounded-full gap-2 transition-all duration-200"
             onClick={onSetExperienceSection}
           >
-            <span className="mr-1">Explore All Projects</span>
-            <GrLinkNext className="text-2xl" />
+            Explore All Projects
+            <GrLinkNext className="text-base" />
           </button>
-        </BackgroundGradient>
+        </div>
       </div>
       <StickyScroll content={projectLists} />
     </div>

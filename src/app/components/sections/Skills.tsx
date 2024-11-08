@@ -1,5 +1,6 @@
 import { InfiniteMovingCards } from "../ui/infinite-moving-cars";
 import { ReactNode } from "react";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -7,9 +8,7 @@ export default function Skills() {
       className="max-lg:col-span-1  max-lg:row-span-1 col-span-4 row-span-2 col-start-1 row-start-7 bg-spotify-light-dark rounded-xl h-fit"
       id="skills"
     >
-      <h1 className="text-xl font-semibold pl-5 pt-3 max-md:text-xl">
-        My Skills
-      </h1>
+      <h1 className="text-2xl font-semibold pl-5 pt-3">Skills</h1>
       <InfiniteMovingCards items={skillItems} speed="slow" className="" />
     </div>
   );
@@ -18,97 +17,177 @@ export default function Skills() {
 const skillItems: { quote: ReactNode; name: string }[] = [
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        width={40}
+        height={40}
+        alt="React"
+      />
     ),
     name: "React",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+        width={40}
+        height={40}
+        alt="Next.js"
+      />
     ),
     name: "NEXTJS",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+        width={40}
+        height={40}
+        alt="Node.js"
+      />
     ),
     name: "NodeJS",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+        width={40}
+        height={40}
+        alt="Express"
+      />
     ),
     name: "Express",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+        width={40}
+        height={40}
+        alt="Flask"
+      />
     ),
     name: "Flask",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+        width={40}
+        height={40}
+        alt="jQuery"
+      />
     ),
     name: "jQuery",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+        width={40}
+        height={40}
+        alt="Bootstrap"
+      />
     ),
     name: "Bootstrap",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+        width={40}
+        height={40}
+        alt="TailwindCSS"
+      />
     ),
     name: "TailwindCSS",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+        width={40}
+        height={40}
+        alt="PostreSQL"
+      />
     ),
     name: "PostreSQL",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+        width={40}
+        height={40}
+        alt="MongoDB"
+      />
     ),
     name: "MongoDB",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+        width={40}
+        height={40}
+        alt="MongoDB"
+      />
     ),
     name: "MongoDB",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+        width={40}
+        height={40}
+        alt="Docker"
+      />
     ),
     name: "Docker",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+        width={40}
+        height={40}
+        alt="Postman"
+      />
     ),
     name: "Postman",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+        width={40}
+        height={40}
+        alt="npm"
+      />
     ),
     name: "npm",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+        width={40}
+        height={40}
+        alt="git"
+      />
     ),
     name: "git",
   },
   {
     quote: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+        width={40}
+        height={40}
+        alt="Figma"
+      />
     ),
     name: "Figma",
   },

@@ -1,18 +1,24 @@
 import { ReactNode } from "react";
+import Image from "next/image";
 
 export default function ProgrammingLanguages() {
   return (
     <div
-      className=" max-lg:col-span-1  max-lg:row-span-1  col-span-2 row-span-2 col-start-3 row-start-5 rounded-xl  bg-spotify-light-dark "
+      className="max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-2 col-start-3 row-start-5 rounded-xl bg-spotify-light-dark overflow-hidden"
       id="programming-languages"
     >
-      <h1 className="text-xl font-semibold pl-6 pt-4">Programming Languages</h1>
-      <div className="grid grid-cols-5 gap-1 p-6">
-        {languageItems.map((item) => (
-          <div className="w-[60px] p-3 rounded-lg shadow-md" key={item.name}>
-            {item.component}
-          </div>
-        ))}
+      <div className="p-6">
+        <h1 className="text-xl font-bold mb-5">Programming Languages</h1>
+        <div className="grid grid-cols-5 max-xl:grid-cols-4 max-lg:grid-cols-5 max-md:grid-cols-4 max-sm:grid-cols-3 gap-4">
+          {languageItems.map((item) => (
+            <div
+              className="flex items-center justify-center p-2.5 rounded-lg hover:bg-[#282828] transition-all duration-200"
+              key={item.name}
+            >
+              {item.component}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -25,61 +31,111 @@ const languageItems: {
   {
     name: "HTML",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        width={35}
+        height={35}
+        alt="HTML"
+      />
     ),
   },
   {
     name: "CSS",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        width={32}
+        height={32}
+        alt="CSS"
+      />
     ),
   },
   {
     name: "JavaScript",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        width={32}
+        height={32}
+        alt="JavaScript"
+      />
     ),
   },
   {
     name: "TypeScript",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        width={32}
+        height={32}
+        alt="TypeScript"
+      />
     ),
   },
   {
     name: "C",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+        width={32}
+        height={32}
+        alt="C"
+      />
     ),
   },
   {
     name: "C++",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+        width={32}
+        height={32}
+        alt="C++"
+      />
     ),
   },
   {
     name: "Java",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+        width={32}
+        height={32}
+        alt="Java"
+      />
     ),
   },
   {
     name: "Python",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+        width={32}
+        height={32}
+        alt="Python"
+      />
     ),
   },
   {
     name: "SQL",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+        width={32}
+        height={32}
+        alt="SQL"
+      />
     ),
   },
   {
     name: "Golang",
     component: (
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+        width={32}
+        height={32}
+        alt="Golang"
+      />
     ),
   },
 ];

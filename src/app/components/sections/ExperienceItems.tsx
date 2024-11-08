@@ -10,31 +10,31 @@ import Image from "next/image";
 export default function ExperienceItem() {
   return (
     <section
-      className={`relative max-md:col-span-1 col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl h-[450px] overflow-hidden max-md:min-h-[600px]`}
+      className="relative col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl max-md:overflow-y-scroll overflow-hidden max-md:col-span-1"
       id="#experience"
     >
-      <div className="bg-spotify-gray p-6 rounded-t-lg">
-        <h2 className="text-xl max-md:text-xl font-bold">
-          Professional Experience
-        </h2>
-        <p className="flex items-center text-spotify-grey max-md:text-sm">
-          <CiGlobe />
+      <div className="bg-spotify-gray p-6">
+        <h2 className="text-xl font-bold mb-1">Professional Experience</h2>
+        <p className="flex items-center gap-1.5 text-spotify-grey text-sm">
+          <CiGlobe className="text-lg" />
           1208 saves • 184086h 38m
         </p>
       </div>
 
-      <div>
-        <div className="flex flex-row p-4 items-center justify-between">
-          <div className="flex flex-row gap-2 items-center">
-            <button className="rounded-full bg-spotify-green p-4">
-              <FaPlay className="text-spotify-black" />
+      <div className="px-4 py-3">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <button className="rounded-full bg-spotify-green p-3.5 hover:scale-105 transition-transform">
+              <FaPlay className="text-spotify-black text-sm" />
             </button>
-            <IoShuffle className="text-4xl text-spotify-grey" />
-            <FiPlusCircle className="text-3xl text-spotify-grey" />
-            <MdOutlineDownloadForOffline className="text-3xl text-spotify-grey" />
-            <BsThreeDots className="text-3xl text-spotify-grey" />
+            <div className="flex items-center gap-5">
+              <IoShuffle className="text-3xl text-spotify-grey hover:text-white transition-colors" />
+              <FiPlusCircle className="text-2xl text-spotify-grey hover:text-white transition-colors" />
+              <MdOutlineDownloadForOffline className="text-2xl text-spotify-grey hover:text-white transition-colors" />
+              <BsThreeDots className="text-2xl text-spotify-grey hover:text-white transition-colors" />
+            </div>
           </div>
-          <RxHamburgerMenu className="text-3xl text-spotify-grey" />
+          <RxHamburgerMenu className="text-2xl text-spotify-grey hover:text-white transition-colors" />
         </div>
       </div>
 
@@ -45,30 +45,20 @@ export default function ExperienceItem() {
 
 function Positions() {
   return (
-    <div className="p-4 md:overflow-y-auto h-[300px] pb-20">
+    <div className="px-4 pb-4 md:overflow-y-auto h-[300px]">
       {experienceLists.map((position: experienceListsProps, index) => (
         <div
-          className="flex gap-4 pb-2 p-2 items-center sm:hover:bg-spotify-black rounded-lg"
+          className="flex items-center gap-4 p-2.5 hover:bg-[#282828] rounded-lg transition-colors group"
           key={position.companyName}
         >
-          {/* {" "}
-            <Image
-              src={position.imageSrc}
-              width={40}
-              height={40}
-              alt={position.companyName}
-              className="rounded-lg w-[50px]"
-              layout="fixed"
-            ></Image> */}
-          <h4>{index + 1}</h4>
-          <div>
-            {" "}
-            <p className="text-spotify-green font-semibold text-sm">
+          <span className="text-spotify-grey group-hover:text-white min-w-[20px]">
+            {index + 1}
+          </span>
+          <div className="flex-1">
+            <p className="text-spotify-green text-sm font-semibold mb-0.5">
               {position.companyName}
             </p>
-            <p className="font-bold text-spotify-white">
-              {position.positionTitle}
-            </p>
+            <p className="font-bold text-md mb-0.5">{position.positionTitle}</p>
             <p className="text-spotify-gray text-sm">{position.date}</p>
           </div>
         </div>
@@ -87,8 +77,7 @@ type experienceListsProps = {
 const experienceLists: experienceListsProps[] = [
   {
     imageSrc: "/ESR.svg",
-    companyName:
-      "School of Electrical, Computer and Energy Engineering — ASU ECEE",
+    companyName: "Wireless Intelligence Lab — ASU ECEE",
     positionTitle: "Software Engineer",
     date: "September 2024 - Present",
   },
