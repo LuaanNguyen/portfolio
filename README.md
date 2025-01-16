@@ -1,17 +1,16 @@
 # Luan Nguyen's Portfolio 🚀
 
-> [luannguyen.net](https://www.luannguyen.net)
+> [Demo: luannguyen.net](https://www.luannguyen.net)
 
 [![Website Status](https://img.shields.io/badge/website-up-yellow)](https://www.luannguyen.net/)
 [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/LuaanNguyen/luannguyen-portfolio/commits/main)
 [![LinkedIn](https://img.shields.io/badge/connect-linkedin-1abc9c.svg)](https://www.linkedin.com/in/luanthiennguyen/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 A modern, responsive portfolio website built with cutting-edge technologies, featuring a Spotify-inspired design.
 
 ## ✨ Preview
 
-<img src="https://github.com/user-attachments/assets/c8dc6f9b-4aea-45ee-8e83-86d2ddef5b3a" width="900" alt="Portfolio Preview">
+<img src="public/portfolio_readme.jpg" width="900" alt="Portfolio Preview">
 
 ## 🛠️ Built With
 
