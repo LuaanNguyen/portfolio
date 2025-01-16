@@ -36,7 +36,7 @@ export default function ProfileCard() {
 function Location() {
   return (
     <div className="text-lg px-4">
-      <div className="flex items-center gap-2 font-semibold">
+      <div className="flex items-center gap-2 font-medium">
         <IoLocationOutline className="text-spotify-green text-2xl" />
         Tempe, AZ
       </div>

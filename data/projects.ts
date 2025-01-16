@@ -10,6 +10,33 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://github.com/LuaanNguyen/pokedexcli",
+    imageSrc: "/pokedex.png",
+    imageAlt: "Pokedex CLI 👨🏻‍💻 (In Progress)",
+    title: "Pokedex CLI 👨🏻‍💻",
+    description:
+      "A command line interface to get Pokemon informations from Pokedex API",
+    tech: ["Golang", "HTTPS", "Unit Testing"],
+  },
+  {
+    href: "https://github.com/LuaanNguyen/go-leetcode",
+    imageSrc: "/goleetcode.png",
+    imageAlt: "Daily LeetCode Solutions in Golang 🧠",
+    title: "Daily LeetCode Solutions in Golang 🧠",
+    description:
+      "I try to solve most daily LeetCode questions in Golang in order to get familiar with the language.",
+    tech: ["Golang", "Unit Testing"],
+  },
+  {
+    href: "https://github.com/LuaanNguyen/HelpSystem",
+    imageSrc: "/helpsystem.jpg",
+    imageAlt: "Help System 📚",
+    title: "Help System 📚",
+    description:
+      "Directed a team of 5 developers to design and implement a help system using Java, providing personalized academic support to over 200 ASU students.",
+    tech: ["Java", "JavaFX", "Maven", "H2 Database", "Figma"],
+  },
+  {
     href: "https://github.com/LuaanNguyen/neutral-lens",
     imageSrc: "/Neutral_Lens.png",
     imageAlt: "Neutral Lens 🎥",
@@ -46,7 +73,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://github.com/LuaanNguyen/static-site-generator",
-    imageSrc: "/staticsitegenerator_infrastructure.png",
+    imageSrc: "/staticsitegenerator_infrastructure.jpg",
     imageAlt: "Static Site Generator",
     title: "Static Site Generator ♺",
     description:
@@ -83,7 +110,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://www.luannguyen.net/",
-    imageSrc: "/luan-portfolio.jpeg",
+    imageSrc: "/luan-portfolio.jpg",
     imageAlt: "My Portfolio",
     title: "Personal Portfolio 🪪",
     description:
