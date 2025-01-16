@@ -68,7 +68,6 @@ function Positions() {
 }
 
 type experienceListsProps = {
-  imageSrc: string;
   companyName: string;
   positionTitle: string;
   date: string;
@@ -76,37 +75,37 @@ type experienceListsProps = {
 
 const experienceLists: experienceListsProps[] = [
   {
-    imageSrc: "/ESR.svg",
+    companyName: "Amazon",
+    positionTitle: "Software Development Engineer Intern",
+    date: "May 2025 - August 2025",
+  },
+  {
     companyName: "Wireless Intelligence Lab — ASU ECEE",
     positionTitle: "Software Engineer",
     date: "September 2024 - Present",
   },
+
   {
-    imageSrc: "/ESR.svg",
     companyName: "Ethical Spectacle Research",
     positionTitle: "Software Engineer Intern",
     date: "August 2024 - Present",
   },
   {
-    imageSrc: "/asu.svg",
     companyName: "ASU Enterprise Technology",
     positionTitle: "Technology Consultant",
     date: "May 2024 – August 2024",
   },
   {
-    imageSrc: "/pinear-logo.svg",
     companyName: "Pinear",
     positionTitle: "Software Engineer Intern",
     date: "March 2024 - May 2024",
   },
   {
-    imageSrc: "/asu.svg",
     companyName: "EPICS at ASU",
     positionTitle: "Lead Software Engineer",
     date: "January 2024 – April 2024",
   },
   {
-    imageSrc: "/gtx.jpeg",
     companyName: "The Global Tech Experience",
     positionTitle: "Web Developer",
     date: "August 2023 – December 2024",

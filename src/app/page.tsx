@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense, lazy } from "react";
 import Footer from "./components/Footer";
 import Loader from "./components/ui/Loader";
+import GithubContributions from "./components/sections/GithubContributions";
 
 // Lazy load components
 const ProfileCard = lazy(() => import("./components/sections/ProfileCard"));
@@ -60,7 +61,8 @@ export default function Home() {
               </>
             )}
             <OpenedExperienceItem className="block md:hidden" />
-            <Skills />
+            {/* <Skills /> */}
+            <GithubContributions />
             <SpotifyAlbum />
             <Footer />
           </Suspense>
