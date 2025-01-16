@@ -11,6 +11,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
     { section: "Experience", href: "#experience" },
     { section: "Projects", href: "#project" },
     { section: "Programming Languages", href: "#programming-languages" },
+    { section: "Contributions", href: "#contribution" },
     { section: "Skills", href: "#skills" },
   ];
 
