@@ -10,7 +10,7 @@ import { BackgroundGradient } from "../ui/background-gradient";
 export default function ProfileCard() {
   return (
     <div
-      className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl p-6 max-md:p-6"
+      className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl p-4 max-md:p-6"
       id="#profile"
     >
       <div className="flex flex-col gap-7 max-md:gap-5">
@@ -100,13 +100,12 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
-        I am a rising <span className="text-spotify-white">Junior</span>{" "}
-        studying <span className="text-spotify-white">Computer Science 💻</span>{" "}
-        at
+        I am a <span className="text-spotify-white">Junior</span> studying{" "}
+        <span className="text-spotify-white">Computer Science 💻</span> at
         <span className="text-spotify-white"> Arizona State University 🔱</span>
-        . Passionate about{" "}
+        . I am passionate about{" "}
         <span className="text-spotify-white">Full-Stack Development</span> &{" "}
-        <span className="text-spotify-white">UI/UX Design</span>
+        <span className="text-spotify-white">Cloud Engineering</span>
       </h4>
     </div>
   );
