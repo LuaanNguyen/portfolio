@@ -91,6 +91,11 @@ const experienceLists: experienceListsProps[] = [
     date: "August 2024 - Present",
   },
   {
+    companyName: "The Software Developer Association (SoDA)",
+    positionTitle: "Technical Project Manager",
+    date: "April 2024 – September 2024",
+  },
+  {
     companyName: "ASU Enterprise Technology",
     positionTitle: "Technology Consultant",
     date: "May 2024 – August 2024",
@@ -107,7 +112,7 @@ const experienceLists: experienceListsProps[] = [
   },
   {
     companyName: "The Global Tech Experience",
-    positionTitle: "Web Developer",
+    positionTitle: "Web Developer Trainee",
     date: "August 2023 – December 2024",
   },
 ];

@@ -36,7 +36,10 @@ export default function Navigation(): ReactNode {
             />
           )}
 
-          <Link href="/" className="flex gap-2 text-3xl font-bold items-center">
+          <Link
+            href="javascript:window.location.href=window.location.href"
+            className="flex gap-2 text-3xl font-bold items-center"
+          >
             <FaCode className="text-spotify-green w-[70px]" />
             {/* <h1 className="max-lg:hidden">Luan Nguyen</h1> */}
             <TypewriterEffect
@@ -52,7 +55,7 @@ export default function Navigation(): ReactNode {
           <section className="flex flex-row gap-5 items-center max-sm:hidden">
             <SocialLinks />
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
-            <NavButton name="Resume"/>
+            <NavButton name="Resume" />
           </section>
         </section>
         {mobile && <MobileNav handleMobile={handleMobile} />}
