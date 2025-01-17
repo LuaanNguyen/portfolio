@@ -1,15 +1,127 @@
 import React from "react";
+import styled from "styled-components";
 
-const Loader: React.FC = () => {
+const Loader = () => {
   return (
-    <div className="absolute inset-0 flex items-center justify-center h-screen">
-      <div className="flex space-x-2">
-        <div className="w-4 h-4 bg-green-500 rounded-full animate-bounce"></div>
-        <div className="w-4 h-4 bg-green-500 rounded-full animate-bounce delay-200"></div>
-        <div className="w-4 h-4 bg-green-500 rounded-full animate-bounce delay-400"></div>
+    <StyledWrapper>
+      <div className="loader">
+        <div className="cell d-0" />
+        <div className="cell d-1" />
+        <div className="cell d-2" />
+        <div className="cell d-1" />
+        <div className="cell d-2" />
+        <div className="cell d-2" />
+        <div className="cell d-3" />
+        <div className="cell d-3" />
+        <div className="cell d-4" />
       </div>
-    </div>
+    </StyledWrapper>
   );
 };
+
+const StyledWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  .loader {
+    --cell-size: 52px;
+    --cell-spacing: 1px;
+    --cells: 3;
+    --total-size: calc(
+      var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing))
+    );
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--total-size);
+    height: var(--total-size);
+  }
+
+  .cell {
+    flex: 0 0 var(--cell-size);
+    margin: var(--cell-spacing);
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+    animation: 1.5s ripple ease infinite;
+  }
+
+  .cell.d-1 {
+    animation-delay: 100ms;
+  }
+
+  .cell.d-2 {
+    animation-delay: 200ms;
+  }
+
+  .cell.d-3 {
+    animation-delay: 300ms;
+  }
+
+  .cell.d-4 {
+    animation-delay: 400ms;
+  }
+
+  .cell:nth-child(1) {
+    --cell-color: #1db954;
+  }
+
+  .cell:nth-child(2) {
+    --cell-color: #0cfd95;
+  }
+
+  .cell:nth-child(3) {
+    --cell-color: #17fba2;
+  }
+
+  .cell:nth-child(4) {
+    --cell-color: #23f9b2;
+  }
+
+  .cell:nth-child(5) {
+    --cell-color: #30f7c3;
+  }
+
+  .cell:nth-child(6) {
+    --cell-color: #3df5d4;
+  }
+
+  .cell:nth-child(7) {
+    --cell-color: #45f4de;
+  }
+
+  .cell:nth-child(8) {
+    --cell-color: #53f1f0;
+  }
+
+  .cell:nth-child(9) {
+    --cell-color: #60efff;
+  }
+
+  /* Animation */
+  @keyframes ripple {
+    0% {
+      background-color: transparent;
+    }
+
+    30% {
+      background-color: var(--cell-color);
+    }
+
+    60% {
+      background-color: transparent;
+    }
+
+    100% {
+      background-color: transparent;
+    }
+  }
+`;
 
 export default Loader;
