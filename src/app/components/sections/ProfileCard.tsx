@@ -100,12 +100,17 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
-        I am a <span className="text-spotify-white">Junior</span> studying{" "}
-        <span className="text-spotify-white">Computer Science 💻</span> at
+        Hello there 🫶
+        <br /> I am a <span className="text-spotify-white">Junior</span>{" "}
+        studying <span className="text-spotify-white">Computer Science 💻</span>{" "}
+        at
         <span className="text-spotify-white"> Arizona State University 🔱</span>
-        . I am passionate about{" "}
-        <span className="text-spotify-white">Full-Stack Development</span> &{" "}
-        <span className="text-spotify-white">Cloud Engineering</span>
+        . <br />
+        My Expertise:{" "}
+        <span className="text-spotify-white">
+          Full-Stack Development
+        </span> & <span className="text-spotify-white">UI/UX</span> &{" "}
+        <span className="text-spotify-white">Cloud Engineering.</span>
       </h4>
     </div>
   );
