@@ -10,6 +10,41 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://lwm-wireless.net/",
+    imageSrc: "/lwm.jpg",
+    imageAlt: "Large Wireless Model",
+    title: "Large Wireless Model",
+    description:
+      "Documentation Website for LWM, world's first foundational model for wireless channels.",
+    tech: [
+      "ReactJS",
+      "NodeJS",
+      "Express",
+      "MySQL",
+      "AWS EC2",
+      "AWS S3",
+      "Github Actions",
+      "Docker",
+      "Webhooks",
+    ],
+  },
+  {
+    href: "https://voxel51.codestacx.com/",
+    imageSrc: "/bulbasaur.jpg",
+    imageAlt: "🌱 Bulbasaur",
+    title: "🌱 Bulbasaur",
+    description:
+      "An advanced AI-powered system for real-time wildfire detection using satellite imagery and environmental data analysis. ",
+    tech: [
+      "TensorFlow",
+      "PyTorch",
+      "ReactJS",
+      "Flask",
+      "Mapbox API",
+      "TailwindCSS",
+    ],
+  },
+  {
     href: "https://github.com/LuaanNguyen/pokedexcli",
     imageSrc: "/pokedex.png",
     imageAlt: "Pokedex CLI 👨🏻‍💻 (In Progress)",
