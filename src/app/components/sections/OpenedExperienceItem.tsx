@@ -53,7 +53,7 @@ export default function OpenedExperienceItem({
             href={project.href}
             className="group"
           >
-            <div className="relative  hover:bg-[#282828] transition-colors p-4 rounded-xl flex flex-col gap-3">
+            <div className="relative  sm:hover:bg-[#282828] transition-colors p-4 rounded-xl flex flex-col gap-3">
               <div className="relative">
                 <Image
                   src={project.imageSrc}
@@ -62,7 +62,7 @@ export default function OpenedExperienceItem({
                   height={400}
                   className="rounded-lg w-full aspect-video object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/20">
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 sm:group-hover:opacity-100 transition-opacity bg-black/20">
                   <IoPlayCircle className="text-spotify-green text-5xl drop-shadow-lg" />
                 </div>
               </div>

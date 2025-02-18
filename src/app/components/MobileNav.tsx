@@ -20,7 +20,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
       {links.map((link, index) => (
         <div
           key={index}
-          className="p-4 hover:bg-spotify-green rounded-lg"
+          className="p-4 sm:hover:bg-spotify-green rounded-lg"
           onClick={handleMobile}
         >
           <a

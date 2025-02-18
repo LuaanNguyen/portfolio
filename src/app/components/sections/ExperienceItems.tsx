@@ -28,13 +28,13 @@ export default function ExperienceItem() {
               <FaPlay className="text-spotify-black text-sm" />
             </button>
             <div className="flex items-center gap-5">
-              <IoShuffle className="text-3xl text-spotify-grey hover:text-white transition-colors" />
-              <FiPlusCircle className="text-2xl text-spotify-grey hover:text-white transition-colors" />
-              <MdOutlineDownloadForOffline className="text-2xl text-spotify-grey hover:text-white transition-colors" />
-              <BsThreeDots className="text-2xl text-spotify-grey hover:text-white transition-colors" />
+              <IoShuffle className="text-3xl text-spotify-grey sm:hover:text-white transition-colors" />
+              <FiPlusCircle className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+              <MdOutlineDownloadForOffline className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+              <BsThreeDots className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
             </div>
           </div>
-          <RxHamburgerMenu className="text-2xl text-spotify-grey hover:text-white transition-colors" />
+          <RxHamburgerMenu className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
         </div>
       </div>
 
@@ -48,10 +48,10 @@ function Positions() {
     <div className="px-4 pb-4 md:overflow-y-auto h-[300px]">
       {experienceLists.map((position: experienceListsProps, index) => (
         <div
-          className="flex items-center gap-4 p-2.5 hover:bg-[#282828] rounded-lg transition-colors group"
+          className="flex items-center gap-4 p-2.5 sm:hover:bg-[#282828] rounded-lg transition-colors group"
           key={position.companyName}
         >
-          <span className="text-spotify-grey group-hover:text-white min-w-[20px]">
+          <span className="text-spotify-grey sm:group-hover:text-white min-w-[20px]">
             {index + 1}
           </span>
           <div className="flex-1">

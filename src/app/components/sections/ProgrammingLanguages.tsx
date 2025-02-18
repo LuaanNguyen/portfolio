@@ -12,7 +12,7 @@ export default function ProgrammingLanguages() {
         <div className="grid grid-cols-5 max-xl:grid-cols-4 max-lg:grid-cols-5 max-md:grid-cols-4 max-sm:grid-cols-3 gap-4">
           {languageItems.map((item) => (
             <div
-              className="flex items-center justify-center p-2.5 rounded-lg hover:bg-[#282828] transition-all duration-200"
+              className="flex items-center justify-center p-2.5 rounded-lg sm:hover:bg-[#282828] transition-all duration-200"
               key={item.name}
             >
               {item.component}
