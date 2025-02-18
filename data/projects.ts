@@ -11,7 +11,7 @@ export type personalProjectType = {
 export const personalProjects: personalProjectType = [
   {
     href: "https://lwm-wireless.net/",
-    imageSrc: "/lwm.jpg",
+    imageSrc: "/lwm.png",
     imageAlt: "Large Wireless Model",
     title: "Large Wireless Model",
     description:
@@ -30,7 +30,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://voxel51.codestacx.com/",
-    imageSrc: "/bulbasaur.jpg",
+    imageSrc: "/bulbasaur.png",
     imageAlt: "🌱 Bulbasaur",
     title: "🌱 Bulbasaur",
     description:
@@ -44,33 +44,25 @@ export const personalProjects: personalProjectType = [
       "TailwindCSS",
     ],
   },
-  {
-    href: "https://github.com/LuaanNguyen/pokedexcli",
-    imageSrc: "/pokedex.png",
-    imageAlt: "Pokedex CLI 👨🏻‍💻 (In Progress)",
-    title: "Pokedex CLI 👨🏻‍💻",
-    description:
-      "A command line interface to get Pokemon informations from Pokedex API",
-    tech: ["Golang", "HTTPS", "Unit Testing"],
-  },
-  {
-    href: "https://github.com/LuaanNguyen/go-leetcode",
-    imageSrc: "/goleetcode.png",
-    imageAlt: "Daily LeetCode Solutions in Golang 🧠",
-    title: "Daily LeetCode Solutions in Golang 🧠",
-    description:
-      "I try to solve most daily LeetCode questions in Golang in order to get familiar with the language.",
-    tech: ["Golang", "Unit Testing"],
-  },
-  {
-    href: "https://github.com/LuaanNguyen/HelpSystem",
-    imageSrc: "/helpsystem.jpg",
-    imageAlt: "Help System 📚",
-    title: "Help System 📚",
-    description:
-      "Directed a team of 5 developers to design and implement a help system using Java, providing personalized academic support to over 200 ASU students.",
-    tech: ["Java", "JavaFX", "Maven", "H2 Database", "Figma"],
-  },
+  // {
+  //   href: "https://github.com/LuaanNguyen/pokedexcli",
+  //   imageSrc: "/pokedex.png",
+  //   imageAlt: "Pokedex CLI 👨🏻‍💻 (In Progress)",
+  //   title: "Pokedex CLI 👨🏻‍💻",
+  //   description:
+  //     "A command line interface to get Pokemon informations from Pokedex API",
+  //   tech: ["Golang", "HTTPS", "Unit Testing"],
+  // },
+  // {
+  //   href: "https://github.com/LuaanNguyen/go-leetcode",
+  //   imageSrc: "/goleetcode.png",
+  //   imageAlt: "Daily LeetCode Solutions in Golang 🧠",
+  //   title: "Daily LeetCode Solutions in Golang 🧠",
+  //   description:
+  //     "I try to solve most daily LeetCode questions in Golang in order to get familiar with the language.",
+  //   tech: ["Golang", "Unit Testing"],
+  // },
+
   {
     href: "https://github.com/LuaanNguyen/neutral-lens",
     imageSrc: "/Neutral_Lens.png",
@@ -190,8 +182,8 @@ export const personalProjects: personalProjectType = [
   {
     href: "https://www.unionize101.org",
     imageSrc: "/unionize101.png",
-    imageAlt: "Unionize101 Website",
-    title: "Unionize101 Website 💻",
+    imageAlt: "unionize101.org ",
+    title: "unionize101.org 💻",
     description:
       "This is a website to educate worker and union leaders about starting a Union. A multidisciplinary team of 6 interns collaborated in the span of 12 weeks to produce a fully functional web-app.",
     tech: [
@@ -206,6 +198,15 @@ export const personalProjects: personalProjectType = [
     ],
   },
   {
+    href: "https://github.com/LuaanNguyen/HelpSystem",
+    imageSrc: "/helpsystem.jpg",
+    imageAlt: "Help System 📚",
+    title: "Help System 📚",
+    description:
+      "Directed a team of 5 developers to design and implement a help system using Java, providing personalized academic support to over 200 ASU students.",
+    tech: ["Java", "JavaFX", "Maven", "H2 Database", "Figma"],
+  },
+  {
     href: "https://github.com/LuaanNguyen/epics-mern",
     imageSrc: "/shrimp-farming.png",
     imageAlt: "EPICS project",
@@ -214,54 +215,54 @@ export const personalProjects: personalProjectType = [
       "Developed and implement a device that will analyze water quality to assist Vietnamese shrimp farmers. The desired outcomes of this project entail the establishment of a functional, self-updating database to facilitate communication with shrimp farmers and ensure consistent data conversion and updating.",
     tech: ["React", "Express", "NodeJS", "MongoDB", "TailwindCSS"],
   },
-  {
-    href: "https://worldwise-xi-five.vercel.app/",
-    imageSrc: "/worldwise.jpg",
-    imageAlt: "Worldwise",
-    title: "Wordwise 🌎",
-    description:
-      "This project ultilize Geolocation and Leaflet Map's API to track user's travel experiences",
-    tech: ["React", "JavaScript", "Leaflet"],
-  },
-  {
-    href: "https://popcorn-picks.vercel.app/",
-    imageSrc: "/popcorn-picks.png",
-    imageAlt: "Popcorn Picks",
-    title: "Popcorn Picks 🍿",
-    description:
-      "Popcorn Picks: A Personalized Movie Tracker to track your movie experience.",
-    tech: ["React", "JavaScript"],
-  },
-  {
-    href: "https://github.com/LuaanNguyen/chatbot-chatgpt",
-    imageSrc: "/chatgpt-terminal.jpg",
-    imageAlt: "Personal ChatGPT",
-    title: "Personal ChatGPT 🤖",
-    description:
-      "Ultilized OpenAI's API to create a chatbot within the MacOS Terminal that is as capable as regular ChatGPT 3.5",
-    tech: ["NodeJS", "JavaScript", "OpenAI's API"],
-  },
-  {
-    href: "https://luaannguyen.github.io/marriott-bonvoy-bootstrap-clone/#",
-    imageSrc: "/homevillas.png",
-    imageAlt: "Marriot Bonvoy Website",
-    title: "Marriot Bonvoy Website 🏝️",
-    description:
-      "Devised a prototype leveraging the Mapbox API to create Marriot Bonvoy’s Homes & Villas home page website. Employed DOM manipulation techniques to develop and customize website sections, ensuring alignment with stakeholder requirements and enhancing overall user experience.",
-    tech: ["HTML/CSS", "JavaScript", "Bootstrap", "MapBox API"],
-  },
-  {
-    href: "https://b7c0c00a-ee15-4855-91dc-f508d9c2049b-00-1pkpcsn82sekg.spock.replit.dev/",
-    imageSrc: "/hiking-matching-game.png",
-    imageAlt: "Hiking Game",
-    title: "Hiking Matching Game 🥾",
-    description:
-      "A hiking-theme matching game that I created while learning JavaScript",
-    tech: ["HTML/CSS", "JavaScript", "Bootstrap"],
-  },
+  // {
+  //   href: "https://worldwise-xi-five.vercel.app/",
+  //   imageSrc: "/worldwise.jpg",
+  //   imageAlt: "Worldwise",
+  //   title: "Wordwise 🌎",
+  //   description:
+  //     "This project ultilize Geolocation and Leaflet Map's API to track user's travel experiences",
+  //   tech: ["React", "JavaScript", "Leaflet"],
+  // },
+  // {
+  //   href: "https://popcorn-picks.vercel.app/",
+  //   imageSrc: "/popcorn-picks.png",
+  //   imageAlt: "Popcorn Picks",
+  //   title: "Popcorn Picks 🍿",
+  //   description:
+  //     "Popcorn Picks: A Personalized Movie Tracker to track your movie experience.",
+  //   tech: ["React", "JavaScript"],
+  // },
+  // {
+  //   href: "https://github.com/LuaanNguyen/chatbot-chatgpt",
+  //   imageSrc: "/chatgpt-terminal.jpg",
+  //   imageAlt: "Personal ChatGPT",
+  //   title: "Personal ChatGPT 🤖",
+  //   description:
+  //     "Ultilized OpenAI's API to create a chatbot within the MacOS Terminal that is as capable as regular ChatGPT 3.5",
+  //   tech: ["NodeJS", "JavaScript", "OpenAI's API"],
+  // },
+  // {
+  //   href: "https://luaannguyen.github.io/marriott-bonvoy-bootstrap-clone/#",
+  //   imageSrc: "/homevillas.png",
+  //   imageAlt: "Marriot Bonvoy Website",
+  //   title: "Marriot Bonvoy Website 🏝️",
+  //   description:
+  //     "Devised a prototype leveraging the Mapbox API to create Marriot Bonvoy’s Homes & Villas home page website. Employed DOM manipulation techniques to develop and customize website sections, ensuring alignment with stakeholder requirements and enhancing overall user experience.",
+  //   tech: ["HTML/CSS", "JavaScript", "Bootstrap", "MapBox API"],
+  // },
+  // {
+  //   href: "https://b7c0c00a-ee15-4855-91dc-f508d9c2049b-00-1pkpcsn82sekg.spock.replit.dev/",
+  //   imageSrc: "/hiking-matching-game.png",
+  //   imageAlt: "Hiking Game",
+  //   title: "Hiking Matching Game 🥾",
+  //   description:
+  //     "A hiking-theme matching game that I created while learning JavaScript",
+  //   tech: ["HTML/CSS", "JavaScript", "Bootstrap"],
+  // },
   {
     href: "https://luaannguyen.github.io/FSE100-final-project/",
-    imageSrc: "/fine-motor-skills.png",
+    imageSrc: "/spacegames.png",
     imageAlt: "Space Games",
     title: "Space Games 👾",
     description:

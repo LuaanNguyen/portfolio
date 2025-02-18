@@ -27,7 +27,7 @@ export default function ProfileCard() {
 
         <PersonalStatement />
         <Location />
-        <Booking />
+        {/* <Booking /> */}
       </div>
     </div>
   );
