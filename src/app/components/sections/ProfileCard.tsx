@@ -45,8 +45,8 @@ function Location() {
 }
 
 function Booking() {
-  const email = "luanthiennguyen2003@gmail.com"; // Replace with the email you want to copy
-  const phoneNum = "9176574242";
+  const email = ""; // Replace with the email you want to copy
+  const phoneNum = "";
 
   const handleCopyEmail = () => {
     navigator.clipboard
@@ -100,12 +100,13 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
-        Hello there 🫶
+        Hello there 🫶 <br />
         <br /> I am a <span className="text-spotify-white">Junior</span>{" "}
         studying <span className="text-spotify-white">Computer Science 💻</span>{" "}
         at
         <span className="text-spotify-white"> Arizona State University 🔱</span>
         . <br />
+        <br />
         My Expertise:{" "}
         <span className="text-spotify-white">
           Full-Stack Development
