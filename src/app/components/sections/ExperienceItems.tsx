@@ -5,7 +5,6 @@ import { MdOutlineDownloadForOffline } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaPlay } from "react-icons/fa";
-import Image from "next/image";
 
 export default function ExperienceItem() {
   return (
@@ -78,6 +77,11 @@ const experienceLists: experienceListsProps[] = [
     companyName: "Amazon",
     positionTitle: "Software Development Engineer Intern",
     date: "May 2025 - August 2025",
+  },
+  {
+    companyName: "Simplify (YC W21)",
+    positionTitle: "Ambassador",
+    date: "January 2025 - Present",
   },
   {
     companyName: "Wireless Intelligence Lab — ASU ECEE",
