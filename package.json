@@ -12,6 +12,7 @@
     "@react-three/drei": "^9.108.4",
     "@react-three/fiber": "^8.16.8",
     "@tabler/icons-react": "^3.11.0",
+    "@vercel/analytics": "^1.5.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.8",
     "mini-svg-data-uri": "^1.4.4",

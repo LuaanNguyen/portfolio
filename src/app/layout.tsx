@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
-import EmbedediFrame from "./components/EmbedediFrame";
+import { Analytics } from "@vercel/analytics/next";
 import { GeneralProvider } from "./contexts/generalContext";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -95,7 +95,7 @@ export default function RootLayout({
         <GeneralProvider>
           <Navigation />
           {children}
-          {/* <EmbedediFrame /> */}
+          <Analytics />
         </GeneralProvider>
       </body>
     </html>
