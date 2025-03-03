@@ -11,7 +11,7 @@ export type personalProjectType = {
 export const personalProjects: personalProjectType = [
   {
     href: "https://lwm-wireless.net/",
-    imageSrc: "/lwm.png",
+    imageSrc: "https://d2th3dc33uqqn2.cloudfront.net/lwm.png",
     imageAlt: "Large Wireless Model",
     title: "Large Wireless Model",
     description:
@@ -248,7 +248,7 @@ export const personalProjects: personalProjectType = [
   //   imageAlt: "Marriot Bonvoy Website",
   //   title: "Marriot Bonvoy Website 🏝️",
   //   description:
-  //     "Devised a prototype leveraging the Mapbox API to create Marriot Bonvoy’s Homes & Villas home page website. Employed DOM manipulation techniques to develop and customize website sections, ensuring alignment with stakeholder requirements and enhancing overall user experience.",
+  //     "Devised a prototype leveraging the Mapbox API to create Marriot Bonvoy's Homes & Villas home page website. Employed DOM manipulation techniques to develop and customize website sections, ensuring alignment with stakeholder requirements and enhancing overall user experience.",
   //   tech: ["HTML/CSS", "JavaScript", "Bootstrap", "MapBox API"],
   // },
   // {

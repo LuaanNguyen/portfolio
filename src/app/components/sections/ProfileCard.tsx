@@ -102,8 +102,7 @@ function PersonalStatement() {
       <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
         Hello there 🫶 <br />
         <br /> I am a <span className="text-spotify-white">Junior</span>{" "}
-        studying <span className="text-spotify-white">Computer Science 💻</span>{" "}
-        at
+        studying <span className="text-spotify-white">Computer Science</span> at
         <span className="text-spotify-white"> Arizona State University 🔱</span>
         . <br />
         <br />
