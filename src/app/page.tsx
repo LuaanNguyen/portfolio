@@ -16,8 +16,8 @@ const SpotifyAlbum = lazy(() => import("./components/sections/SpotifyAlbum"));
 const ExperienceItem = lazy(
   () => import("./components/sections/ExperienceItems")
 );
-const OpenedExperienceItem = lazy(
-  () => import("./components/sections/OpenedExperienceItem")
+const OpenedProjects = lazy(
+  () => import("./components/sections/OpenedProjects")
 );
 
 export interface ProjectsProps {
@@ -49,7 +49,7 @@ export default function Home() {
           <Suspense fallback={<Loader />}>
             <ProfileCard />
             {experienceSection ? (
-              <OpenedExperienceItem
+              <OpenedProjects
                 onSetExperienceSection={handleSetExperienceSection}
                 className="max-md:hidden"
               />
@@ -60,7 +60,7 @@ export default function Home() {
                 <ProgrammingLanguages />
               </>
             )}
-            <OpenedExperienceItem className="block md:hidden" />
+            <OpenedProjects className="block md:hidden" />
             {/* <Skills /> */}
             <GithubContributions />
             <SpotifyAlbum />

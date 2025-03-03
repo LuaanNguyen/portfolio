@@ -9,6 +9,7 @@ import { GeneralProvider } from "./contexts/generalContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://luannguyen.net"),
   title: "Luan Nguyen's Portfolio",
   description:
     "Full-stack software engineer specializing in web development, AI/ML, and cloud solutions. Explore my projects and experience in building innovative digital solutions.",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Luan Nguyen's Portfolio",
     images: [
       {
-        url: "/Luan.jpg", // Add your preview image to public folder
+        url: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Luan.jpg`,
         width: 1200,
         height: 630,
         alt: "Luan Nguyen Portfolio",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     title: "Luan Nguyen | Software Engineer",
     description:
       "Full-stack software engineer specializing in web development, AI/ML, and cloud solutions.",
-    images: ["/Luan.jpg"],
+    images: [`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Luan.jpg`],
   },
   robots: {
     index: true,

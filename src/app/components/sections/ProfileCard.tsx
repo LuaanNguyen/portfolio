@@ -16,7 +16,7 @@ export default function ProfileCard() {
       <div className="flex flex-col gap-7 max-md:gap-5">
         <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
           <Image
-            src="/Luan.jpg"
+            src="https://d2th3dc33uqqn2.cloudfront.net/Luan.jpg"
             alt="Picture of the author"
             width={400}
             height={400}
@@ -102,8 +102,7 @@ function PersonalStatement() {
       <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
         Hello there 🫶 <br />
         <br /> I am a <span className="text-spotify-white">Junior</span>{" "}
-        studying <span className="text-spotify-white">Computer Science 💻</span>{" "}
-        at
+        studying <span className="text-spotify-white">Computer Science</span> at
         <span className="text-spotify-white"> Arizona State University 🔱</span>
         . <br />
         <br />

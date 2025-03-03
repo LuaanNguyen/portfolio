@@ -57,7 +57,7 @@ const projectLists: {
     content: (
       <a target="_blank" href="https://board-game-cafe-website.vercel.app/">
         <Image
-          src="/codedex-hackathon.jpeg"
+          src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/codedex-hackathon.jpeg`}
           alt="Sip n Play Cafe Website"
           width={500}
           height={500}
@@ -72,7 +72,7 @@ const projectLists: {
     content: (
       <a target="_blank" href="https://github.com/LuaanNguyen/epics-mern">
         <Image
-          src="/Mine_Alliance.png"
+          src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Mine_Alliance.png`}
           alt="Mine Alliance"
           loading="lazy"
           width={500}
@@ -88,7 +88,7 @@ const projectLists: {
     content: (
       <a target="_blank" href="https://github.com/Smit2553/Fiber">
         <Image
-          src="/fiber.png"
+          src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/fiber.png`}
           alt="Fiber Project"
           loading="lazy"
           width={500}
