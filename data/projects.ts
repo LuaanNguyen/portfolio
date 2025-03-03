@@ -11,7 +11,7 @@ export type personalProjectType = {
 export const personalProjects: personalProjectType = [
   {
     href: "https://lwm-wireless.net/",
-    imageSrc: "https://d2th3dc33uqqn2.cloudfront.net/lwm.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/lwm.png`,
     imageAlt: "Large Wireless Model",
     title: "Large Wireless Model",
     description:
@@ -30,7 +30,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://voxel51.codestacx.com/",
-    imageSrc: "/bulbasaur.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/bulbasaur.png`,
     imageAlt: "🌱 Bulbasaur",
     title: "🌱 Bulbasaur",
     description:
@@ -65,7 +65,7 @@ export const personalProjects: personalProjectType = [
 
   {
     href: "https://github.com/LuaanNguyen/neutral-lens",
-    imageSrc: "/Neutral_Lens.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Neutral_Lens.png`,
     imageAlt: "Neutral Lens 🎥",
     title: "Neutral Lens 🎥 (Social Bias Hackathon Winner 🥇)",
     description:
@@ -82,7 +82,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://github.com/LuaanNguyen/Mine-Alliance",
-    imageSrc: "/Mine_Alliance.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Mine_Alliance.png`,
     imageAlt: "Mine Alliance ⛏️",
     title: "Mine Alliance ⛏️ (Principled Innovation Hackathon Winner 🥇)",
     description:
@@ -100,7 +100,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://github.com/LuaanNguyen/static-site-generator",
-    imageSrc: "/staticsitegenerator_infrastructure.jpg",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/staticsitegenerator_infrastructure.jpg`,
     imageAlt: "Static Site Generator",
     title: "Static Site Generator ♺",
     description:
@@ -109,7 +109,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://github.com/LuaanNguyen/asteroids",
-    imageSrc: "/asteroids.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/asteroids.png`,
     imageAlt: "Asteroids Game",
     title: "Asteroids Game ☄️",
     description:
@@ -118,7 +118,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://thesoda.io/",
-    imageSrc: "/thesodaio.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/thesodaio.png`,
     imageAlt: "Thesoda.io",
     title: "The Software Developers Association (SoDA) Website 🥤",
     description:
@@ -137,7 +137,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://www.luannguyen.net/",
-    imageSrc: "/luan-portfolio.jpg",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/luan-portfolio.jpg`,
     imageAlt: "My Portfolio",
     title: "Personal Portfolio 🪪",
     description:
@@ -153,7 +153,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://board-game-cafe-website.vercel.app/",
-    imageSrc: "/sipnplay.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/sipnplay.png`,
     imageAlt: "Sip n Play Cafe Website",
     title:
       "Sip n Play Boardgame Café Website ☕️ (Codédex Hackathon 2024 Winner 🥇)",
@@ -163,7 +163,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://github.com/Smit2553/Fiber",
-    imageSrc: "/fiber.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/fiber.png`,
     imageAlt: "Fiber Project",
     title: "🥑 Fiber (CalHacks 2024)",
     description:
@@ -172,7 +172,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://ethicalspectacle.com/",
-    imageSrc: "/ethicalspectacle.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/ethicalspectacle.png`,
     imageAlt: "Ethical Spectable Research Website",
     title: "Ethical Spectable Research Website 💻",
     description:
@@ -181,7 +181,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://www.unionize101.org",
-    imageSrc: "/unionize101.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/unionize101.png`,
     imageAlt: "unionize101.org ",
     title: "unionize101.org 💻",
     description:
@@ -199,7 +199,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://github.com/LuaanNguyen/HelpSystem",
-    imageSrc: "/helpsystem.jpg",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/helpsystem.jpg`,
     imageAlt: "Help System 📚",
     title: "Help System 📚",
     description:
@@ -208,7 +208,7 @@ export const personalProjects: personalProjectType = [
   },
   {
     href: "https://github.com/LuaanNguyen/epics-mern",
-    imageSrc: "/shrimp-farming.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/shrimp-farming.png`,
     imageAlt: "EPICS project",
     title: "Online Database for Study Abroad Program 📊",
     description:
@@ -262,7 +262,7 @@ export const personalProjects: personalProjectType = [
   // },
   {
     href: "https://luaannguyen.github.io/FSE100-final-project/",
-    imageSrc: "/spacegames.png",
+    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/spacegames.png`,
     imageAlt: "Space Games",
     title: "Space Games 👾",
     description:
