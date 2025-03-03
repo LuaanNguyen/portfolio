@@ -98,7 +98,3 @@ html {
 body {
   @apply bg-spotify-black text-spotify-white;
 }
-
-:root {
-  color-scheme: white;
-}

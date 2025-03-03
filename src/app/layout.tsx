@@ -9,7 +9,7 @@ import { GeneralProvider } from "./contexts/generalContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Luan Nguyen's Portfolio",
+  title: "Luan Nguyen",
   description:
     "Full-stack software engineer specializing in web development, AI/ML, and cloud solutions. Explore my projects and experience in building innovative digital solutions.",
   keywords: [
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   creator: "Luan Nguyen",
   authors: [{ name: "Luan Nguyen" }],
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/terminal.svg",
+    shortcut: "/terminal.svg",
     apple: [
-      { url: "/favicon.svg" },
-      { url: "/favicon.svg", sizes: "180x180", type: "image/svg+xml" },
+      { url: "/terminal.svg" },
+      { url: "/terminal.svg", sizes: "180x180", type: "image/svg+xml" },
     ],
   },
   openGraph: {
