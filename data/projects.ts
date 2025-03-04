@@ -147,8 +147,8 @@ export const personalProjects: personalProjectType = [
       "AceternityUI",
       "TailwindCSS",
       "TypeScript",
-      "Google Analytics",
-      "SEO",
+      "Vercel Analytics",
+      "AWS S3 + CloudFront",
     ],
   },
   {
