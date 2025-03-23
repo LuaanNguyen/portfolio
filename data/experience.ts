@@ -6,13 +6,18 @@ type experienceListsProps = {
 
 const experienceLists: experienceListsProps[] = [
   {
-    companyName: "Amazon",
+    companyName: "Amazon Web Services",
     positionTitle: "Software Development Engineer Intern",
     date: "May 2025 - August 2025",
   },
   {
+    companyName: "Autodesk",
+    positionTitle: "Design & Make Ambassador",
+    date: "March 2025 - Present",
+  },
+  {
     companyName: "Simplify (YC W21)",
-    positionTitle: "Ambassador",
+    positionTitle: "Campus Ambassador",
     date: "January 2025 - Present",
   },
   {
