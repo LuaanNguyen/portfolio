@@ -10,7 +10,7 @@ A modern, responsive portfolio website built with cutting-edge technologies, fea
 
 ## ✨ Preview
 
-<img src="public/portfolio_readme.jpg" width="900" alt="Portfolio Preview">
+<img src="portfolio_highres.png" width="700"  alt="Portfolio Preview">
 
 ## 🛠️ Built With
 
