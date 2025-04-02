@@ -10,6 +10,26 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://www.brainrotmastervaultovercooked.tech/",
+    imageSrc: `/gallery.jpg`,
+    imageAlt: "Brainrot Master Vault",
+    title: "Brainrot Master Vault 📻 (HackPrinceton 2025 Winner 🏆)",
+    description:
+      "Launched 2 AI full-stack applications to convert short-form contents (TikTok, IG reels, etc.) into podcasts, allowing users to retain connections between contents visually, by transcribing videos from LLMs running on Modal’s cloud service.",
+    tech: [
+      "OpenAI Whisper",
+      "Microsoft Phi-2",
+      "Gemini",
+      "Modal",
+      "NextJS",
+      "React Native/ Expo",
+      "Framer Motion",
+      "Kokoro",
+      "FastAPI",
+      "SQLlite",
+    ],
+  },
+  {
     href: "https://lwm-wireless.net/",
     imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/lwm.png`,
     imageAlt: "Large Wireless Model",
