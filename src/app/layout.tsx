@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   creator: "Luan Nguyen",
   authors: [{ name: "Luan Nguyen" }],
   icons: {
-    icon: "/terminal.svg",
-    shortcut: "/terminal.svg",
+    icon: "/Luan.jpg",
+    shortcut: "/Luan.jpg",
     apple: [
-      { url: "/terminal.svg" },
-      { url: "/terminal.svg", sizes: "180x180", type: "image/svg+xml" },
+      { url: "/Luan.jpg" },
+      { url: "/Luan.jpg", sizes: "180x180", type: "image/svg+xml" },
     ],
   },
   openGraph: {

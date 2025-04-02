@@ -282,7 +282,7 @@ export const personalProjects: personalProjectType = [
   // },
   {
     href: "https://luaannguyen.github.io/FSE100-final-project/",
-    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/spacegames.png`,
+    imageSrc: `/spacegames.png`,
     imageAlt: "Space Games",
     title: "Space Games 👾",
     description:
