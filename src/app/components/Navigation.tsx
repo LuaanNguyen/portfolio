@@ -47,7 +47,7 @@ export default function Navigation(): ReactNode {
                 { text: "Luan", className: "text-3xl" },
                 { text: "Nguyen", className: "text-3xl" },
               ]}
-              className="place-self-center max-lg:hidden"
+              className="place-self-center max-lg:hidden text-white"
             />
           </Link>
 
