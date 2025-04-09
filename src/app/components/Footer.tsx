@@ -8,9 +8,23 @@ export default function Footer() {
         <a
           href="https://www.luannguyen.net/"
           className="text-spotify-green font-semibold underline"
+          target="_blank"
         >
           Luan
         </a>
+      </p>
+      <p className="text-spotify-light-gray max-md:text-sm mt-5">
+        Built with NextJS, Tailwind, and Aceternity UI. Check out the source
+        code
+        <a
+          target="_blank"
+          href="https://github.com/LuaanNguyen/portfolio"
+          className="text-spotify-green font-semibold"
+        >
+          {" "}
+          here
+        </a>
+        .
       </p>
     </div>
   );

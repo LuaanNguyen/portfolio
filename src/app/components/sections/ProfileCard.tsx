@@ -17,7 +17,7 @@ export default function ProfileCard() {
         <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
           <Image
             src="https://d2th3dc33uqqn2.cloudfront.net/Luan.jpg"
-            alt="Picture of the author"
+            alt="Luan Nguyen"
             width={400}
             height={400}
             objectFit="none"

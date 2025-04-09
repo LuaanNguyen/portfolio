@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   creator: "Luan Nguyen",
   authors: [{ name: "Luan Nguyen" }],
   icons: {
-    icon: "/Luan.jpg",
-    shortcut: "/Luan.jpg",
+    icon: "/terminal.svg",
+    shortcut: "/luan_aws.png",
     apple: [
       { url: "/Luan.jpg" },
       { url: "/Luan.jpg", sizes: "180x180", type: "image/svg+xml" },
