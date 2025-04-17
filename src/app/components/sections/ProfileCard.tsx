@@ -96,7 +96,7 @@ function PersonalStatement() {
       <div className="space-y-1.5">
         <h1 className="text-2xl font-semibold">Luan Nguyen</h1>
         <p className="text-spotify-gray text-sm">
-          Developer • Designer • Artist
+          Engineer • Designer • Artist
         </p>
       </div>
       <h4 className="text-sm font-semibold">
@@ -107,7 +107,7 @@ function PersonalStatement() {
         >
           AWS
         </a>{" "}
-        , a new cloud computing platform. <br />
+        , a leading cloud technology platform. <br />
         <br />
         <span>
           I hope to develop better{" "}
