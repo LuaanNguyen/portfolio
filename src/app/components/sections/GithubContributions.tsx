@@ -7,8 +7,8 @@ const GithubContributions: React.FC = () => {
   useEffect(() => {
     // Simulate loading time (e.g., fetching data)
     const timer = setTimeout(() => {
-      setLoading(false); // Set loading to false after 2 seconds
-    }, 5000);
+      setLoading(false);
+    }, 2000);
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
