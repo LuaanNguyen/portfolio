@@ -79,11 +79,6 @@ const experienceLists: experienceListsProps[] = [
     date: "May 2025 - August 2025",
   },
   {
-    companyName: "Autodesk",
-    positionTitle: "Design & Make Ambassador",
-    date: "March 2025 - Present",
-  },
-  {
     companyName: "Simplify (YC W21)",
     positionTitle: "Campus Ambassador",
     date: "January 2025 - Present",

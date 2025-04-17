@@ -16,7 +16,7 @@ export default function ProfileCard() {
       <div className="flex flex-col gap-7 max-md:gap-5">
         <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
           <Image
-            src="https://d2th3dc33uqqn2.cloudfront.net/Luan.jpg"
+            src="/luan_real.png"
             alt="Luan Nguyen"
             width={400}
             height={400}
@@ -26,7 +26,7 @@ export default function ProfileCard() {
         </BackgroundGradient>
 
         <PersonalStatement />
-        <Location />
+        {/* <Location /> */}
         {/* <Booking /> */}
       </div>
     </div>
@@ -99,15 +99,30 @@ function PersonalStatement() {
           Developer • Designer • Artist
         </p>
       </div>
-      <h4 className="text-md max-md:text-sm text-spotify-light-gray font-semibold">
-        Hello there 🫶 <br />
-        <br /> I am a 3rd year undergraduate student studying{" "}
-        <span className="text-spotify-white">Computer Science</span> @
-        <span className="text-spotify-white"> Arizona State University 🔱</span>
-        . <br />
+      <h4 className="text-sm font-semibold">
+        I&apos;m currently interning at{" "}
+        <a
+          href="https://aws.amazon.com/"
+          className="text-spotify-green underline"
+        >
+          AWS
+        </a>{" "}
+        , a new cloud computing platform. <br />
         <br />
         <span>
-          I spend a lot of time listening to podcast and reading documentations.
+          I hope to develop better{" "}
+          <span className="text-spotify-green">interactive software</span> for
+          people to cultivate and share ideas, and to meaningfully express what
+          brings them joy.
+        </span>
+        <br />
+        <br />
+        <span>
+          Towards that goal, I am a generalist and care deeply about{" "}
+          <span className="text-spotify-green">systems</span>, which form the
+          fundamental building blocks of our applications; and{" "}
+          <span className="text-spotify-green"> interaction design </span>, how
+          we use and live with computers that are all around us.
         </span>
       </h4>
     </div>

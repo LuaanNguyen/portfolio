@@ -15,13 +15,12 @@ export default function Footer() {
       </p>
       <p className="text-spotify-light-gray max-md:text-sm mt-5">
         Built with NextJS, Tailwind, and Aceternity UI. Check out the source
-        code
+        code{" "}
         <a
           target="_blank"
           href="https://github.com/LuaanNguyen/portfolio"
-          className="text-spotify-green font-semibold"
+          className="text-spotify-green font-semibold underline"
         >
-          {" "}
           here
         </a>
         .
