@@ -10,6 +10,21 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://rateourclub.com/",
+    imageSrc: `/rateourclub.png`,
+    imageAlt: "Rate Our Club",
+    title: "Rate Our Club ⭐️",
+    description:
+      "A website for students to rate college organizations, supporting over 100+ clubs.",
+    tech: [
+      "NextJS",
+      "TailwindCSS",
+      "JavaScript",
+      "Firebase DB",
+      "Ubuntu Server",
+    ],
+  },
+  {
     href: "https://www.brainrotmastervaultovercooked.tech/",
     imageSrc: `/gallery.jpg`,
     imageAlt: "Brainrot Master Vault",
@@ -27,6 +42,24 @@ export const personalProjects: personalProjectType = [
       "Kokoro",
       "FastAPI",
       "SQLlite",
+    ],
+  },
+  {
+    href: "https://demo.airbnb-for-stuff.pages.dev/items",
+    imageSrc: `/airbnb_for_stuff.png`,
+    imageAlt: "AirBnb For Stuff",
+    title: "AirBnb For Stuff 📦",
+    description:
+      "A peer-to-peer item rental platform, built with Svelte, Go's gorilla/mux, and PostgreSQL — like AirBnB, but for everyday items.",
+    tech: [
+      "GO + gorilla/mux",
+
+      "Svelte + SvelteKit",
+      "TailwindCSS",
+      "TypeScript",
+      "PostgresSQL",
+      "AWS RDS",
+      "CloudFare Pages",
     ],
   },
   {
