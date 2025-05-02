@@ -8,14 +8,14 @@ const GithubContributions: React.FC = () => {
     // Simulate loading time (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 0);
 
     return () => clearTimeout(timer); // Cleanup timer on unmount
   }, []);
 
   return (
     <div
-      className="flex py-3 px-3 max-lg:col-span-1 max-lg:row-span-1 col-span-4 row-span-2 col-start-1 row-start-7 bg-spotify-light-dark rounded-xl h-fit"
+      className="flex py-2 px-3 max-lg:col-span-1 max-lg:row-span-1 col-span-4 row-span-2 col-start-1 row-start-7 bg-spotify-light-dark rounded-xl h-fit"
       id="contribution"
     >
       {loading ? (
@@ -38,7 +38,7 @@ const GithubContributions: React.FC = () => {
           <GitHubCalendar
             username="LuaanNguyen"
             blockSize={11} // Size of each block
-            blockMargin={3} // Margin between blocks
+            blockMargin={2} // Margin between blocks
             fontSize={12} // Font size for the text
           />
         </div>

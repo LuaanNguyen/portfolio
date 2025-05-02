@@ -76,7 +76,7 @@ const experienceLists: experienceListsProps[] = [
   {
     companyName: "Amazon Web Services",
     positionTitle: "Software Development Engineer Intern",
-    date: "May 2025 - August 2025",
+    date: "May 2025 - Present",
   },
   {
     companyName: "Simplify (YC W21)",
@@ -86,7 +86,7 @@ const experienceLists: experienceListsProps[] = [
   {
     companyName: "Wireless Intelligence Lab — ASU ECEE",
     positionTitle: "Software Engineer",
-    date: "September 2024 - Present",
+    date: "September 2024 - March 2025",
   },
 
   {
