@@ -110,19 +110,20 @@ function PersonalStatement() {
         , a leading cloud technology platform. <br />
         <br />
         <span>
-          I hope to develop better{" "}
-          <span className="text-spotify-green">interactive software</span> for
-          people to cultivate and share ideas, and to meaningfully express what
-          brings them joy.
+          I aspire to create{" "}
+          <span className="text-spotify-green">interactive software</span> that
+          helps people cultivate and share ideas, and express what brings them
+          joy in meaningful ways.
         </span>
         <br />
         <br />
         <span>
-          Towards that goal, I am a generalist and care deeply about{" "}
-          <span className="text-spotify-green">systems</span>, which form the
-          fundamental building blocks of our applications; and{" "}
-          <span className="text-spotify-green"> interaction design </span>, how
-          we use and live with computers that are all around us.
+          To that end, I take a generalist’s approach, driven by a deep care for
+          both <span className="text-spotify-green">systems</span>, — the
+          foundational layers of our digital world—and{" "}
+          <span className="text-spotify-green"> interaction design </span>,
+          which shapes how we live with and relate to the computers that
+          surround us.
         </span>
       </h4>
     </div>
