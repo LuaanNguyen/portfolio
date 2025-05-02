@@ -10,8 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luan Nguyen",
-  description:
-    "Full-stack software engineer specializing in web development, AI/ML, and cloud solutions. Explore my projects and experience in building innovative digital solutions.",
+  description: "Intern @ AWS",
   keywords: [
     "Luan Nguyen",
     "Software Engineer",
@@ -26,8 +25,8 @@ export const metadata: Metadata = {
     icon: "/terminal.svg",
     shortcut: "/luan_aws.png",
     apple: [
-      { url: "/Luan.jpg" },
-      { url: "/Luan.jpg", sizes: "180x180", type: "image/svg+xml" },
+      { url: "/luan_aws.png" },
+      { url: "/luan_aws.png", sizes: "180x180", type: "image/svg+xml" },
     ],
   },
   openGraph: {
