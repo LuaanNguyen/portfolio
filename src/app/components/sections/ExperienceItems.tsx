@@ -16,7 +16,7 @@ export default function ExperienceItem() {
         <h2 className="text-xl font-bold mb-1">Professional Experience</h2>
         <p className="flex items-center gap-1.5 text-spotify-grey text-sm">
           <CiGlobe className="text-lg" />
-          1208 saves • 184086h 38m
+          1208 saves • 21h 03m
         </p>
       </div>
 
@@ -44,7 +44,7 @@ export default function ExperienceItem() {
 
 function Positions() {
   return (
-    <div className="px-4 pb-4 md:overflow-y-auto h-[300px]">
+    <div className="px-4 pb-4 md:overflow-y-auto sm:h-[300px]">
       {experienceLists.map((position: experienceListsProps, index) => (
         <div
           className="flex items-center gap-4 p-2.5 sm:hover:bg-[#282828] rounded-lg transition-colors group"

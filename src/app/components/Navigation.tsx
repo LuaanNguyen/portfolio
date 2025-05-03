@@ -44,8 +44,8 @@ export default function Navigation(): ReactNode {
             {/* <h1 className="max-lg:hidden">Luan Nguyen</h1> */}
             <TypewriterEffect
               words={[
-                { text: "Luan", className: "text-3xl" },
-                { text: "Nguyen", className: "text-3xl" },
+                { text: "Luan", className: "text-4xl" },
+                { text: "Nguyen", className: "text-4xl" },
               ]}
               className="place-self-center max-lg:hidden text-white"
             />
