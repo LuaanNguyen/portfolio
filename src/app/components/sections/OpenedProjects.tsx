@@ -22,7 +22,7 @@ export default function OpenedExperienceItem({
   return (
     <div
       id="project"
-      className={`${className} col-span-4 row-span-6 col-start-3 row-start-1 bg-spotify-light-dark rounded-xl overflow-hidden flex flex-col h-[800px]`}
+      className={`${className} col-span-4 row-span-6 col-start-3 row-start-1 bg-spotify-light-dark rounded-xl overflow-hidden flex flex-col sm:h-[800px]`}
     >
       <div className="sticky top-0 bg-spotify-light-dark z-10">
         <div className="flex justify-between items-center p-6 pb-4">

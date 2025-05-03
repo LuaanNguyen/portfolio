@@ -95,7 +95,7 @@ function PersonalStatement() {
     <div className="flex flex-col gap-3 px-4">
       <div className="space-y-1.5">
         <h1 className="text-2xl font-semibold">Luan Nguyen</h1>
-        <p className="text-spotify-gray text-sm">
+        <p className="text-spotify-gray text-md">
           Engineer • Designer • Artist
         </p>
       </div>
@@ -110,17 +110,17 @@ function PersonalStatement() {
         , a leading cloud technology platform. <br />
         <br />
         <span>
-          I aspire to create{" "}
+          I hope to create better{" "}
           <span className="text-spotify-green">interactive software</span> that
-          helps people cultivate and share ideas, and express what brings them
+          helps people cultivate and share ideas, expressing what brings them
           joy in meaningful ways.
         </span>
         <br />
         <br />
         <span>
           To that end, I take a generalist’s approach, driven by a deep care for
-          both <span className="text-spotify-green">systems</span>, — the
-          foundational layers of our digital world—and{" "}
+          both <span className="text-spotify-green">systems</span> — the
+          foundational layers of our digital world — and{" "}
           <span className="text-spotify-green"> interaction design </span>,
           which shapes how we live with and relate to the computers that
           surround us.

@@ -22,7 +22,7 @@ export default function Navigation(): ReactNode {
   return (
     <nav>
       <div
-        className={`flex flex-col bg-spotify-light-dark max-md:mx-4 max-md:mt-4 mx-32 mt-4 p-2 rounded-full max-md:rounded-xl
+        className={`flex flex-col bg-spotify-light-dark max-md:mx-2 max-md:mt-2 mx-32 mt-4 p-2 rounded-full max-md:rounded-xl
          `}
       >
         <section className="flex flex-row w-full justify-between items-center max-md:px-4 max-md:py-1">
@@ -44,8 +44,8 @@ export default function Navigation(): ReactNode {
             {/* <h1 className="max-lg:hidden">Luan Nguyen</h1> */}
             <TypewriterEffect
               words={[
-                { text: "Luan", className: "text-3xl" },
-                { text: "Nguyen", className: "text-3xl" },
+                { text: "Luan", className: "text-4xl" },
+                { text: "Nguyen", className: "text-4xl" },
               ]}
               className="place-self-center max-lg:hidden text-white"
             />

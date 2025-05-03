@@ -35,7 +35,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -45,7 +45,7 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 max-md:gap-4 gap-4 max-lg:flex max-lg:flex-col max-md:px-6 mb-10">
+        <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 max-md:gap-4 gap-4 max-lg:flex max-lg:flex-col max-md:px-2 mb-10">
           <Suspense fallback={<Loader />}>
             <ProfileCard />
             {experienceSection ? (
@@ -63,7 +63,9 @@ export default function Home() {
             <OpenedProjects className="block md:hidden" />
             {/* <Skills /> */}
             <GithubContributions />
+
             <SpotifyAlbum />
+
             <Footer />
           </Suspense>
         </main>
