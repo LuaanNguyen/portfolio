@@ -4,7 +4,6 @@ import { useState, useEffect, Suspense, lazy } from "react";
 import Footer from "./components/Footer";
 import Loader from "./components/ui/Loader";
 import GithubContributions from "./components/sections/GithubContributions";
-import { motion } from "framer-motion";
 
 // Lazy load components
 const ProfileCard = lazy(() => import("./components/sections/ProfileCard"));
@@ -46,42 +45,30 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.7,
-            ease: "easeOut",
-            delay: 0.3,
-          }}
-        >
-          <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 max-md:gap-4 gap-4 max-lg:flex max-lg:flex-col max-md:px-6 mb-10">
-            <Suspense fallback={<Loader />}>
-              <ProfileCard />
-              {experienceSection ? (
-                <OpenedProjects
-                  onSetExperienceSection={handleSetExperienceSection}
-                  className="max-md:hidden"
-                />
-              ) : (
-                <>
-                  <ExperienceItem />
-                  <Projects
-                    onSetExperienceSection={handleSetExperienceSection}
-                  />
-                  <ProgrammingLanguages />
-                </>
-              )}
-              <OpenedProjects className="block md:hidden" />
-              {/* <Skills /> */}
-              <GithubContributions />
+        <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 max-md:gap-4 gap-4 max-lg:flex max-lg:flex-col max-md:px-2 mb-10">
+          <Suspense fallback={<Loader />}>
+            <ProfileCard />
+            {experienceSection ? (
+              <OpenedProjects
+                onSetExperienceSection={handleSetExperienceSection}
+                className="max-md:hidden"
+              />
+            ) : (
+              <>
+                <ExperienceItem />
+                <Projects onSetExperienceSection={handleSetExperienceSection} />
+                <ProgrammingLanguages />
+              </>
+            )}
+            <OpenedProjects className="block md:hidden" />
+            {/* <Skills /> */}
+            <GithubContributions />
 
-              <SpotifyAlbum />
+            <SpotifyAlbum />
 
-              <Footer />
-            </Suspense>
-          </main>
-        </motion.div>
+            <Footer />
+          </Suspense>
+        </main>
       )}
     </>
   );

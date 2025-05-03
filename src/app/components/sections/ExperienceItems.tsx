@@ -10,7 +10,7 @@ export default function ExperienceItem() {
   return (
     <section
       className="relative col-span-2 row-span-4 col-start-3 bg-spotify-light-dark rounded-xl max-md:overflow-y-scroll overflow-hidden max-md:col-span-1"
-      id="#experience"
+      id="experience"
     >
       <div className="bg-spotify-gray p-6">
         <h2 className="text-xl font-bold mb-1">Professional Experience</h2>
