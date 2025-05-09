@@ -11,14 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Luan Nguyen",
   description: "Intern @ AWS",
-  keywords: [
-    "Luan Nguyen",
-    "Software Engineer",
-    "Full Stack Developer",
-    "Web Development",
-    "AI/ML",
-    "Cloud Computing",
-  ],
+  keywords: ["Luan Nguyen", "Software Engineer", "AI/ML", "Cloud Computing"],
   creator: "Luan Nguyen",
   authors: [{ name: "Luan Nguyen" }],
   icons: {
@@ -39,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Luan Nguyen's Portfolio",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Luan.jpg`,
+        url: `/luan_aws.png`,
         width: 1200,
         height: 630,
         alt: "Luan Nguyen Portfolio",
@@ -51,7 +44,7 @@ export const metadata: Metadata = {
     title: "Luan Nguyen | Software Engineer",
     description:
       "Full-stack software engineer specializing in web development, AI/ML, and cloud solutions.",
-    images: [`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Luan.jpg`],
+    images: [`/luan_aws.png`],
   },
   robots: {
     index: true,

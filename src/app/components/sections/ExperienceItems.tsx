@@ -79,6 +79,11 @@ const experienceLists: experienceListsProps[] = [
     date: "May 2025 - Present",
   },
   {
+    companyName: "OpenAI",
+    positionTitle: "ChatGPT Lab Member",
+    date: "May 2025 - Present",
+  },
+  {
     companyName: "Simplify (YC W21)",
     positionTitle: "Campus Ambassador",
     date: "January 2025 - Present",
