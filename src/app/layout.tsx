@@ -82,6 +82,30 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+        {/* Structured data for rich Google search results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Luan Nguyen",
+              url: "https://luannguyen.net",
+              image: "https://luannguyen.net/luan_aws.png",
+              sameAs: [
+                "https://www.linkedin.com/in/luanthiennguyen",
+                "https://github.com/LuaanNguyen",
+              ],
+              jobTitle: "Software Engineer",
+              worksFor: {
+                "@type": "Organization",
+                name: "AWS",
+              },
+              description:
+                "Full-stack software engineer at AWS, passionate about web development, AI/ML, and cloud solutions.",
+            }),
+          }}
+        />
       </head>
       <body className={inter.className}>
         <GeneralProvider>
