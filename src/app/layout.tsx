@@ -10,12 +10,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Luan Nguyen",
-  description: "Intern @ AWS",
+  description: "Software Development Engineer Intern @ Amazon Web Services",
   keywords: ["Luan Nguyen", "Software Engineer", "AI/ML", "Cloud Computing"],
   creator: "Luan Nguyen",
   authors: [{ name: "Luan Nguyen" }],
   icons: {
-    icon: "/terminal.svg",
+    icon: "/luan_aws.png",
     shortcut: "/luan_aws.png",
     apple: [
       { url: "/luan_aws.png" },
