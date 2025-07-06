@@ -121,7 +121,7 @@ const experienceLists: experienceListsProps[] = [
   },
   {
     companyName: "Podium Education",
-    positionTitle: "Web Developer Trainee",
+    positionTitle: "Web Developer",
     date: "August 2023 – December 2024",
   },
 ];

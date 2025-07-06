@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function SocialLinks() {
   return (
@@ -28,6 +29,11 @@ type socialMediasProps = {
 }[];
 
 const socialMedias: socialMediasProps = [
+  {
+    title: "X",
+    url: "https://x.com/LuanNgu8855474",
+    icon: <FaSquareXTwitter />,
+  },
   {
     title: "Instagram",
     url: "https://www.instagram.com/luannuen/",

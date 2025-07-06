@@ -7,7 +7,6 @@ import { ReactNode } from "react";
 import { PiLineVerticalThin } from "react-icons/pi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 import MobileNav from "./MobileNav";
 import { TypewriterEffect } from "./ui/type-writer-effect";
@@ -36,10 +35,7 @@ export default function Navigation(): ReactNode {
             />
           )}
 
-          <Link
-            href="javascript:window.location.href=window.location.href"
-            className="flex gap-2 text-3xl font-bold items-center"
-          >
+          <a href="/" className="flex gap-2 text-3xl font-bold items-center">
             <FaCode className="text-spotify-green w-[70px]" />
             {/* <h1 className="max-lg:hidden">Luan Nguyen</h1> */}
             <TypewriterEffect
@@ -49,7 +45,7 @@ export default function Navigation(): ReactNode {
               ]}
               className="place-self-center max-lg:hidden text-white"
             />
-          </Link>
+          </a>
 
           {/*Hidden on Mobile*/}
           <section className="flex flex-row gap-5 items-center max-sm:hidden">

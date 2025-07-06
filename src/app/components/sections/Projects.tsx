@@ -18,7 +18,7 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
           <button
             className="flex items-center justify-center text-sm font-bold 
             bg-spotify-green hover:bg-spotify-dark-green hover:scale-105 
-            px-6 py-2.5 rounded-full gap-2 transition-all duration-200
+            px-5 py-2 rounded-full gap-2 transition-all duration-200
             min-w-[180px]"
           >
             Featured Projects
@@ -29,7 +29,7 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
           <button
             className="flex items-center justify-center text-sm font-bold 
             border border-[#727272] hover:border-white hover:scale-105 
-            text-white px-6 py-2.5 rounded-full gap-2 transition-all duration-200
+            text-white px-5 py-2 rounded-full gap-2 transition-all duration-200
             animate-pulse hover:animate-none hover:bg-white hover:text-black
             shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
             min-w-[180px]"
@@ -50,6 +50,21 @@ const projectLists: {
   description: string;
   content?: React.ReactNode | any;
 }[] = [
+  {
+    title: "Brainrot Master Vault (HackPrinceton 2025 Winner 🏆)",
+    description:
+      "Launched 2 AI full-stack applications to convert short-form contents (TikTok, IG reels, etc.) into podcasts, allowing users to retain connections between contents visually, by transcribing videos from LLMs running on Modal’s cloud service.",
+    content: (
+      <a target="_blank" href="https://www.brainrotmastervaultovercooked.tech/">
+        <Image
+          src={`/gallery.jpg`}
+          alt="Brainrot Master Vault Website"
+          width={500}
+          height={500}
+        />
+      </a>
+    ),
+  },
   {
     title: "🍵 Sip n Play Café Website (Codédex Hackathon Winner)",
     description:
