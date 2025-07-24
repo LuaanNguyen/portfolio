@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="max-lg:col-span-1  max-lg:row-span-1 col-span-6 items-center text-center">
       <p className="text-spotify-light-gray max-md:text-sm">
-        &copy; Luan&apos;s Portfolio {new Date().getFullYear()}, Design By{" "}
+        &copy; Luan&apos;s Portfolio {new Date().getFullYear()}, designed by{" "}
         <a
           href="https://www.luannguyen.net/"
           className="text-spotify-green font-semibold underline"
@@ -14,7 +14,7 @@ export default function Footer() {
         </a>
       </p>
       <p className="text-spotify-light-gray max-md:text-sm mt-5">
-        Built with NextJS, Tailwind, and Aceternity UI. Check out the source
+        Built with NextJS, TailwindCSS, and Aceternity UI. Check out the source
         code{" "}
         <a
           target="_blank"

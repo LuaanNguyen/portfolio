@@ -15,7 +15,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Rate Our Club",
     title: "Rate Our Club ⭐️",
     description:
-      "A website for students to rate college organizations, supporting over 100+ clubs.",
+      "rateourclub.com is a community-driven platform where students can rate and review 100+ college organizations. Built with Next.js, TailwindCSS, and Firebase, it offers a fast, responsive UI and real-time feedback system hosted on an Ubuntu server.",
     tech: [
       "NextJS",
       "TailwindCSS",
@@ -30,7 +30,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Brainrot Master Vault",
     title: "Brainrot Master Vault 📻 (HackPrinceton 2025 Winner 🏆)",
     description:
-      "Launched 2 AI full-stack applications to convert short-form contents (TikTok, IG reels, etc.) into podcasts, allowing users to retain connections between contents visually, by transcribing videos from LLMs running on Modal’s cloud service.",
+      "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025, it filters for quality insights using Whisper, Gemini, and Phi-3, and won Best Self-Hosted Inference.",
     tech: [
       "OpenAI Whisper",
       "Microsoft Phi-2",
@@ -50,7 +50,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "AirBnb For Stuff",
     title: "AirBnb For Stuff 📦",
     description:
-      "A peer-to-peer item rental platform, built with Svelte, Go's gorilla/mux, and PostgreSQL — like AirBnB, but for everyday items.",
+      "AirBnb For Stuff is a peer-to-peer rental platform for everyday items, built with SvelteKit, Go’s gorilla/mux, and PostgreSQL. It enables users to lend and borrow gear locally, with a full-stack setup powered by AWS RDS and deployed on Cloudflare Pages.",
     tech: [
       "GO + gorilla/mux",
 

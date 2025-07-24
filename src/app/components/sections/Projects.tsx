@@ -53,7 +53,7 @@ const projectLists: {
   {
     title: "Brainrot Master Vault (HackPrinceton 2025 Winner 🏆)",
     description:
-      "Launched 2 AI full-stack applications to convert short-form contents (TikTok, IG reels, etc.) into podcasts, allowing users to retain connections between contents visually, by transcribing videos from LLMs running on Modal’s cloud service.",
+      "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025, it filters for quality insights using Whisper, Gemini, and Phi-3, and won Best Self-Hosted Inference.",
     content: (
       <a target="_blank" href="https://www.brainrotmastervaultovercooked.tech/">
         <Image
@@ -66,9 +66,25 @@ const projectLists: {
     ),
   },
   {
+    title: " 📚 rateourclub.com",
+    description:
+      "rateourclub.com is a community-driven platform where students can rate and review 100+ college organizations. Built with Next.js, TailwindCSS, and Firebase, it offers a fast, responsive UI and real-time feedback system hosted on an Ubuntu server.",
+    content: (
+      <a target="_blank" href="https://rateourclub.com">
+        <Image
+          src={`/rateourclub.png`}
+          alt="rateourclub.com"
+          loading="lazy"
+          width={500}
+          height={300}
+        />
+      </a>
+    ),
+  },
+  {
     title: "🍵 Sip n Play Café Website (Codédex Hackathon Winner)",
     description:
-      "This project was created as a website revamp for Sip & Play Boardgame Cafe, with a collection of over 500+ games! Sip & Play is Park Slope's very first board game cafe, offering a wide menu of apps, sandwiches and salads along with boba, beer, wine and coffee.",
+      "Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu built with React, Three.js, and TailwindCSS. Designed for an immersive UX, it won Best UI/UX Design at the Codédex Hackathon.",
     content: (
       <a target="_blank" href="https://board-game-cafe-website.vercel.app/">
         <Image
@@ -83,7 +99,7 @@ const projectLists: {
   {
     title: "Mine Alliance ⛏️",
     description:
-      "Pioneered the development of an AI-driven platform uniting Arizona's mining stakeholders, implementing AWS infrastructure for CI/CD pipelines and integrating ChatGPT-4's API for advanced NLP. Engineered a robust full-stack solution using NextJS and Flask, incorporating geospatial visualizations and real-time environmental monitoring to promote sustainable mining practices.",
+      "Mine Alliance is a platform that connects Arizona’s mining communities, corporations, and regulators through real-time data and environmental insights. Built with Next.js, Flask, and AWS, it features interactive maps and GPT-4o–powered analysis to promote sustainable mining. Winner of the Spark Challenge Hackathon.",
     content: (
       <a target="_blank" href="https://github.com/LuaanNguyen/epics-mern">
         <Image
@@ -96,20 +112,20 @@ const projectLists: {
       </a>
     ),
   },
-  {
-    title: "🥑 Fiber (Calhacks 2024)",
-    description:
-      "An AI-powered mobile application to scan the barcodes of groceries, providing comprehensive nutritional value, additives, and organic dimension for the users. This allows users to easily identify healthier options while grocery shopping.",
-    content: (
-      <a target="_blank" href="https://github.com/Smit2553/Fiber">
-        <Image
-          src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/fiber.png`}
-          alt="Fiber Project"
-          loading="lazy"
-          width={500}
-          height={300}
-        />
-      </a>
-    ),
-  },
+  // {
+  //   title: "🥑 Fiber (Calhacks 2024)",
+  //   description:
+  //     "An AI-powered mobile application to scan the barcodes of groceries, providing comprehensive nutritional value, additives, and organic dimension for the users. This allows users to easily identify healthier options while grocery shopping.",
+  //   content: (
+  //     <a target="_blank" href="https://github.com/Smit2553/Fiber">
+  //       <Image
+  //         src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/fiber.png`}
+  //         alt="Fiber Project"
+  //         loading="lazy"
+  //         width={500}
+  //         height={300}
+  //       />
+  //     </a>
+  //   ),
+  // },
 ];

@@ -16,7 +16,7 @@ export default function ProfileCard() {
       <div className="flex flex-col gap-7 max-md:gap-5">
         <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
           <Image
-            src="/luan_real.png"
+            src="/luan_real.jpg"
             alt="Luan Nguyen"
             width={400}
             height={400}

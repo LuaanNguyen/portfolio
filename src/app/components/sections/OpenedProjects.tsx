@@ -28,7 +28,7 @@ export default function OpenedExperienceItem({
       className={`${className} col-span-4 row-span-6 col-start-3 row-start-1 bg-spotify-light-dark rounded-xl overflow-hidden flex flex-col sm:h-[800px]`}
     >
       <div className="sticky top-0 bg-spotify-light-dark z-10">
-        <div className="flex justify-between items-center p-6 pb-4">
+        <div className="flex justify-between items-center px-6 py-4 bg-spotify-gray">
           <div className="flex flex-col gap-1.5">
             <h2 className="text-2xl font-bold">Projects</h2>
             <p className="flex items-center text-spotify-grey text-sm gap-1.5">
@@ -40,7 +40,7 @@ export default function OpenedExperienceItem({
 
           <button
             type="button"
-            className="p-3 hover:bg-[#282828] rounded-full transition-colors"
+            className="p-3 hover:bg-[#282828] rounded-full transition-colors  max-md:hidden"
             onClick={onSetExperienceSection}
           >
             <MdClose className="text-2xl" />
