@@ -68,7 +68,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Large Wireless Model",
     title: "Large Wireless Model",
     description:
-      "Documentation Website for LWM, world's first foundational model for wireless channels.",
+      "Large Wireless Model is the official documentation site for LWM—the world’s first foundational model for wireless channels. Built with React, Node.js, and MySQL, it features CI/CD via GitHub Actions, containerized with Docker, and deployed on AWS EC2 with S3 integration.",
     tech: [
       "ReactJS",
       "NodeJS",
@@ -87,7 +87,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "🌱 Bulbasaur",
     title: "🌱 Bulbasaur",
     description:
-      "An advanced AI-powered system for real-time wildfire detection using satellite imagery and environmental data analysis. ",
+      "Bulbasaur is an AI-driven platform for real-time wildfire detection, leveraging satellite imagery and environmental data. Built with TensorFlow, PyTorch, Flask, and React, it visualizes wildfire risks through a sleek Mapbox-powered interface.",
     tech: [
       "TensorFlow",
       "PyTorch",
@@ -139,7 +139,8 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Mine Alliance ⛏️",
     title: "Mine Alliance ⛏️ (Principled Innovation Hackathon Winner 🥇)",
     description:
-      "An innovative, AI-driven application designed to unite stakeholders across Arizona's mining industry, promoting responsible and sustainable practices.",
+      "Mine Alliance is a platform that connects Arizona’s mining communities, corporations, and regulators through real-time data and environmental insights. Built with Next.js, Flask, and AWS, it features interactive maps and GPT-4o–powered analysis to promote sustainable mining. Winner of the Spark Challenge Hackathon.",
+
     tech: [
       "AWS EC2",
       "AWS SageMaker Studio",
@@ -157,7 +158,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Static Site Generator",
     title: "Static Site Generator ♺",
     description:
-      "This Python program takes raw content files (like Markdown and images) and turns them into a static website (a mix of HTML and CSS files).",
+      "Static Site Generator is a Python-based tool that converts raw content—like Markdown and images—into fully rendered static websites using HTML and CSS. Designed with object-oriented principles for easy extensibility.",
     tech: ["Python", "OOP", "HTML/CSS"],
   },
   {
@@ -166,7 +167,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Asteroids Game",
     title: "Asteroids Game ☄️",
     description:
-      "Developed a simple version of the Asteroids Game (https://freeasteroids.org/). I learned how to use pygame for the first time. The game was meant to solidified my OOP concepts.",
+      "Asteroids Game is a simplified remake of the classic arcade game, built using Pygame to strengthen object-oriented programming concepts. It marked my first hands-on experience with game development in Python.",
     tech: ["Pygame", "Python", "OOP"],
   },
   {
@@ -175,7 +176,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Thesoda.io",
     title: "The Software Developers Association (SoDA) Website 🥤",
     description:
-      "Directed a website revamp for the Software Developer Association, one of the largest Arizona State University's student organizations, with 8 other technical officers. Assisted with the creation of a Flask back-end for the points system, Discord bots, as well as SEO optimization.",
+      "thesoda.io is the official site for the Software Developers Association at ASU. Collaborated with 8 technical officers to revamp the site, build a Flask backend for a points system, integrate Discord bots, and optimize SEO. Powered by React, TailwindCSS, and Digital Ocean.",
     tech: [
       "ReactJS",
       "Flask",
@@ -194,7 +195,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "My Portfolio",
     title: "Personal Portfolio 🪪",
     description:
-      "I spent under 24 hours on a random weekend to develop my brand-new portfolio, inpsired by Spotify.",
+      "This is a Spotify-inspired site I built in under 24 hours to showcase my work and identity. Built with Next.js, TailwindCSS, and TypeScript, it's deployed with AWS S3 + CloudFront and features Vercel Analytics for insights.",
     tech: [
       "NEXTJS",
       "AceternityUI",
@@ -211,7 +212,7 @@ export const personalProjects: personalProjectType = [
     title:
       "Sip n Play Boardgame Café Website ☕️ (Codédex Hackathon 2024 Winner 🥇)",
     description:
-      "This project was created as a website revamp for Sip & Play Boardgame Cafe, with a collection of over 500+ games! Sip & Play is Park Slope's very first board game cafe, offering a wide menu of apps, sandwiches and salads along with boba, beer, wine and coffee.",
+      "Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu built with React, Three.js, and TailwindCSS. Designed for an immersive UX, it won Best UI/UX Design at the Codédex Hackathon.",
     tech: ["React", "ThreeJS", "TailwindCSS", "JavaScript"],
   },
   {
@@ -229,7 +230,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Ethical Spectable Research Website",
     title: "Ethical Spectable Research Website 💻",
     description:
-      "This is a website to introduce people to our Ethical Spectacle Research company. This website showcases our projects, research, and leaderboards of the current members.",
+      "Ethical Spectacle Research Website is the official site for our research company, highlighting ongoing projects, publications, and member leaderboards. Built with Next.js, Flask, and MySQL, it serves as a hub for showcasing our AI-driven initiatives.",
     tech: ["NEXTJS", "JavaScript", "Python", "Flask", "MySQL", "TailwindCSS"],
   },
   {
@@ -238,7 +239,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "unionize101.org ",
     title: "unionize101.org 💻",
     description:
-      "This is a website to educate worker and union leaders about starting a Union. A multidisciplinary team of 6 interns collaborated in the span of 12 weeks to produce a fully functional web-app.",
+      "unionize101.org is an educational platform designed to guide workers and union leaders through the process of starting a union. Built by a team of 6 interns during my time at Pinear LLC, the site combines Next.js, GhostCMS, and Docker to deliver a polished, SEO-optimized experience.",
     tech: [
       "NEXTJS",
       "TypeScript",
@@ -256,7 +257,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Help System 📚",
     title: "Help System 📚",
     description:
-      "Directed a team of 5 developers to design and implement a help system using Java, providing personalized academic support to over 200 ASU students.",
+      "Help System is a Java-based desktop application designed to provide personalized academic support to over 200 ASU students. Led a team of 5 to build the system using JavaFX, H2 Database, and Maven, with a Figma-driven UI design.",
     tech: ["Java", "JavaFX", "Maven", "H2 Database", "Figma"],
   },
   {
@@ -265,7 +266,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "EPICS project",
     title: "Online Database for Study Abroad Program 📊",
     description:
-      "Developed and implement a device that will analyze water quality to assist Vietnamese shrimp farmers. The desired outcomes of this project entail the establishment of a functional, self-updating database to facilitate communication with shrimp farmers and ensure consistent data conversion and updating.",
+      "Online Database for Study Abroad Program is a MERN-stack platform supporting Vietnamese shrimp farmers by monitoring water quality. The system maintains a self-updating database and enables real-time data conversion and communication.",
     tech: ["React", "Express", "NodeJS", "MongoDB", "TailwindCSS"],
   },
   // {
@@ -319,7 +320,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Space Games",
     title: "Space Games 👾",
     description:
-      "Designed and developed key functionalities, game algorithms, and interface for three online games in p5.js with a team of four engineers and presented the finished products to over 20 stakeholders.",
+      "Space Games is a trio of browser-based games built with p5.js, developed in a team of four. I contributed to core game logic, UI design, and presented the final product to over 20 stakeholders.",
     tech: ["HTML/CSS", "JavaScript", "p5.js"],
   },
 
