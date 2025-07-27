@@ -94,12 +94,12 @@ function PersonalStatement() {
   return (
     <div className="flex flex-col gap-3 px-4">
       <div className="space-y-1.5">
-        <h1 className="text-2xl font-semibold">Luan Nguyen</h1>
-        <p className="text-spotify-gray text-md">
+        <h1 className="text-3xl font-semibold">Luan Nguyen</h1>
+        <p className="text-spotify-gray text-sm">
           Engineer • Designer • Artist
         </p>
       </div>
-      <h4 className="text-sm font-semibold">
+      <h4 className="text-sm">
         I&apos;m currently interning at{" "}
         <a
           href="https://aws.amazon.com/"
@@ -122,8 +122,7 @@ function PersonalStatement() {
           both <span className="text-spotify-green">systems</span> — the
           foundational layers of our digital world — and{" "}
           <span className="text-spotify-green"> interaction design </span>,
-          which shapes how we live with and relate to the computers that
-          surround us.
+          which shapes how we live with and relate to computers around us.
         </span>
       </h4>
     </div>
