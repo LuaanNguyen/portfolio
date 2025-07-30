@@ -10,6 +10,15 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://www.linkedin.com/posts/chatgpt-for-education_today-were-introducing-study-mode-a-new-activity-7356072086492073985-AwSt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOlMkwBGudRKqJxI09d_sbxL7eqHyKnDk8",
+    imageSrc: `/openai_study_mode.jpeg`,
+    imageAlt: "ChatGPT Study Mode",
+    title: "ChatGPT Study Mode 📚",
+    description:
+      "As part of ChatGPT Lab for Education, I conducted various product and usability testing for OpenAI's unreleased features. One of them was ChatGPT's Study Mode. It is designed to help students learn with ChatGPT, not just get answers. It guides users step by step, asking thoughtful questions and adapting to each student’s goals and skill level - much like a tutor would.",
+    tech: ["Product Testing", "Usability Testing"],
+  },
+  {
     href: "https://rateourclub.com/",
     imageSrc: `/rateourclub.png`,
     imageAlt: "Rate Our Club",
