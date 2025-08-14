@@ -104,7 +104,7 @@ export async function getPostData(
     // Convert inline code
     contentHtml = contentHtml.replace(
       /`([^`]+)`/g,
-      '<code class="bg-spotify-light-dark px-2 py-1 rounded text-spotify-green text-sm">$1</code>'
+      '<code class="bg-spotify-light-dark px-2 py-2 rounded text-spotify-green text-sm">$1</code>'
     );
 
     // Convert bold text
@@ -119,20 +119,103 @@ export async function getPostData(
       '<em class="text-spotify-green italic">$1</em>'
     );
     contentHtml = contentHtml.replace(
-      /_(.+?)_/g,
+      /_([^_]+?)_/g,
       '<em class="text-spotify-green italic">$1</em>'
+    );
+
+    // Handle italic text with spaces (line-level italic)
+    contentHtml = contentHtml.replace(
+      /^_\s*(.+?)\s*_$/gm,
+      '<em class="text-spotify-green italic block my-2">$1</em>'
+    );
+
+    // Convert images ![alt text](image-url)
+    contentHtml = contentHtml.replace(
+      /!\[([^\]]*)\]\(([^)]+)\)/g,
+      '<img src="$2" alt="$1" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg my-6" loading="lazy" />'
+    );
+
+    // Convert links [text](url)
+    contentHtml = contentHtml.replace(
+      /\[([^\]]+)\]\(([^)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-spotify-green hover:text-green-400 underline underline-offset-2 hover:no-underline transition-all duration-200 font-medium">$1</a>'
+    );
+
+    // Convert blockquotes
+    contentHtml = contentHtml.replace(
+      /^> (.+)$/gm,
+      '<blockquote class="border-l-4 border-spotify-green pl-4 py-2 my-4 bg-spotify-light-dark/30 rounded-r-lg italic text-spotify-white/80">$1</blockquote>'
+    );
+
+    // Convert horizontal rules (---)
+    contentHtml = contentHtml.replace(
+      /^---$/gm,
+      '<hr class="border-t border-spotify-green/30 my-8" />'
+    );
+
+    // Convert strikethrough ~~text~~
+    contentHtml = contentHtml.replace(
+      /~~(.+?)~~/g,
+      '<del class="line-through text-spotify-white/60">$1</del>'
+    );
+
+    // Convert tables (basic support)
+    // Table headers (| Header 1 | Header 2 |)
+    contentHtml = contentHtml.replace(/^\|(.+)\|$/gm, (match, content) => {
+      const cells = content
+        .split("|")
+        .map((cell: string) => cell.trim())
+        .filter((cell: string) => cell);
+      const isHeader = cells.every(
+        (cell: string) => cell.includes("---") || !contentHtml.includes("|---")
+      );
+
+      if (cells.some((cell: string) => cell.includes("---"))) {
+        return ""; // Skip separator rows
+      }
+
+      const cellTags = isHeader ? "th" : "td";
+      const cellClass = isHeader
+        ? "px-4 py-3 text-left font-semibold text-spotify-white border-b border-spotify-green/30 bg-spotify-light-dark/50"
+        : "px-4 py-3 text-left text-spotify-white/80 border-b border-spotify-green/10";
+
+      const cellsHtml = cells
+        .map(
+          (cell: string) =>
+            `<${cellTags} class="${cellClass}">${cell}</${cellTags}>`
+        )
+        .join("");
+      return `<tr class="hover:bg-spotify-light-dark/30 transition-colors duration-200">${cellsHtml}</tr>`;
+    });
+
+    // Wrap table rows in table tags
+    contentHtml = contentHtml.replace(
+      /(<tr.*?>.*?<\/tr>\s*)+/g,
+      '<div class="overflow-x-auto my-6"><table class="min-w-full border border-spotify-green/20 rounded-lg overflow-hidden">$&</table></div>'
     );
 
     // Convert bullet points
     contentHtml = contentHtml.replace(
       /^- (.+)$/gm,
-      '<li class="ml-6 mb-2 list-disc">$1</li>'
+      '<li class="ml-6 mb-2 list-disc marker:text-spotify-green">$1</li>'
     );
 
-    // Wrap consecutive list items in ul tags
+    // Convert numbered lists
     contentHtml = contentHtml.replace(
-      /(<li.*?>.*?<\/li>\s*)+/g,
-      '<ul class="my-4 space-y-1">$&</ul>'
+      /^\d+\. (.+)$/gm,
+      '<li class="ml-6 mb-2 list-decimal marker:text-spotify-green">$1</li>'
+    );
+
+    // Wrap consecutive unordered list items in ul tags
+    contentHtml = contentHtml.replace(
+      /(<li class="[^"]*list-disc[^"]*">.*?<\/li>\s*)+/g,
+      '<ul class="my-4 space-y-1 pl-2">$&</ul>'
+    );
+
+    // Wrap consecutive ordered list items in ol tags
+    contentHtml = contentHtml.replace(
+      /(<li class="[^"]*list-decimal[^"]*">.*?<\/li>\s*)+/g,
+      '<ol class="my-4 space-y-1 pl-2">$&</ol>'
     );
 
     // Convert paragraphs (lines that aren't HTML tags)
