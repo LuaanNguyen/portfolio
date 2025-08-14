@@ -53,10 +53,10 @@ function Positions() {
           <span className="text-spotify-grey sm:group-hover:text-white min-w-[20px]">
             {index + 1}
           </span>
-          <div className="flex-1">
-            <p className="text-spotify-green text-sm font-semibold mb-0.5">
+          <div className="flex flex-col gap-0.5">
+            <a className="text-spotify-green text-sm font-semibold mb-0.5 bg-spotify-green/20 rounded-md transition-all duration-200 w-fit px-2 py-0.5 hover:bg-spotify-green/10 cursor-pointer">
               {position.companyName}
-            </p>
+            </a>
             <p className="font-bold text-md mb-0.5">{position.positionTitle}</p>
             <p className="text-spotify-gray text-sm">{position.date}</p>
           </div>
@@ -69,59 +69,70 @@ function Positions() {
 type experienceListsProps = {
   companyName: string;
   positionTitle: string;
+  url: string;
   date: string;
 };
 
 const experienceLists: experienceListsProps[] = [
   {
     companyName: "Amazon Web Services",
+    url: "https://aws.amazon.comope",
     positionTitle: "Software Development Engineer Intern",
-    date: "May 2025 - Present",
+    date: "May 2025 - August 2025",
   },
   {
     companyName: "OpenAI",
+    url: "https://openai.com",
     positionTitle: "ChatGPT Lab Member",
     date: "May 2025 - Present",
   },
   {
     companyName: "Simplify (YC W21)",
+    url: "https://simplify.jobs",
     positionTitle: "Campus Ambassador",
     date: "January 2025 - Present",
   },
   {
     companyName: "Wireless Intelligence Lab — ASU ECEE",
+    url: "https://www.wi-lab.net",
     positionTitle: "Software Engineer",
     date: "September 2024 - March 2025",
   },
 
   {
     companyName: "Ethical Spectacle Research",
+    url: "https://ethicalspectacle.org",
     positionTitle: "Software Engineer Intern",
     date: "August 2024 - Present",
   },
   {
     companyName: "The Software Developer Association (SoDA)",
+    url: "https://thesoda.io",
     positionTitle: "Technical Project Manager",
     date: "April 2024 – September 2024",
   },
   {
     companyName: "ASU Enterprise Technology",
+    url: "https://tech.asu.edu",
     positionTitle: "IT Consultant",
     date: "May 2024 – August 2024",
   },
   {
     companyName: "Pinear",
+    url: "https://www.linkedin.com/company/pinearllc/",
     positionTitle: "Software Engineer Intern",
     date: "March 2024 - May 2024",
   },
   {
     companyName: "EPICS at ASU",
-    positionTitle: "Lead Software Developer",
+    url: "https://epics.engineering.asu.edu",
+    positionTitle: "Software Team Lead",
     date: "January 2024 – April 2024",
   },
   {
     companyName: "Podium Education",
-    positionTitle: "Web Developer",
+    url: "https://www.podiumeducation.com",
+    positionTitle: "Web Developer Trainee",
     date: "August 2023 – December 2024",
   },
 ];
