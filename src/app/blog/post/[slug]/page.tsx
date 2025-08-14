@@ -8,9 +8,9 @@ import BlogHeader from "../../../components/blog/BlogHeader";
 import BlogPostContent from "../../../components/blog/BlogPostContent";
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function IndividualBlogPostPage({
