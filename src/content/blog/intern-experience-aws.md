@@ -5,6 +5,11 @@ date: "August 14, 2025"
 readTime: "9 min read"
 image: "/blogs/aws.jpeg"
 slug: "intern-experience-aws"
+author: "Luan Nguyen"
+tags:
+  ["AWS", "Internship", "Software Engineering", "Bedrock", "Seattle", "Career"]
+category: "Career & Experience"
+excerpt: "From onboarding challenges to building a proof-of-concept that increased throughput by 10%, here's my complete AWS internship journey including project details, Seattle adventures, and key learnings."
 ---
 
 _ Note: I did sign an NDA, so I can’t go too deep into certain details—but I’ll do my best to capture the essence of it._
