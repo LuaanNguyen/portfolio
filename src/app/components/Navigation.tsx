@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 import { PiLineVerticalThin } from "react-icons/pi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
+import { LuNewspaper } from "react-icons/lu";
 import SocialLinks from "./SocialLinks";
 import MobileNav from "./MobileNav";
 import { TypewriterEffect } from "./ui/type-writer-effect";
@@ -48,7 +49,11 @@ export default function Navigation(): ReactNode {
           </a>
 
           {/*Hidden on Mobile*/}
-          <section className="flex flex-row gap-5 items-center max-sm:hidden">
+          <section className="flex flex-row gap-4 items-center max-sm:hidden">
+            <a href="/blog" className="text-3xl hover:text-spotify-green">
+              <LuNewspaper className="" />
+            </a>
+            <PiLineVerticalThin className="text-spotify-gray text-4xl" />
             <SocialLinks />
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
             <NavButton name="Resume" />

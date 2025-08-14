@@ -36,7 +36,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [require("@tailwindcss/typography"), addVariablesForColors],
 };
 export default config;
 
