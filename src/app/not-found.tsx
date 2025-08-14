@@ -25,12 +25,6 @@ export default function NotFound() {
           >
             Go to Home
           </Link>
-          <button
-            onClick={() => window.history.back()}
-            className="bg-spotify-light-dark hover:bg-spotify-gray-hover text-spotify-white font-medium py-3 px-8 rounded-full border border-spotify-gray transition-colors"
-          >
-            Go Back
-          </button>
         </div>
       </div>
     </div>
