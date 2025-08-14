@@ -9,6 +9,7 @@ import { GeneralProvider } from "./contexts/generalContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://luannguyen.net"),
   title: "Luan Nguyen",
   description: "Software Development Engineer Intern @ Amazon Web Services",
   keywords: ["Luan Nguyen", "Software Engineer", "AI/ML", "Cloud Computing"],

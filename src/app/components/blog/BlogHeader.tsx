@@ -26,7 +26,7 @@ export default function BlogHeader({
       </Link>
 
       <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-semibold text-spotify-white mb-4">
+        <h1 className="text-3xl md:text-5xl font-semibold text-spotify-white mb-4">
           {title}
         </h1>
         {subtitle && (
