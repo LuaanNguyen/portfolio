@@ -27,9 +27,7 @@ export default async function IndividualBlogPostPage({
     <div className="min-h-screen text-white">
       <div className="max-md:mx-10 max-md:mt-2 mx-40 mt-4">
         <BlogHeader title="" backLink="/blog" backText="Back to Writings" />
-
         <BlogPostContent post={post} />
-
         <div className="mt-16">
           <Footer />
         </div>

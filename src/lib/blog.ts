@@ -81,24 +81,24 @@ export async function getPostData(
     // Simple markdown to HTML conversion
     let contentHtml = matterResult.content;
 
-    // Convert headers
+    // Convert headers with consistent spacing
     contentHtml = contentHtml.replace(
       /^### (.+)$/gm,
-      '<h3 class="text-xl font-semibold text-spotify-white mt-6 mb-3">$1</h3>'
+      '<h3 class="text-xl font-semibold text-spotify-white mt-8 mb-4">$1</h3>'
     );
     contentHtml = contentHtml.replace(
       /^## (.+)$/gm,
-      '<h2 class="text-2xl font-bold text-spotify-white mt-8 mb-4">$1</h2>'
+      '<h2 class="text-2xl font-bold text-spotify-white mt-12 mb-6">$1</h2>'
     );
     contentHtml = contentHtml.replace(
       /^# (.+)$/gm,
-      '<h1 class="text-3xl font-bold text-spotify-white mt-10 mb-5">$1</h1>'
+      '<h1 class="text-3xl font-bold text-spotify-white mt-16 mb-8">$1</h1>'
     );
 
-    // Convert code blocks
+    // Convert code blocks with consistent spacing
     contentHtml = contentHtml.replace(
       /```(\w+)?\n([\s\S]*?)```/g,
-      '<pre class="bg-spotify-light-dark rounded-lg p-4 overflow-x-auto my-6 border border-spotify-green/20"><code class="text-sm text-spotify-green">$2</code></pre>'
+      '<pre class="bg-spotify-light-dark rounded-lg p-6 overflow-x-auto my-8 border border-spotify-green/20 shadow-lg"><code class="text-sm text-spotify-green leading-relaxed">$2</code></pre>'
     );
 
     // Convert inline code
@@ -126,13 +126,13 @@ export async function getPostData(
     // Handle italic text with spaces (line-level italic)
     contentHtml = contentHtml.replace(
       /^_\s*(.+?)\s*_$/gm,
-      '<em class="text-spotify-green italic block my-2">$1</em>'
+      '<em class="text-spotify-green italic block my-6 p-4 bg-spotify-light-dark/20 rounded-lg border-l-4 border-spotify-green/40">$1</em>'
     );
 
-    // Convert images ![alt text](image-url)
+    // Convert images ![alt text](image-url) with captions
     contentHtml = contentHtml.replace(
       /!\[([^\]]*)\]\(([^)]+)\)/g,
-      '<img src="$2" alt="$1" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg my-6" loading="lazy" />'
+      '<figure class="my-12 mx-auto max-w-3xl"><img src="$2" alt="$1" class="w-full rounded-lg shadow-xl border border-spotify-green/10" loading="lazy" /><figcaption class="text-center text-sm text-spotify-white/60 mt-4 italic font-medium">$1</figcaption></figure>'
     );
 
     // Convert links [text](url)
@@ -144,13 +144,13 @@ export async function getPostData(
     // Convert blockquotes
     contentHtml = contentHtml.replace(
       /^> (.+)$/gm,
-      '<blockquote class="border-l-4 border-spotify-green pl-4 py-2 my-4 bg-spotify-light-dark/30 rounded-r-lg italic text-spotify-white/80">$1</blockquote>'
+      '<blockquote class="border-l-4 border-spotify-green pl-6 py-4 my-8 bg-spotify-light-dark/30 rounded-r-lg italic text-spotify-white/80 shadow-lg">$1</blockquote>'
     );
 
     // Convert horizontal rules (---)
     contentHtml = contentHtml.replace(
       /^---$/gm,
-      '<hr class="border-t border-spotify-green/30 my-8" />'
+      '<hr class="border-t-2 border-spotify-green/30 my-12 mx-auto max-w-md" />'
     );
 
     // Convert strikethrough ~~text~~
@@ -197,25 +197,25 @@ export async function getPostData(
     // Convert bullet points
     contentHtml = contentHtml.replace(
       /^- (.+)$/gm,
-      '<li class="ml-6 mb-2 list-disc marker:text-spotify-green">$1</li>'
+      '<li class="ml-6 mb-3 list-disc marker:text-spotify-green leading-relaxed">$1</li>'
     );
 
     // Convert numbered lists
     contentHtml = contentHtml.replace(
       /^\d+\. (.+)$/gm,
-      '<li class="ml-6 mb-2 list-decimal marker:text-spotify-green">$1</li>'
+      '<li class="ml-6 mb-3 list-decimal marker:text-spotify-green leading-relaxed">$1</li>'
     );
 
     // Wrap consecutive unordered list items in ul tags
     contentHtml = contentHtml.replace(
       /(<li class="[^"]*list-disc[^"]*">.*?<\/li>\s*)+/g,
-      '<ul class="my-4 space-y-1 pl-2">$&</ul>'
+      '<ul class="my-8 space-y-2 pl-4">$&</ul>'
     );
 
     // Wrap consecutive ordered list items in ol tags
     contentHtml = contentHtml.replace(
       /(<li class="[^"]*list-decimal[^"]*">.*?<\/li>\s*)+/g,
-      '<ol class="my-4 space-y-1 pl-2">$&</ol>'
+      '<ol class="my-8 space-y-2 pl-4">$&</ol>'
     );
 
     // Convert paragraphs (lines that aren't HTML tags)
@@ -227,7 +227,7 @@ export async function getPostData(
         !trimmedLine.startsWith("<") &&
         !trimmedLine.endsWith(">")
       ) {
-        return `<p class="mb-4 leading-relaxed">${trimmedLine}</p>`;
+        return `<p class="mb-6 leading-relaxed text-spotify-white/90">${trimmedLine}</p>`;
       }
       return line;
     });
