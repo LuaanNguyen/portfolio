@@ -11,6 +11,7 @@ import { LuNewspaper } from "react-icons/lu";
 import SocialLinks from "./SocialLinks";
 import MobileNav from "./MobileNav";
 import { TypewriterEffect } from "./ui/type-writer-effect";
+import Link from "next/link";
 
 export default function Navigation(): ReactNode {
   const [mobile, setMobile] = useState<boolean>(false);
@@ -36,7 +37,7 @@ export default function Navigation(): ReactNode {
             />
           )}
 
-          <a href="/" className="flex gap-2 text-3xl font-bold items-center">
+          <Link href="/" className="flex gap-2 text-3xl font-bold items-center">
             <FaCode className="text-spotify-green w-[70px]" />
             {/* <h1 className="max-lg:hidden">Luan Nguyen</h1> */}
             <TypewriterEffect
@@ -46,13 +47,16 @@ export default function Navigation(): ReactNode {
               ]}
               className="place-self-center max-lg:hidden text-white"
             />
-          </a>
+          </Link>
 
           {/*Hidden on Mobile*/}
           <section className="flex flex-row gap-4 items-center max-sm:hidden">
-            <a href="/blog" className="text-3xl hover:text-spotify-green">
+            <Link
+              href="/blog"
+              className="text-3xl hover:text-spotify-green transition-colors duration-200"
+            >
               <LuNewspaper className="" />
-            </a>
+            </Link>
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
             <SocialLinks />
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />

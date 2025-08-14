@@ -1,6 +1,7 @@
 import SocialLinks from "./SocialLinks";
 import NavButton from "./NavButton";
 import { LuNewspaper } from "react-icons/lu";
+import Link from "next/link";
 
 interface MobileNavProps {
   handleMobile: () => void;
@@ -45,13 +46,13 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         }}
         onClick={handleMobile}
       >
-        <a
+        <Link
           href="/blog"
           className="flex items-center space-x-3 text-spotify-white text-lg font-semibold hover:text-spotify-green transition-colors duration-200"
         >
           <LuNewspaper className="text-xl" />
           <span>Blog</span>
-        </a>
+        </Link>
       </div>
 
       {/* Social Links and Resume */}
