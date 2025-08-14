@@ -100,14 +100,15 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-sm">
-        I&apos;m currently interning at{" "}
+        I&apos;m currently working as a Lab Member at{" "}
         <a
           href="https://aws.amazon.com/"
           className="text-spotify-green underline"
         >
-          AWS
+          OpenAI
         </a>{" "}
-        , a leading cloud technology platform. <br />
+        , a leading AI research company.
+        <br />
         <br />
         <span>
           I hope to create better{" "}

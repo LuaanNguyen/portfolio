@@ -13,10 +13,10 @@ export default function ExperienceItem() {
       id="experience"
     >
       <div className="bg-spotify-gray px-6 py-4">
-        <h2 className="text-xl font-bold mb-1">Professional Experience</h2>
+        <h2 className="text-xl font-semibold mb-1">Professional Experience</h2>
         <p className="flex items-center gap-1.5 text-spotify-grey text-sm">
           <CiGlobe className="text-lg" />
-          1208 saves • 21h 03m
+          1208 saves • 22h 03m
         </p>
       </div>
 
@@ -54,7 +54,11 @@ function Positions() {
             {index + 1}
           </span>
           <div className="flex flex-col gap-0.5">
-            <a className="text-spotify-green text-sm font-semibold mb-0.5 bg-spotify-green/20 rounded-md transition-all duration-200 w-fit px-2 py-0.5 hover:bg-spotify-green/10 cursor-pointer">
+            <a
+              href={position.url}
+              target="_blank"
+              className="text-spotify-green text-sm font-semibold mb-0.5 bg-spotify-green/20 rounded-md transition-all duration-200 w-fit px-2 py-0.5 hover:bg-spotify-green/10 cursor-pointer"
+            >
               {position.companyName}
             </a>
             <p className="font-bold text-md mb-0.5">{position.positionTitle}</p>
@@ -76,7 +80,7 @@ type experienceListsProps = {
 const experienceLists: experienceListsProps[] = [
   {
     companyName: "Amazon Web Services",
-    url: "https://aws.amazon.comope",
+    url: "https://aws.amazon.com",
     positionTitle: "Software Development Engineer Intern",
     date: "May 2025 - August 2025",
   },
