@@ -1,19 +1,34 @@
+"use client";
+
 import SocialLinks from "./SocialLinks";
 import NavButton from "./NavButton";
 import { LuNewspaper } from "react-icons/lu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface MobileNavProps {
   handleMobile: () => void;
 }
 
 export default function MobileNav({ handleMobile }: MobileNavProps) {
+  const pathname = usePathname();
+  const isOnBlogPage = pathname?.startsWith("/blog");
+
   const links = [
     // { section: "Profile", href: "#profile" },
-    { section: "Experience", href: "#experience" },
-    { section: "Programming Languages", href: "#programming-languages" },
-    { section: "Projects", href: "#project" },
-    { section: "Contributions", href: "#contribution" },
+    {
+      section: "Experience",
+      href: isOnBlogPage ? "/#experience" : "#experience",
+    },
+    {
+      section: "Programming Languages",
+      href: isOnBlogPage ? "/#programming-languages" : "#programming-languages",
+    },
+    { section: "Projects", href: isOnBlogPage ? "/#project" : "#project" },
+    {
+      section: "Contributions",
+      href: isOnBlogPage ? "/#contribution" : "#contribution",
+    },
   ];
 
   return (
@@ -29,12 +44,12 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
           }}
           onClick={handleMobile}
         >
-          <a
+          <Link
             href={link.href}
             className="text-spotify-white text-lg font-semibold hover:text-spotify-green transition-colors duration-200"
           >
             {link.section}
-          </a>
+          </Link>
         </div>
       ))}
 
