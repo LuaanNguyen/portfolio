@@ -102,18 +102,11 @@ const experienceLists: experienceListsProps[] = [
     positionTitle: "Software Engineer",
     date: "September 2024 - March 2025",
   },
-
   {
     companyName: "Ethical Spectacle Research",
     url: "https://ethicalspectacle.org",
     positionTitle: "Software Engineer Intern",
-    date: "August 2024 - Present",
-  },
-  {
-    companyName: "The Software Developer Association (SoDA)",
-    url: "https://thesoda.io",
-    positionTitle: "Technical Project Manager",
-    date: "April 2024 – September 2024",
+    date: "August 2024 - December 2024",
   },
   {
     companyName: "ASU Enterprise Technology",
@@ -126,17 +119,5 @@ const experienceLists: experienceListsProps[] = [
     url: "https://www.linkedin.com/company/pinearllc/",
     positionTitle: "Software Engineer Intern",
     date: "March 2024 - May 2024",
-  },
-  {
-    companyName: "EPICS at ASU",
-    url: "https://epics.engineering.asu.edu",
-    positionTitle: "Software Team Lead",
-    date: "January 2024 – April 2024",
-  },
-  {
-    companyName: "Podium Education",
-    url: "https://www.podiumeducation.com",
-    positionTitle: "Web Developer Trainee",
-    date: "August 2023 – December 2024",
   },
 ];
