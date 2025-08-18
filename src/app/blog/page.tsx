@@ -9,7 +9,7 @@ export default function BlogListingPage() {
 
   return (
     <div className="min-h-screen text-white">
-      <div className="max-md:mx-10 max-md:mt-2 mx-40 mt-4">
+      <div className=" max-md:mx-10 max-md:mt-2 mx-40 mt-4">
         <BlogHeader
           title="Writings"
           subtitle=""
