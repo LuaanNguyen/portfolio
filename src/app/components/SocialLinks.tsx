@@ -41,7 +41,7 @@ const socialMedias: socialMediasProps = [
   },
   {
     title: "Linkedin",
-    url: "https://www.linkedin.com/in/luanthiennguyen/",
+    url: "https://www.linkedin.com/in/luaanng/",
     icon: <FaLinkedin />,
   },
   {
