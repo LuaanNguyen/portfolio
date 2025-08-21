@@ -10,6 +10,29 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "/blog/post/intern-experience-aws",
+    imageSrc: `/aws_project.png`,
+    imageAlt: "Unified Media Processing Pipeline",
+    title: "Unified Media Processing Pipeline ⚙️",
+    description:
+      "My internship project at AWS, focusing on combining to major service: decoding and shot detection, into one host. This project succeeded and served as a Proof of Concept (POC) for further optimization into the Bedrock Data Automation workflows.",
+    tech: [
+      "Java",
+      "Python",
+      "TypeScript",
+      "CDK",
+      "AWS",
+      "ECS",
+      "Fargate",
+      "Step Functions",
+      "Cloud Watch",
+      "Cloud Formation",
+      "S3",
+      "Docker",
+      "Bedrock",
+    ],
+  },
+  {
     href: "https://www.linkedin.com/posts/chatgpt-for-education_today-were-introducing-study-mode-a-new-activity-7356072086492073985-AwSt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOlMkwBGudRKqJxI09d_sbxL7eqHyKnDk8",
     imageSrc: `/openai_study_mode.jpeg`,
     imageAlt: "ChatGPT Study Mode",
