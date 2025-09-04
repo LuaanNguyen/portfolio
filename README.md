@@ -4,9 +4,7 @@
 
 <img src="public/portfolio_highres.png" width="700"  alt="Portfolio Preview">
 
----
-
-A modern, responsive portfolio website featuring a [Spotify](spotify.com)-inspired design. Hosted on [Vercel](https://vercel.com)
+A modern, responsive portfolio website featuring a design, inspired by Spotify.
 
 This website is powered by [Next.js 15](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [Aceternity UI](https://ui.aceternity.com/). To develop, run:
 
@@ -16,6 +14,19 @@ $ npm install
 $ npm run dev
 ```
 
+To run with Docker:
+
+```bash
+$ docker build -t luan/portfolio .
+$ docker run --rm -p 3000:3000 luan/portfolio
+```
+
+With hot reload:
+
+```bash
+$ docker compose -f docker-compose.dev.yml up
+```
+
 ---
 
-❤️ by [Luan Nguyen](https://www.linkedin.com/in/luanthiennguyen/)
+Made with ❤️ by [Luan Nguyen](https://www.linkedin.com/in/luaanng/)
