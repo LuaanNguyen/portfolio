@@ -94,10 +94,10 @@ const experienceLists: experienceListsProps[] = [
     companyName: "Simplify (YC W21)",
     url: "https://simplify.jobs",
     positionTitle: "Campus Ambassador",
-    date: "January 2025 - Present",
+    date: "January 2025 - August 2025",
   },
   {
-    companyName: "Wireless Intelligence Lab — ASU ECEE",
+    companyName: "Arizona State University - WILab",
     url: "https://www.wi-lab.net",
     positionTitle: "Software Engineer",
     date: "September 2024 - March 2025",

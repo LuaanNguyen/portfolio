@@ -120,8 +120,8 @@ function PersonalStatement() {
         <br />
         <span>
           To that end, I take a generalist’s approach, driven by a deep care for
-          both <span className="text-spotify-green">systems</span> — the
-          foundational layers of our digital world — and{" "}
+          both <span className="text-spotify-green">systems</span>, the
+          foundational layers of our digital world, and{" "}
           <span className="text-spotify-green"> interaction design </span>,
           which shapes how we live with and relate to computers around us.
         </span>
