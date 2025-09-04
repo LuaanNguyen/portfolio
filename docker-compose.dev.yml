@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  web:
+    image: node:18-alpine
+    working_dir: /app
+    command: sh -c "npm i && npm run dev"
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - PORT=3000

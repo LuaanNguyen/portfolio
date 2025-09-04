@@ -1,0 +1,15 @@
+# Node/Next build artifacts
+node_modules
+.next
+out
+
+# VCS & local files
+.git
+.gitignore
+Dockerfile*
+docker-compose*.yml
+README.md
+
+# OS/editor
+.DS_Store
+*.log
