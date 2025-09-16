@@ -10,6 +10,29 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://github.com/LuaanNguyen/PhoenixProject",
+    imageSrc: `/phoenix_project.png`,
+    imageAlt: "Phoenix Project (HackMIT 2025)",
+    title: "Phoenix Project (HackMIT 2025)",
+    description:
+      "Phoenix Project is a live Arduino wildfire sensor network with real-time map, AI decisions, and analytics. Built at HackMIT 2025, it uses Keyestudio 18B20 temperature sensors deployed in multiple regions of California to detect fire spread, modeled after the Alexandridis probabilistic fire simulation.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "deck.gl",
+      "Mapbox GL",
+      "WebSockets",
+      "Arduino UNO R4 WiFi",
+      "DS18B20 (OneWire)",
+      "Python",
+      "Alexandridis Fire Model",
+      "AI Judge (EigenCloud)",
+      "Cerebras API",
+      "3D-printed Enclosure (Bambu X1C)",
+    ],
+  },
+  {
     href: "/blog/post/intern-experience-aws",
     imageSrc: `/aws_project.png`,
     imageAlt: "Unified Media Processing Pipeline",
