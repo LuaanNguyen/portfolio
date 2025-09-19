@@ -28,28 +28,6 @@ const languageItems: {
   name: string;
   component: ReactNode;
 }[] = [
-  // {
-  //   name: "HTML",
-  //   component: (
-  //     <Image
-  //       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-  //       width={35}
-  //       height={35}
-  //       alt="HTML"
-  //     />
-  //   ),
-  // },
-  // {
-  //   name: "CSS",
-  //   component: (
-  //     <Image
-  //       src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-  //       width={32}
-  //       height={32}
-  //       alt="CSS"
-  //     />
-  //   ),
-  // },
   {
     name: "JavaScript",
     component: (
@@ -69,28 +47,6 @@ const languageItems: {
         width={32}
         height={32}
         alt="TypeScript"
-      />
-    ),
-  },
-  {
-    name: "C",
-    component: (
-      <Image
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
-        width={32}
-        height={32}
-        alt="C"
-      />
-    ),
-  },
-  {
-    name: "C++",
-    component: (
-      <Image
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
-        width={32}
-        height={32}
-        alt="C++"
       />
     ),
   },
@@ -128,7 +84,7 @@ const languageItems: {
     ),
   },
   {
-    name: "Golang",
+    name: "Go",
     component: (
       <Image
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"

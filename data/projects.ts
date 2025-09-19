@@ -12,8 +12,8 @@ export const personalProjects: personalProjectType = [
   {
     href: "https://github.com/LuaanNguyen/PhoenixProject",
     imageSrc: `/phoenix_project.png`,
-    imageAlt: "Phoenix Project (HackMIT 2025)",
-    title: "Phoenix Project (HackMIT 2025)",
+    imageAlt: "Phoenix Project (HackMIT 2025) 🐦‍🔥",
+    title: "Phoenix Project (HackMIT 2025) 🐦‍🔥",
     description:
       "Phoenix Project is a live Arduino wildfire sensor network with real-time map, AI decisions, and analytics. Built at HackMIT 2025, it uses Keyestudio 18B20 temperature sensors deployed in multiple regions of California to detect fire spread, modeled after the Alexandridis probabilistic fire simulation.",
     tech: [
