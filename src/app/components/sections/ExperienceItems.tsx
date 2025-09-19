@@ -79,10 +79,10 @@ type experienceListsProps = {
 
 const experienceLists: experienceListsProps[] = [
   {
-    companyName: "Amazon Web Services",
-    url: "https://aws.amazon.com",
-    positionTitle: "Software Development Engineer Intern",
-    date: "May 2025 - August 2025",
+    companyName: "SCAI ASU",
+    url: "https://scai.engineering.asu.edu/",
+    positionTitle: "AI Engineer",
+    date: "september 2025 - Present",
   },
   {
     companyName: "OpenAI",
@@ -91,20 +91,20 @@ const experienceLists: experienceListsProps[] = [
     date: "May 2025 - Present",
   },
   {
-    companyName: "Simplify (YC W21)",
-    url: "https://simplify.jobs",
-    positionTitle: "Campus Ambassador",
-    date: "January 2025 - August 2025",
+    companyName: "Amazon Web Services",
+    url: "https://aws.amazon.com",
+    positionTitle: "Software Development Engineer Intern",
+    date: "May 2025 - August 2025",
   },
   {
-    companyName: "Arizona State University - WILab",
+    companyName: "Wireless Intelligence Lab",
     url: "https://www.wi-lab.net",
     positionTitle: "Software Engineer",
     date: "September 2024 - March 2025",
   },
   {
     companyName: "Ethical Spectacle Research",
-    url: "https://ethicalspectacle.org",
+    url: "https://www.linkedin.com/company/ethicalspectacle/",
     positionTitle: "Software Engineer Intern",
     date: "August 2024 - December 2024",
   },
