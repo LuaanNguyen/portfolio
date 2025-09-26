@@ -10,6 +10,15 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://openai.com/index/introducing-chatgpt-pulse/",
+    imageSrc: `/chatgpt_pulse.png`,
+    imageAlt: "ChatGPT Pulse 📱",
+    title: "ChatGPT Pulse 📱",
+    description:
+      "Pulse is a new experience where ChatGPT proactively does research to deliver personalized updates based on your chats, feedback, and connected apps like your calendar.",
+    tech: ["Product Testing", "Usability Testing"],
+  },
+  {
     href: "https://github.com/LuaanNguyen/PhoenixProject",
     imageSrc: `/phoenix_project.png`,
     imageAlt: "Phoenix Project (HackMIT 2025) 🐦‍🔥",
@@ -170,7 +179,6 @@ export const personalProjects: personalProjectType = [
   //     "I try to solve most daily LeetCode questions in Golang in order to get familiar with the language.",
   //   tech: ["Golang", "Unit Testing"],
   // },
-
   {
     href: "https://github.com/LuaanNguyen/neutral-lens",
     imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Neutral_Lens.png`,
@@ -315,15 +323,15 @@ export const personalProjects: personalProjectType = [
       "Help System is a Java-based desktop application designed to provide personalized academic support to over 200 ASU students. Led a team of 5 to build the system using JavaFX, H2 Database, and Maven, with a Figma-driven UI design.",
     tech: ["Java", "JavaFX", "Maven", "H2 Database", "Figma"],
   },
-  {
-    href: "https://github.com/LuaanNguyen/epics-mern",
-    imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/shrimp-farming.png`,
-    imageAlt: "EPICS project",
-    title: "Online Database for Study Abroad Program 📊",
-    description:
-      "Online Database for Study Abroad Program is a MERN-stack platform supporting Vietnamese shrimp farmers by monitoring water quality. The system maintains a self-updating database and enables real-time data conversion and communication.",
-    tech: ["React", "Express", "NodeJS", "MongoDB", "TailwindCSS"],
-  },
+  // {
+  //   href: "https://github.com/LuaanNguyen/epics-mern",
+  //   imageSrc: `${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/shrimp-farming.png`,
+  //   imageAlt: "EPICS project",
+  //   title: "Online Database for Study Abroad Program 📊",
+  //   description:
+  //     "Online Database for Study Abroad Program is a MERN-stack platform supporting Vietnamese shrimp farmers by monitoring water quality. The system maintains a self-updating database and enables real-time data conversion and communication.",
+  //   tech: ["React", "Express", "NodeJS", "MongoDB", "TailwindCSS"],
+  // },
   // {
   //   href: "https://worldwise-xi-five.vercel.app/",
   //   imageSrc: "/worldwise.jpg",
@@ -369,15 +377,15 @@ export const personalProjects: personalProjectType = [
   //     "A hiking-theme matching game that I created while learning JavaScript",
   //   tech: ["HTML/CSS", "JavaScript", "Bootstrap"],
   // },
-  {
-    href: "https://luaannguyen.github.io/FSE100-final-project/",
-    imageSrc: `/spacegames.png`,
-    imageAlt: "Space Games",
-    title: "Space Games 👾",
-    description:
-      "Space Games is a trio of browser-based games built with p5.js, developed in a team of four. I contributed to core game logic, UI design, and presented the final product to over 20 stakeholders.",
-    tech: ["HTML/CSS", "JavaScript", "p5.js"],
-  },
+  // {
+  //   href: "https://luaannguyen.github.io/FSE100-final-project/",
+  //   imageSrc: `/spacegames.png`,
+  //   imageAlt: "Space Games",
+  //   title: "Space Games 👾",
+  //   description:
+  //     "Space Games is a trio of browser-based games built with p5.js, developed in a team of four. I contributed to core game logic, UI design, and presented the final product to over 20 stakeholders.",
+  //   tech: ["HTML/CSS", "JavaScript", "p5.js"],
+  // },
 
   // Add more project objects here...
 ];

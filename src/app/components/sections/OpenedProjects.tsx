@@ -33,8 +33,8 @@ export default function OpenedExperienceItem({
             <h2 className="text-2xl font-bold">Projects</h2>
             <p className="flex items-center text-spotify-grey text-sm gap-1.5">
               <CiGlobe className="text-xl text-spotify-white" />
-              {personalProjects.length} completed projects • Updated February
-              15, 2025
+              {personalProjects.length} completed projects • Updated September
+              25, 2025
             </p>
           </div>
 

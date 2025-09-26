@@ -79,12 +79,6 @@ type experienceListsProps = {
 
 const experienceLists: experienceListsProps[] = [
   {
-    companyName: "SCAI ASU",
-    url: "https://scai.engineering.asu.edu/",
-    positionTitle: "AI Engineer",
-    date: "september 2025 - Present",
-  },
-  {
     companyName: "OpenAI",
     url: "https://openai.com",
     positionTitle: "ChatGPT Lab Member",
