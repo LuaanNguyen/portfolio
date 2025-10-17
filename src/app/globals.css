@@ -40,34 +40,6 @@ html {
     @apply bg-[#FFFFFF];
   }
 
-  .bg-spotify-green {
-    @apply bg-[#1DB954];
-  }
-
-  .bg-spotify-dark-green {
-    @apply bg-[#189a45];
-  }
-
-  .bg-spotify-black {
-    @apply bg-[#121212];
-  }
-
-  .bg-spotify-light-dark {
-    @apply bg-[#212121];
-  }
-
-  .bg-spotify-gray {
-    @apply bg-[#535353];
-  }
-
-  .bg-spotify-light-gray {
-    @apply bg-[#B3B3B3];
-  }
-
-  .bg-spotify-white {
-    @apply bg-[#FFFFFF];
-  }
-
   /* Define text colors */
   .text-spotify-green {
     @apply text-[#1DB954];
