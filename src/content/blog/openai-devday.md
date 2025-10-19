@@ -32,11 +32,11 @@ About how I got into the Lab: I came across the application randomly, filled it 
 
 ## Dinner
 
-One of the coolest perks of being in the Lab is getting invited to [OpenAI DevDay](https://openai.com/devday/) in San Francisco. It happened right in the middle of my midterms, but there was no way I was missing that, so I booked a flight and studied in airports between connections.
+One of the coolest perks of being in the Lab is getting invited to [DevDay](https://openai.com/devday/) in San Francisco. It happened right in the middle of my midterms, but there was no way I was missing that, so I booked a flight and studied in airports between connections.
 
 The night before the event, we had a dinner at [China Live](https://chinalivesf.com/). It was a fancy full-course styled meal. We were finally meeting everyone in person after working together online for months. Putting faces to names felt surreal.
 
-After dinner, a few of us decided to explore the city, which was probably not the smartest idea. We ended up at a small community motel where another Lab member was staying, and somehow that turned into karaoke until 2 a.m. with people from all over the world. Easily one of my favorite memories from the trip.
+After dinner, a few of us decided to explore the city, which was probably not the smartest idea 🙏🏽. We ended up at a small community motel where another Lab member was staying, and somehow that turned into karaoke until 2 a.m. with people from all over the world. Easily one of my favorite memories from the trip.
 
 ![Dinner at China Live](/blogs/dinner.jpg)
 
@@ -48,9 +48,9 @@ DevDay itself was such a mix of excitement and inspiration. I met a lot of peopl
 
 The highlight of the event for me was seeing the new Agent Builder demo, meeting the CEO of [Cursor](https://cursor.com/), and just walking around talking to other builders. The food was also ridiculously good.
 
-What made it really personal, though, was seeing our ChatGPT Lab book being displayed and handed out. Seeing people pick it up and flip through the pages felt surreal. Something I helped create was actually out there in the world. Sam Altman also mentioned ASU during his keynote, which made me quietly smile in the crowd.
+What made it really personal, though, was seeing our ChatGPT Lab book being displayed and handed out. Seeing people pick it up and flip through the pages felt surreal. Something I helped create was actually out there in the world.
 
-I didn’t get a photo with Sam, but I did get my book signed by [Greg Brockman](https://x.com/gdb?lang=en) (and failed the claw machine three times trying to win OpenAI stuffed toy 😭).
+Sam Altman also mentioned ASU during his keynote, which made me quietly smile in the crowd. Though I didn’t get a photo with Sam, but I did get my book signed by [Greg Brockman](https://x.com/gdb?lang=en) (and failed the claw machine three times trying to win OpenAI stuffed toy 😭).
 
 ![Michael Truell presenting](/blogs/cursor.JPG)
 
@@ -62,6 +62,6 @@ That kind of sums up the whole experience for me. DevDay wasn’t just about see
 
 I came home tired, but inspired and grateful for the community, for the people I met, and for the chance to be part of something this special.
 
-_Thank you to the community team at OpenAI for an incredible day at DevDay 2025_
+_Thank you to the community team at OpenAI for an incredible time at DevDay [2025]_
 
 ![100 Chats for Studying, Career & College Life displayed at the venue](/blogs/books.jpeg)
