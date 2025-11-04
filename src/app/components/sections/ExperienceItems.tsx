@@ -85,9 +85,21 @@ const experienceLists: experienceListsProps[] = [
     date: "May 2025 - Present",
   },
   {
+    companyName: "ASU SCAI",
+    url: "https://engineering.asu.edu/",
+    positionTitle: "Machine Learning Engineer Intern",
+    date: "August 2025 - Present",
+  },
+  {
+    companyName: "Next Lab",
+    url: "https://nextlab.asu.edu/",
+    positionTitle: "Associate",
+    date: "September 2025 - Present",
+  },
+  {
     companyName: "Amazon Web Services",
     url: "https://aws.amazon.com",
-    positionTitle: "Software Development Engineer Intern",
+    positionTitle: "Software Engineer Intern",
     date: "May 2025 - August 2025",
   },
   {

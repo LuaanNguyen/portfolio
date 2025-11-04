@@ -31,17 +31,17 @@ type socialMediasProps = {
 const socialMedias: socialMediasProps = [
   {
     title: "X",
-    url: "https://x.com/LuanNgu8855474",
+    url: "https://x.com/luaan_ng",
     icon: <FaSquareXTwitter />,
   },
   {
     title: "Instagram",
-    url: "https://www.instagram.com/luannuen/",
+    url: "https://www.instagram.com/luannuen",
     icon: <FaInstagram />,
   },
   {
     title: "Linkedin",
-    url: "https://www.linkedin.com/in/luaanng/",
+    url: "https://www.linkedin.com/in/luaanng",
     icon: <FaLinkedin />,
   },
   {
