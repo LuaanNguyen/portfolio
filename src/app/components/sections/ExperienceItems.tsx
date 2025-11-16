@@ -79,21 +79,15 @@ type experienceListsProps = {
 
 const experienceLists: experienceListsProps[] = [
   {
-    companyName: "OpenAI",
-    url: "https://openai.com",
-    positionTitle: "ChatGPT Lab Member",
-    date: "May 2025 - Present",
-  },
-  {
     companyName: "ASU SCAI",
     url: "https://engineering.asu.edu/",
-    positionTitle: "Machine Learning Engineer Intern",
+    positionTitle: "AI/ML Engineer Intern",
     date: "August 2025 - Present",
   },
   {
     companyName: "Next Lab",
     url: "https://nextlab.asu.edu/",
-    positionTitle: "Associate",
+    positionTitle: "Cloud & AI Associate",
     date: "September 2025 - Present",
   },
   {
@@ -103,10 +97,16 @@ const experienceLists: experienceListsProps[] = [
     date: "May 2025 - August 2025",
   },
   {
+    companyName: "OpenAI",
+    url: "https://openai.com",
+    positionTitle: "ChatGPT Lab Member",
+    date: "May 2025 - August 2025",
+  },
+  {
     companyName: "Wireless Intelligence Lab",
     url: "https://www.wi-lab.net",
-    positionTitle: "Software Engineer",
-    date: "September 2024 - March 2025",
+    positionTitle: "Software Engineer Intern",
+    date: "September 2024 - January 2025",
   },
   {
     companyName: "Ethical Spectacle Research",

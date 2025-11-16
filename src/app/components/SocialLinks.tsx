@@ -30,14 +30,9 @@ type socialMediasProps = {
 
 const socialMedias: socialMediasProps = [
   {
-    title: "X",
-    url: "https://x.com/luaan_ng",
-    icon: <FaSquareXTwitter />,
-  },
-  {
-    title: "Instagram",
-    url: "https://www.instagram.com/luannuen",
-    icon: <FaInstagram />,
+    title: "Github",
+    url: "https://github.com/LuaanNguyen",
+    icon: <FaGithub />,
   },
   {
     title: "Linkedin",
@@ -45,8 +40,8 @@ const socialMedias: socialMediasProps = [
     icon: <FaLinkedin />,
   },
   {
-    title: "Github",
-    url: "https://github.com/LuaanNguyen",
-    icon: <FaGithub />,
+    title: "X",
+    url: "https://x.com/luaan_ng",
+    icon: <FaSquareXTwitter />,
   },
 ];

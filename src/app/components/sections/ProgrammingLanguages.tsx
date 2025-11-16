@@ -94,4 +94,15 @@ const languageItems: {
       />
     ),
   },
+  {
+    name: "C++",
+    component: (
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+        width={32}
+        height={32}
+        alt="C++"
+      />
+    ),
+  },
 ];
