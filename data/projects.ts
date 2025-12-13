@@ -10,6 +10,24 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://github.com/LuaanNguyen/cf_ai_dns_doctor",
+    imageSrc: `/dns_doctor.png`,
+    imageAlt: "DNS Doctor 🩺",
+    title: "DNS Doctor 🩺",
+    description:
+      "DNS Doctor is an diagnostic tool that helps you identify and fix DNS configuration issues for any domain. Simply paste a domain name or URL into the search box, and the application will perform a comprehensive analysis of your DNS records across multiple resolvers (Cloudflare, Google, Quad9)",
+    tech: ["Cloudflare Workers", "Workers AI", "Durable Objects", "Pages"],
+  },
+  {
+    href: "https://openai.com/index/introducing-chatgpt-atlas/",
+    imageSrc: `/chatgpt_atlas.png`,
+    imageAlt: "ChatGPT Atlas 🖥️",
+    title: "ChatGPT Atlas 🖥️",
+    description:
+      "A browser built with ChatGPT takes us closer to a true super-assistant that understands your world and helps you achieve your goals.",
+    tech: ["Product Testing", "Usability Testing"],
+  },
+  {
     href: "https://openai.com/index/introducing-chatgpt-pulse/",
     imageSrc: `/chatgpt_pulse.png`,
     imageAlt: "ChatGPT Pulse 📱",
