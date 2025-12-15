@@ -10,6 +10,15 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://github.com/LuaanNguyen/AnglerSpots",
+    imageSrc: `/angler_spots.png`,
+    imageAlt: "Angler Spots 🎣",
+    title: "Angler Spots 🎣",
+    description:
+      "Many existing fishing apps require subscriptions or paid features. AnglerSpots is a simple, free app where people can mark their favorite fishing spots on a map, log catches, and leave useful notes for others.",
+    tech: ["Swift", "SwiftUI", "SwiftData"],
+  },
+  {
     href: "https://github.com/LuaanNguyen/cf_ai_dns_doctor",
     imageSrc: `/dns_doctor.png`,
     imageAlt: "DNS Doctor 🩺",
