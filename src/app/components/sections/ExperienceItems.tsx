@@ -79,16 +79,16 @@ type experienceListsProps = {
 
 const experienceLists: experienceListsProps[] = [
   {
+    companyName: "FOX Corporation",
+    url: "https://www.linkedin.com/company/fox-corporation/",
+    positionTitle: "Software Engineer Intern",
+    date: "February 2026 - April 2026",
+  },
+  {
     companyName: "ASU SCAI",
     url: "https://engineering.asu.edu/",
     positionTitle: "AI/ML Engineer Intern",
     date: "August 2025 - Present",
-  },
-  {
-    companyName: "Next Lab",
-    url: "https://nextlab.asu.edu/",
-    positionTitle: "Cloud & AI Associate",
-    date: "September 2025 - Present",
   },
   {
     companyName: "Amazon Web Services",

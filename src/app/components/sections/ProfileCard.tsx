@@ -107,7 +107,8 @@ function PersonalStatement() {
         >
           ASU SCAI
         </a>{" "}
-        , researching on LLM ability to perform real-life regotitation tasks.
+        , researching on LLM ability to perform real-life business negotitation
+        tasks.
         <br />
         <br />
         <span>
