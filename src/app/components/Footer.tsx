@@ -6,7 +6,7 @@ export default function Footer() {
       <p className="text-spotify-light-gray max-md:text-sm">
         &copy; Luan&apos;s Portfolio {new Date().getFullYear()}, designed by{" "}
         <a
-          href="https://www.luannguyen.net/"
+          href="https://x.com/luaan_ng"
           className="text-spotify-green font-semibold underline"
           target="_blank"
         >

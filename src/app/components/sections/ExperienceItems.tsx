@@ -5,6 +5,10 @@ import { MdOutlineDownloadForOffline } from "react-icons/md";
 import { BsThreeDots } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaPlay } from "react-icons/fa";
+import {
+  experienceLists,
+  experienceListsProps,
+} from "../../../../data/experience";
 
 export default function ExperienceItem() {
   return (
@@ -45,7 +49,7 @@ export default function ExperienceItem() {
 function Positions() {
   return (
     <div className="px-4 pb-4 md:overflow-y-auto sm:h-[300px]">
-      {experienceLists.map((position: experienceListsProps, index) => (
+      {experienceLists.map((position: experienceListsProps, index: number) => (
         <div
           className="flex items-center gap-4 p-2.5 sm:hover:bg-[#282828] rounded-lg transition-colors group"
           key={position.companyName}
@@ -69,61 +73,3 @@ function Positions() {
     </div>
   );
 }
-
-type experienceListsProps = {
-  companyName: string;
-  positionTitle: string;
-  url: string;
-  date: string;
-};
-
-const experienceLists: experienceListsProps[] = [
-  {
-    companyName: "FOX Corporation",
-    url: "https://www.linkedin.com/company/fox-corporation/",
-    positionTitle: "Software Engineer Intern",
-    date: "February 2026 - April 2026",
-  },
-  {
-    companyName: "ASU SCAI",
-    url: "https://engineering.asu.edu/",
-    positionTitle: "AI/ML Engineer Intern",
-    date: "August 2025 - Present",
-  },
-  {
-    companyName: "Amazon Web Services",
-    url: "https://aws.amazon.com",
-    positionTitle: "Software Engineer Intern",
-    date: "May 2025 - August 2025",
-  },
-  {
-    companyName: "OpenAI",
-    url: "https://openai.com",
-    positionTitle: "ChatGPT Lab Member",
-    date: "May 2025 - August 2025",
-  },
-  {
-    companyName: "Wireless Intelligence Lab",
-    url: "https://www.wi-lab.net",
-    positionTitle: "Software Engineer Intern",
-    date: "September 2024 - January 2025",
-  },
-  {
-    companyName: "Ethical Spectacle Research",
-    url: "https://www.linkedin.com/company/ethicalspectacle/",
-    positionTitle: "Software Engineer Intern",
-    date: "August 2024 - December 2024",
-  },
-  {
-    companyName: "ASU Enterprise Technology",
-    url: "https://tech.asu.edu",
-    positionTitle: "IT Consultant",
-    date: "May 2024 – August 2024",
-  },
-  {
-    companyName: "Pinear",
-    url: "https://www.linkedin.com/company/pinearllc/",
-    positionTitle: "Software Engineer Intern",
-    date: "March 2024 - May 2024",
-  },
-];

@@ -51,14 +51,15 @@ export default function Navigation(): ReactNode {
 
           {/*Hidden on Mobile*/}
           <section className="flex flex-row gap-4 items-center max-sm:hidden mx-4">
+            <SocialLinks />
+            <PiLineVerticalThin className="text-spotify-gray text-4xl" />
             <Link
               href="/blog"
               className="text-3xl hover:text-spotify-green transition-colors duration-200"
             >
               <LuNewspaper className="" />
             </Link>
-            <PiLineVerticalThin className="text-spotify-gray text-4xl" />
-            <SocialLinks />
+
             {/* <PiLineVerticalThin className="text-spotify-gray text-4xl" /> */}
             {/* <NavButton name="Resume" /> */}
           </section>
