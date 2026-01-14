@@ -64,7 +64,7 @@ The intern project ultimately served as a solid [Proof of Concept](https://www.a
 
 I wrapped up my internship with a final presentation to my team and adjacent sister teams. It was around 50 people in total. Instead of focusing on the roadblocks I’d faced, I decided to highlight the different approaches we explored and ensure the audience understood the high-level design of the project.
 
-The feedback was overwhelmingly positive. Both my manager and mentor expressed their interest in having me join full-time. In my last week, we held several working sessions with other engineers to push out additional results - proof that the project could actually be production-ready. I had been told early on that most intern projects never make it to production, so hearing that mine might was incredibly rewarding.
+The feedback was overwhelmingly positive. Both my manager and mentor expressed their interest in having me join full-time. In my last week, we held several working sessions with other engineers to push out additional results -proof that the project could actually be production-ready. I had been told early on that most intern projects never make it to production, so hearing that mine might was incredibly rewarding.
 
 On my final day, I sent out thank-you messages on Slack to my team and the recruiting HR team, gave my last hugs, and returned my laptop.
 
