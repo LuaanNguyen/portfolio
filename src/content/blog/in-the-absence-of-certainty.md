@@ -1,7 +1,7 @@
 ---
 title: "In the Absence of Certainty"
 description: ""
-date: "Jan 14, 2025"
+date: "Jan 14, 2026"
 readTime: "7 min read"
 image: "/blogs/yosemite.jpg"
 slug: "in-the-absence-of-certainty"
