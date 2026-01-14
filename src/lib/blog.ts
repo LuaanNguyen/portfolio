@@ -47,11 +47,9 @@ export function getSortedPostsData(): BlogPost[] {
 
   // Sort posts by date (earliest first)
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return -1;
-    } else {
-      return 1;
-    }
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateA.getTime() - dateB.getTime();
   });
 }
 
@@ -126,7 +124,7 @@ function applyCustomStyling(html: string): string {
   // Enhanced paragraph styling with better readability
   styledHtml = styledHtml.replace(
     /<p>/g,
-    '<p class="mb-5 leading-[1.7] text-spotify-white/95 text-lg font-light tracking-wide">'
+    '<p class="mb-5 leading-[1.7] text-spotify-white/95 text-sm md:text-base lg:text-lg font-light tracking-wide">'
   );
 
   // Enhanced links with Spotify-style hover effects
@@ -163,7 +161,7 @@ function applyCustomStyling(html: string): string {
   // Enhanced blockquotes with Spotify-inspired design
   styledHtml = styledHtml.replace(
     /<blockquote>/g,
-    '<div class="my-6"><blockquote class="relative border-l-4 border-spotify-green pl-6 py-4 my-4 bg-gradient-to-r from-spotify-light-dark/40 to-transparent rounded-r-xl italic text-spotify-white/90 shadow-xl shadow-black/20 before:content-[\'"\'] before:text-5xl before:text-spotify-green/40 before:absolute before:-top-1 before:-left-1 before:font-serif text-lg leading-relaxed">'
+    '<div class="my-6"><blockquote class="relative border-l-4 border-spotify-green pl-6 py-4 my-4 bg-gradient-to-r from-spotify-light-dark/40 to-transparent rounded-r-xl italic text-spotify-white/90 shadow-xl shadow-black/20 before:content-[\'"\'] before:text-5xl before:text-spotify-green/40 before:absolute before:-top-1 before:-left-1 before:font-serif text-sm md:text-base lg:text-lg leading-relaxed">'
   );
   styledHtml = styledHtml.replace(/<\/blockquote>/g, "</blockquote></div>");
 
@@ -172,7 +170,7 @@ function applyCustomStyling(html: string): string {
   styledHtml = styledHtml.replace(/<ol>/g, '<ol class="my-6 space-y-2 pl-6">');
   styledHtml = styledHtml.replace(
     /<li>/g,
-    "<li class=\"leading-relaxed text-spotify-white/90 text-lg relative pl-4 before:content-[''] before:absolute before:left-0 before:top-3 before:w-2 before:h-2 before:bg-spotify-green before:rounded-full before:shadow-lg before:shadow-spotify-green/50\">"
+    "<li class=\"leading-relaxed text-spotify-white/90 text-sm md:text-base lg:text-lg relative pl-4 before:content-[''] before:absolute before:left-0 before:top-3 before:w-2 before:h-2 before:bg-spotify-green before:rounded-full before:shadow-lg before:shadow-spotify-green/50\">"
   );
 
   // Enhanced horizontal rules with Spotify style
