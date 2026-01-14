@@ -45,12 +45,12 @@ export function getSortedPostsData(): BlogPost[] {
       };
     });
 
-  // Sort posts by date
+  // Sort posts by date (earliest first)
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
-      return 1;
-    } else {
       return -1;
+    } else {
+      return 1;
     }
   });
 }
