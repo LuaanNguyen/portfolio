@@ -27,24 +27,24 @@ export const personalProjects: personalProjectType = [
       "DNS Doctor is an diagnostic tool that helps you identify and fix DNS configuration issues for any domain. Simply paste a domain name or URL into the search box, and the application will perform a comprehensive analysis of your DNS records across multiple resolvers (Cloudflare, Google, Quad9)",
     tech: ["Cloudflare Workers", "Workers AI", "Durable Objects", "Pages"],
   },
-  {
-    href: "https://openai.com/index/introducing-chatgpt-atlas/",
-    imageSrc: `/chatgpt_atlas.png`,
-    imageAlt: "ChatGPT Atlas 🖥️",
-    title: "ChatGPT Atlas 🖥️",
-    description:
-      "A browser built with ChatGPT takes us closer to a true super-assistant that understands your world and helps you achieve your goals.",
-    tech: ["Product Testing", "Usability Testing"],
-  },
-  {
-    href: "https://openai.com/index/introducing-chatgpt-pulse/",
-    imageSrc: `/chatgpt_pulse.png`,
-    imageAlt: "ChatGPT Pulse 📱",
-    title: "ChatGPT Pulse 📱",
-    description:
-      "Pulse is a new experience where ChatGPT proactively does research to deliver personalized updates based on your chats, feedback, and connected apps like your calendar.",
-    tech: ["Product Testing", "Usability Testing"],
-  },
+  // {
+  //   href: "https://openai.com/index/introducing-chatgpt-atlas/",
+  //   imageSrc: `/chatgpt_atlas.png`,
+  //   imageAlt: "ChatGPT Atlas 🖥️",
+  //   title: "ChatGPT Atlas 🖥️",
+  //   description:
+  //     "A browser built with ChatGPT takes us closer to a true super-assistant that understands your world and helps you achieve your goals.",
+  //   tech: ["Product Testing", "Usability Testing"],
+  // },
+  // {
+  //   href: "https://openai.com/index/introducing-chatgpt-pulse/",
+  //   imageSrc: `/chatgpt_pulse.png`,
+  //   imageAlt: "ChatGPT Pulse 📱",
+  //   title: "ChatGPT Pulse 📱",
+  //   description:
+  //     "Pulse is a new experience where ChatGPT proactively does research to deliver personalized updates based on your chats, feedback, and connected apps like your calendar.",
+  //   tech: ["Product Testing", "Usability Testing"],
+  // },
   {
     href: "https://github.com/LuaanNguyen/PhoenixProject",
     imageSrc: `/phoenix_project.png`,
@@ -91,15 +91,15 @@ export const personalProjects: personalProjectType = [
       "Bedrock",
     ],
   },
-  {
-    href: "https://www.linkedin.com/posts/chatgpt-for-education_today-were-introducing-study-mode-a-new-activity-7356072086492073985-AwSt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOlMkwBGudRKqJxI09d_sbxL7eqHyKnDk8",
-    imageSrc: `/openai_study_mode.jpeg`,
-    imageAlt: "ChatGPT Study Mode",
-    title: "ChatGPT Study Mode 📚",
-    description:
-      "As part of ChatGPT Lab for Education, I conducted various product and usability testing for OpenAI's unreleased features. One of them was ChatGPT's Study Mode. It is designed to help students learn with ChatGPT, not just get answers. It guides users step by step, asking thoughtful questions and adapting to each student’s goals and skill level - much like a tutor would.",
-    tech: ["Product Testing", "Usability Testing"],
-  },
+  // {
+  //   href: "https://www.linkedin.com/posts/chatgpt-for-education_today-were-introducing-study-mode-a-new-activity-7356072086492073985-AwSt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEOlMkwBGudRKqJxI09d_sbxL7eqHyKnDk8",
+  //   imageSrc: `/openai_study_mode.jpeg`,
+  //   imageAlt: "ChatGPT Study Mode",
+  //   title: "ChatGPT Study Mode 📚",
+  //   description:
+  //     "As part of ChatGPT Lab for Education, I conducted various product and usability testing for OpenAI's unreleased features. One of them was ChatGPT's Study Mode. It is designed to help students learn with ChatGPT, not just get answers. It guides users step by step, asking thoughtful questions and adapting to each student’s goals and skill level - much like a tutor would.",
+  //   tech: ["Product Testing", "Usability Testing"],
+  // },
   {
     href: "https://rateourclub.com/",
     imageSrc: `/rateourclub.png`,

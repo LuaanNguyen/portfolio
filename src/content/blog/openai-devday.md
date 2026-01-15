@@ -1,5 +1,5 @@
 ---
-title: "My Experience at OpenAI DevDay [2025] 🐸"
+title: "OpenAI DevDay [2025] 🐸"
 description: ""
 date: "Oct 19, 2025"
 readTime: "7 min read"
