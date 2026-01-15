@@ -79,7 +79,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         }}
       >
         <SocialLinks />
-        <NavButton name="Resume"></NavButton>
+        {/* <NavButton name="Resume"></NavButton> */}
       </div>
     </nav>
   );

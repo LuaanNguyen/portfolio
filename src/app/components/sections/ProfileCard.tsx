@@ -100,15 +100,14 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-sm">
-        I&apos;m currently working as a AI/ML Engineer Intern at{" "}
+        I&apos;m currently working as a Software Engineer Intern on the
+        broadcast engineering team at{" "}
         <a
           href="https://scai.engineering.asu.edu/"
           className="text-spotify-green underline"
         >
-          ASU SCAI
+          FOX.
         </a>{" "}
-        , researching on LLM ability to perform real-life business negotitation
-        tasks.
         <br />
         <br />
         <span>
@@ -125,6 +124,14 @@ function PersonalStatement() {
           foundational layers of our digital world, and{" "}
           <span className="text-spotify-green"> interaction design </span>,
           which shapes how we live with and relate to computers around us.
+        </span>
+        <br />
+        <br />
+        <span>
+          Check out my latest writings{" "}
+          <a href="/blog" className="text-spotify-green underline">
+            here.
+          </a>{" "}
         </span>
       </h4>
     </div>

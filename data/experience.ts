@@ -33,13 +33,13 @@ export const experienceLists: experienceListsProps[] = [
   {
     companyName: "Wireless Intelligence Lab",
     url: "https://www.wi-lab.net",
-    positionTitle: "Software Engineer Intern",
+    positionTitle: "Software Engineer",
     date: "September 2024 - January 2025",
   },
   {
     companyName: "Ethical Spectacle Research",
     url: "https://www.linkedin.com/company/ethicalspectacle/",
-    positionTitle: "Software Engineer Intern",
+    positionTitle: "Developer Relations Intern",
     date: "August 2024 - December 2024",
   },
   {

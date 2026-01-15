@@ -25,8 +25,8 @@ export default function BlogHeader({
         <span className="text-md font-semibold">{backText}</span>
       </Link>
 
-      <div className="mb-12">
-        <h1 className="text-3xl md:text-5xl font-semibold text-spotify-white mb-4">
+      <div className="mb-0">
+        <h1 className="text-2xl md:text-4xl font-semibold text-spotify-white mb-4">
           {title}
         </h1>
         {subtitle && (
