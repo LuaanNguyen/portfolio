@@ -45,11 +45,11 @@ export function getSortedPostsData(): BlogPost[] {
       };
     });
 
-  // Sort posts by date (earliest first)
+  // Sort posts by date (latest first)
   return allPostsData.sort((a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);
-    return dateA.getTime() - dateB.getTime();
+    return dateB.getTime() - dateA.getTime();
   });
 }
 
