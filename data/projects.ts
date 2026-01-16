@@ -24,7 +24,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "DNS Doctor 🩺",
     title: "DNS Doctor 🩺",
     description:
-      "DNS Doctor is an diagnostic tool that helps you identify and fix DNS configuration issues for any domain. Simply paste a domain name or URL into the search box, and the application will perform a comprehensive analysis of your DNS records across multiple resolvers (Cloudflare, Google, Quad9)",
+      "Diagnostic tool that helps you identify and fix DNS configuration issues for any domain. Simply paste a domain name or URL into the search box, and the application will perform a comprehensive analysis of your DNS records across multiple resolvers (Cloudflare, Google, Quad9)",
     tech: ["Cloudflare Workers", "Workers AI", "Durable Objects", "Pages"],
   },
   // {
@@ -51,7 +51,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Phoenix Project (HackMIT 2025) 🐦‍🔥",
     title: "Phoenix Project (HackMIT 2025) 🐦‍🔥",
     description:
-      "Phoenix Project is a live Arduino wildfire sensor network with real-time map, AI decisions, and analytics. Built at HackMIT 2025, it uses Keyestudio 18B20 temperature sensors deployed in multiple regions of California to detect fire spread, modeled after the Alexandridis probabilistic fire simulation.",
+      "Live Arduino wildfire sensor network with real-time map, AI decisions, and analytics. We use Keyestudio 18B20 temperature sensors deployed in multiple regions of California to detect fire spread, modeled after the Alexandridis probabilistic fire simulation.",
     tech: [
       "Next.js",
       "TypeScript",
@@ -106,7 +106,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Rate Our Club",
     title: "Rate Our Club ⭐️",
     description:
-      "rateourclub.com is a community-driven platform where students can rate and review 100+ college organizations. Built with Next.js, TailwindCSS, and Firebase, it offers a fast, responsive UI and real-time feedback system hosted on an Ubuntu server.",
+      "Community-driven platform where students can rate and review 100+ college organizations, just like Rate My Professor.",
     tech: [
       "NextJS",
       "TailwindCSS",
@@ -141,7 +141,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "AirBnb For Stuff",
     title: "AirBnb For Stuff 📦",
     description:
-      "AirBnb For Stuff is a peer-to-peer rental platform for everyday items, built with SvelteKit, Go’s gorilla/mux, and PostgreSQL. It enables users to lend and borrow gear locally, with a full-stack setup powered by AWS RDS and deployed on Cloudflare Pages.",
+      "Peer-to-peer rental platform for everyday items. It enables users to lend and borrow gear locally, with a full-stack setup powered by AWS RDS and deployed on Cloudflare Pages.",
     tech: [
       "GO + gorilla/mux",
 
@@ -159,7 +159,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Large Wireless Model",
     title: "Large Wireless Model",
     description:
-      "Large Wireless Model is the official documentation site for LWM—the world’s first foundational model for wireless channels. Built with React, Node.js, and MySQL, it features CI/CD via GitHub Actions, containerized with Docker, and deployed on AWS EC2 with S3 integration.",
+      "Official documentation site for LWM—the world’s first foundational model for wireless channels. Built with React, Node.js, and MySQL, it features CI/CD via GitHub Actions, containerized with Docker, and deployed on AWS EC2 with S3 integration.",
     tech: [
       "ReactJS",
       "NodeJS",
@@ -194,7 +194,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Neutral Lens 🎥",
     title: "Neutral Lens 🎥 (Social Bias Hackathon Winner 🥇)",
     description:
-      '"Neutral-lens" is a browser extension that aims to reduce political bias in Youtube videos. This tool analyzes news content, identifying biased language and categorize it into 3 different types: Generalization, Unfairness, and Stereotypes.',
+      'A browser extension that aims to reduce political bias in Youtube videos. This tool analyzes news content, identifying biased language and categorize it into 3 different types: Generalization, Unfairness, and Stereotypes.',
     tech: [
       "GUS-Net Bias Detection LLM",
       "Google's BERT",
@@ -248,7 +248,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Thesoda.io",
     title: "The Software Developers Association (SoDA) Website 🥤",
     description:
-      "thesoda.io is the official site for the Software Developers Association at ASU. Collaborated with 8 technical officers to revamp the site, build a Flask backend for a points system, integrate Discord bots, and optimize SEO. Powered by React, TailwindCSS, and Digital Ocean.",
+      "Official site for the Software Developers Association at ASU. Collaborated with 8 technical officers to revamp the site, build a Flask backend for a points system, integrate Discord bots, and optimize SEO. Powered by React, TailwindCSS, and Digital Ocean.",
     tech: [
       "ReactJS",
       "Flask",
@@ -284,7 +284,7 @@ export const personalProjects: personalProjectType = [
     title:
       "Sip n Play Boardgame Café Website ☕️ (Codédex Hackathon 2024 Winner 🥇)",
     description:
-      "Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu built with React, Three.js, and TailwindCSS. Designed for an immersive UX, it won Best UI/UX Design at the Codédex Hackathon.",
+      "3D website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu. Won Best UI/UX Design at the Codédex Hackathon.",
     tech: ["React", "ThreeJS", "TailwindCSS", "JavaScript"],
   },
   {
@@ -302,7 +302,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Ethical Spectable Research Website",
     title: "Ethical Spectable Research Website 💻",
     description:
-      "Ethical Spectacle Research Website is the official site for our research company, highlighting ongoing projects, publications, and member leaderboards. Built with Next.js, Flask, and MySQL, it serves as a hub for showcasing our AI-driven initiatives.",
+      "Official site for Ethical Spectacle, highlighting ongoing projects, publications, and member leaderboards.",
     tech: ["NEXTJS", "JavaScript", "Python", "Flask", "MySQL", "TailwindCSS"],
   },
   {
@@ -329,7 +329,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Help System 📚",
     title: "Help System 📚",
     description:
-      "Help System is a Java-based desktop application designed to provide personalized academic support to over 200 ASU students. Led a team of 5 to build the system using JavaFX, H2 Database, and Maven, with a Figma-driven UI design.",
+      "Java-based desktop application designed to provide personalized academic support to over 200 ASU students. Led a team of 5 to build the system using JavaFX, H2 Database, and Maven, with a Figma-driven UI design.",
     tech: ["Java", "JavaFX", "Maven", "H2 Database", "Figma"],
   },
 ];
