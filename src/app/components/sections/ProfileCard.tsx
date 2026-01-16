@@ -96,7 +96,7 @@ function PersonalStatement() {
       <div className="space-y-1.5">
         <h1 className="text-3xl font-semibold">Luan Nguyen</h1>
         <p className="text-spotify-gray text-sm">
-          Engineer • Designer • Artist
+          Engineer • Researcher • Designer
         </p>
       </div>
       <h4 className="text-sm">
@@ -111,24 +111,18 @@ function PersonalStatement() {
         <br />
         <br />
         <span>
-          I hope to create better{" "}
-          <span className="text-spotify-green">interactive software</span> that
-          helps people cultivate and share ideas, expressing what brings them
-          joy in meaningful ways.
+        My interests center on <span className="text-spotify-green">systems and AI infrastructure</span>, including distributed services and platforms that enable machine learning to operate in production.{" "}
         </span>
         <br />
         <br />
         <span>
-          To that end, I take a generalist’s approach, driven by a deep care for
-          both <span className="text-spotify-green">systems</span>, the
-          foundational layers of our digital world, and{" "}
-          <span className="text-spotify-green"> interaction design </span>,
-          which shapes how we live with and relate to computers around us.
+          I approach engineering as a generalist, grounded in systems thinking, 
+          but motivated by building tools that help people create, reason, and share ideas meaningfully.
         </span>
         <br />
         <br />
         <span>
-          Check out my latest writings{" "}
+            View my latest writings{" "}
           <a href="/blog" className="text-spotify-green underline">
             here.
           </a>{" "}

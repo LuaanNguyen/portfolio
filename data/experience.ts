@@ -13,6 +13,12 @@ export const experienceLists: experienceListsProps[] = [
     date: "February 2026 - April 2026",
   },
   {
+    companyName: "OpenAI",
+    url: "https://openai.com",
+    positionTitle: "ChatGPT Lab Member",
+    date: "May 2025 - Present",
+  },
+  {
     companyName: "ASU SCAI",
     url: "https://engineering.asu.edu/",
     positionTitle: "AI/ML Engineer Intern",
@@ -22,12 +28,6 @@ export const experienceLists: experienceListsProps[] = [
     companyName: "Amazon Web Services",
     url: "https://aws.amazon.com",
     positionTitle: "Software Engineer Intern",
-    date: "May 2025 - August 2025",
-  },
-  {
-    companyName: "OpenAI",
-    url: "https://openai.com",
-    positionTitle: "ChatGPT Lab Member",
     date: "May 2025 - August 2025",
   },
   {
