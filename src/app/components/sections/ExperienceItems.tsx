@@ -27,17 +27,30 @@ export default function ExperienceItem() {
       <div className="px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <button className="rounded-full bg-spotify-green p-3.5 hover:scale-105 transition-transform">
+            <button 
+              className="rounded-full bg-spotify-green p-3.5 hover:scale-105 transition-transform"
+              aria-label="Play experience showcase"
+            >
               <FaPlay className="text-spotify-black text-sm" />
             </button>
             <div className="flex items-center gap-5">
-              <IoShuffle className="text-3xl text-spotify-grey sm:hover:text-white transition-colors" />
-              <FiPlusCircle className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
-              <MdOutlineDownloadForOffline className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
-              <BsThreeDots className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+              <button aria-label="Shuffle experiences">
+                <IoShuffle className="text-3xl text-spotify-grey sm:hover:text-white transition-colors" />
+              </button>
+              <button aria-label="Add to favorites">
+                <FiPlusCircle className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+              </button>
+              <button aria-label="Download resume">
+                <MdOutlineDownloadForOffline className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+              </button>
+              <button aria-label="More options">
+                <BsThreeDots className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+              </button>
             </div>
           </div>
-          <RxHamburgerMenu className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+          <button aria-label="View list">
+            <RxHamburgerMenu className="text-2xl text-spotify-grey sm:hover:text-white transition-colors" />
+          </button>
         </div>
       </div>
 

@@ -29,7 +29,9 @@ export default function Navigation(): ReactNode {
         <section className="flex flex-row w-full justify-between items-center max-md:px-4 max-md:py-1">
           {/*Mobile Mode*/}
           {mobile ? (
-            <FaTimes className="text-4xl sm:hidden" onClick={handleMobile} />
+            <button onClick={handleMobile} aria-label="Close navigation menu">
+              <FaTimes className="text-4xl sm:hidden" />
+            </button>
           ) : (
             <GiHamburgerMenu
               className="text-4xl sm:hidden"
@@ -56,6 +58,7 @@ export default function Navigation(): ReactNode {
             <Link
               href="/blog"
               className="text-3xl hover:text-spotify-green transition-colors duration-200"
+              aria-label="View blog posts"
             >
               <LuNewspaper className="" />
             </Link>

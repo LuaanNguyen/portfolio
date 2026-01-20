@@ -61,7 +61,6 @@ export default function Home() {
               </>
             )}
             <OpenedProjects className="block md:hidden" />
-            {/* <Skills /> */}
             <GithubContributions />
 
             <SpotifyAlbum />

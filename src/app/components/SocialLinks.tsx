@@ -14,6 +14,7 @@ export default function SocialLinks() {
           className="text-3xl hover:text-spotify-green"
           key={social.title}
           target="_blank"
+          aria-label={`Visit my ${social.title} profile`}
         >
           {social.icon}
         </Link>

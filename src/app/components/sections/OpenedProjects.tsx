@@ -42,6 +42,7 @@ export default function OpenedExperienceItem({
             type="button"
             className="p-3 hover:bg-[#282828] rounded-full transition-colors  max-md:hidden"
             onClick={onSetExperienceSection}
+            aria-label="Close expanded projects view"
           >
             <MdClose className="text-2xl" />
           </button>

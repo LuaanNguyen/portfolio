@@ -20,6 +20,7 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
             bg-spotify-green hover:bg-spotify-dark-green hover:scale-105 
             px-5 py-2 rounded-full gap-2 transition-all duration-200
             min-w-[180px]"
+            aria-label="View featured projects below"
           >
             Featured Projects
             <FaArrowDown className="text-base" />
@@ -34,6 +35,7 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
             shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
             min-w-[180px]"
             onClick={onSetExperienceSection}
+            aria-label="Explore all projects in expanded view"
           >
             Explore All Projects
             <GrLinkNext className="text-base" />
@@ -88,7 +90,7 @@ const projectLists: {
     content: (
       <a target="_blank" href="https://board-game-cafe-website.vercel.app/">
         <Image
-          src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/codedex-hackathon.jpeg`}
+          src={`/codedex-hackathon.jpeg`}
           alt="Sip n Play Cafe Website"
           width={500}
           height={500}
@@ -103,7 +105,7 @@ const projectLists: {
     content: (
       <a target="_blank" href="https://github.com/LuaanNguyen/epics-mern">
         <Image
-          src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/Mine_Alliance.png`}
+          src={`/Mine_Alliance.png`}
           alt="Mine Alliance"
           loading="lazy"
           width={500}
@@ -112,20 +114,4 @@ const projectLists: {
       </a>
     ),
   },
-  // {
-  //   title: "🥑 Fiber (Calhacks 2024)",
-  //   description:
-  //     "An AI-powered mobile application to scan the barcodes of groceries, providing comprehensive nutritional value, additives, and organic dimension for the users. This allows users to easily identify healthier options while grocery shopping.",
-  //   content: (
-  //     <a target="_blank" href="https://github.com/Smit2553/Fiber">
-  //       <Image
-  //         src={`${process.env.NEXT_PUBLIC_CLOUDFRONT_URL}/fiber.png`}
-  //         alt="Fiber Project"
-  //         loading="lazy"
-  //         width={500}
-  //         height={300}
-  //       />
-  //     </a>
-  //   ),
-  // },
 ];

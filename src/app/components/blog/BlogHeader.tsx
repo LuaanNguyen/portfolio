@@ -20,6 +20,7 @@ export default function BlogHeader({
       <Link
         href={backLink}
         className="inline-flex items-center space-x-2 text-spotify-green hover:text-green-400 transition-colors duration-200 mb-8"
+        aria-label={backText}
       >
         <FaArrowLeft className="w-4 h-4" />
         <span className="text-md font-semibold">{backText}</span>

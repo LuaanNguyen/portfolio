@@ -1,7 +1,6 @@
 "use client";
 
 import SocialLinks from "./SocialLinks";
-import NavButton from "./NavButton";
 import { LuNewspaper } from "react-icons/lu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,7 +14,6 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
   const isOnBlogPage = pathname?.startsWith("/blog");
 
   const links = [
-    // { section: "Profile", href: "#profile" },
     {
       section: "Experience",
       href: isOnBlogPage ? "/#experience" : "#experience",
@@ -64,6 +62,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         <Link
           href="/blog"
           className="flex items-center space-x-3 text-spotify-white text-lg font-semibold hover:text-spotify-green transition-colors duration-200"
+          aria-label="View blog posts"
         >
           <LuNewspaper className="text-xl" />
           <span>Blog</span>
@@ -79,7 +78,6 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         }}
       >
         <SocialLinks />
-        {/* <NavButton name="Resume"></NavButton> */}
       </div>
     </nav>
   );
