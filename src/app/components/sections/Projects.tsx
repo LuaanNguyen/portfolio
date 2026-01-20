@@ -55,7 +55,7 @@ const projectLists: {
   {
     title: "Brainrot Master Vault (HackPrinceton 2025 Winner 🏆)",
     description:
-      "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025, it filters for quality insights using Whisper, Gemini, and Phi-3, and won Best Self-Hosted Inference.",
+      "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025 and won Best Self-Hosted Inference.",
     content: (
       <a target="_blank" href="https://www.brainrotmastervaultovercooked.tech/">
         <Image
@@ -70,7 +70,7 @@ const projectLists: {
   {
     title: " 📚 rateourclub.com",
     description:
-      "rateourclub.com is a community-driven platform where students can rate and review 100+ college organizations. Built with Next.js, TailwindCSS, and Firebase, it offers a fast, responsive UI and real-time feedback system hosted on an Ubuntu server.",
+      "Community-driven platform where students can rate and review 100+ college organizations, just like Rate My Professor",
     content: (
       <a target="_blank" href="https://rateourclub.com">
         <Image
@@ -84,9 +84,9 @@ const projectLists: {
     ),
   },
   {
-    title: "🍵 Sip n Play Café Website (Codédex Hackathon Winner)",
+    title: "🍵 Sip n Play Café Website (Codédex Hackathon Winner 🏆)",
     description:
-      "Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu built with React, Three.js, and TailwindCSS. Designed for an immersive UX, it won Best UI/UX Design at the Codédex Hackathon.",
+      "My first hackathon win. Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu. It won Best UI/UX Design at the Codédex Hackathon.",
     content: (
       <a target="_blank" href="https://board-game-cafe-website.vercel.app/">
         <Image
@@ -99,9 +99,9 @@ const projectLists: {
     ),
   },
   {
-    title: "Mine Alliance ⛏️",
+    title: "Mine Alliance ⛏️ (Principled Innovation Hackathon Winner 🏆)",
     description:
-      "Mine Alliance is a platform that connects Arizona’s mining communities, corporations, and regulators through real-time data and environmental insights. Built with Next.js, Flask, and AWS, it features interactive maps and GPT-4o–powered analysis to promote sustainable mining. Winner of the Spark Challenge Hackathon.",
+      "Mine Alliance is a platform that connects Arizona’s mining communities, corporations, and regulators through real-time data and environmental insights.",
     content: (
       <a target="_blank" href="https://github.com/LuaanNguyen/epics-mern">
         <Image
