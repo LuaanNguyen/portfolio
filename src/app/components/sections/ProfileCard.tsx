@@ -63,7 +63,7 @@ function Booking() {
     navigator.clipboard
       .writeText(phoneNum)
       .then(() => {
-        alert("Phone bumber copied to clipboard!");
+        alert("Phone number copied to clipboard!");
       })
       .catch((err) => {
         console.error("Failed to copy: ", err);
@@ -100,13 +100,13 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-sm">
-        Weclome to my portfolio! I hope your stay is short and beautiful.
+        Welcome to my portfolio! I hope your stay is short and beautiful.
         <br />
         <br />
         I&apos;m currently working as a software engineer intern on the
         broadcast engineering team at{" "}
         <a
-          href="https://scai.engineering.asu.edu/"
+          href="https://www.fox.com/"
           className="text-spotify-green underline"
         >
           FOX.

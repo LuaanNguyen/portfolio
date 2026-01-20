@@ -74,7 +74,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Unified Media Processing Pipeline",
     title: "Unified Media Processing Pipeline ⚙️",
     description:
-      "My internship project at AWS, focusing on combining to major service: decoding and shot detection, into one host. This project succeeded and served as a Proof of Concept (POC) for further optimization into the Bedrock Data Automation workflows.",
+      "My internship project at AWS, focusing on combining two major services: decoding and shot detection, into one host. This project succeeded and served as a Proof of Concept (POC) for further optimization into the Bedrock Data Automation workflows.",
     tech: [
       "Java",
       "Python",

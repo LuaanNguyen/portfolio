@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://luannguyen.net"),
   title: "Luan Nguyen",
-  description: "Software Development Engineer Intern @ Amazon Web Services",
+  description: "Software Engineer",
   keywords: ["Luan Nguyen", "Software Engineer", "AI/ML", "Cloud Computing"],
   creator: "Luan Nguyen",
   authors: [{ name: "Luan Nguyen" }],
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: "https://luannguyen.net",
     title: "Luan Nguyen | Software Engineer",
     description:
-      "Full-stack software engineer specializing in web development, AI/ML, and cloud solutions.",
+      "Software Engineer",
     siteName: "Luan Nguyen's Portfolio",
     images: [
       {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Luan Nguyen | Software Engineer",
     description:
-      "Full-stack software engineer specializing in web development, AI/ML, and cloud solutions.",
+      "Software Engineer",
     images: [`/luan_aws.png`],
   },
   robots: {
@@ -98,13 +98,13 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/luanthiennguyen",
                 "https://github.com/LuaanNguyen",
               ],
-              jobTitle: "Software Engineer",
+              jobTitle: "Software Engineer Intern",
               worksFor: {
                 "@type": "Organization",
-                name: "AWS",
+                name: "FOX Corporation",
               },
               description:
-                "Full-stack software engineer at AWS, passionate about web development, AI/ML, and cloud solutions.",
+                "Software Engineer",
             }),
           }}
         />
