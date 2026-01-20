@@ -100,7 +100,10 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-sm">
-        I&apos;m currently working as a Software Engineer Intern on the
+        Weclome to my portfolio! I hope your stay is short and beautiful.
+        <br />
+        <br />
+        I&apos;m currently working as a software engineer intern on the
         broadcast engineering team at{" "}
         <a
           href="https://scai.engineering.asu.edu/"
@@ -112,12 +115,6 @@ function PersonalStatement() {
         <br />
         <span>
         My interests center on <span className="text-spotify-green">systems and AI infrastructure</span>, including distributed services and platforms that enable machine learning to operate in production.{" "}
-        </span>
-        <br />
-        <br />
-        <span>
-          I approach engineering as a generalist, grounded in systems thinking, 
-          but motivated by building tools that help people create, reason, and share ideas meaningfully.
         </span>
         <br />
         <br />
