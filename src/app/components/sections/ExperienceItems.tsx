@@ -20,7 +20,7 @@ export default function ExperienceItem() {
         <h2 className="text-xl font-semibold mb-1">Professional Experience</h2>
         <p className="flex items-center gap-1.5 text-spotify-grey text-sm">
           <CiGlobe className="text-lg" />
-          1208 saves • 22h 03m
+          8 positions • 3+ internship experience
         </p>
       </div>
 

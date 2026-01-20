@@ -22,6 +22,14 @@ export default function OpenedExperienceItem({
   className,
 }: ProjectsPropsWithClassName) {
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
+  
+  // Dynamic date formatting
+  const currentDate = new Date();
+  const formattedDate = currentDate.toLocaleDateString('en-US', { 
+    month: 'long', 
+    year: 'numeric' 
+  });
+
   return (
     <div
       id="project"
@@ -33,8 +41,7 @@ export default function OpenedExperienceItem({
             <h2 className="text-2xl font-bold">Projects</h2>
             <p className="flex items-center text-spotify-grey text-sm gap-1.5">
               <CiGlobe className="text-xl text-spotify-white" />
-              {personalProjects.length} completed projects • Updated December
-              15, 2025
+              {personalProjects.length} completed projects • Updated {formattedDate}
             </p>
           </div>
 
