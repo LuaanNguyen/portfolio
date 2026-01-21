@@ -21,7 +21,7 @@ export const experienceLists: experienceListsProps[] = [
   {
     companyName: "ASU SCAI",
     url: "https://engineering.asu.edu/",
-    positionTitle: "AI/ML Engineer Intern",
+    positionTitle: "Machine Learning Researcher",
     date: "August 2025 - Present",
   },
   {
