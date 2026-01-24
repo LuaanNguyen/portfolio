@@ -7,6 +7,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "d2th3dc33uqqn2.cloudfront.net",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+      },
     ],
   },
 };

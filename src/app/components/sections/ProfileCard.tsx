@@ -17,8 +17,8 @@ export default function ProfileCard() {
             alt="Luan Nguyen"
             width={400}
             height={400}
-            objectFit="none"
-            className="rounded-[25px]"
+            className="rounded-[25px] object-cover"
+            priority
           />
         </BackgroundGradient>
 
