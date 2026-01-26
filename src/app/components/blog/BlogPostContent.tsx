@@ -44,7 +44,7 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
       {/* Article Content */}
       <div className="max-w-none">
         <div
-          className="text-spotify-white/80 leading-relaxed"
+          className="text-base md:text-lg text-spotify-white/80 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </div>
