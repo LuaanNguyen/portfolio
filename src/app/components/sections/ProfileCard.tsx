@@ -38,26 +38,28 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-sm">
-        Welcome to my portfolio! I hope your stay is short and beautiful.
+        Welcome to my portfolio. I hope your stay is short and beautiful.
         <br />
         <br />
         I&apos;m currently working as a software engineer intern on the
         broadcast engineering team at{" "}
-        <a
-          href="https://www.fox.com/"
-          className="text-spotify-green underline"
-        >
+        <a href="https://www.fox.com/" className="text-spotify-green underline">
           FOX.
         </a>{" "}
         <br />
         <br />
         <span>
-        My interests center on <span className="text-spotify-green">systems and AI infrastructure</span>, including distributed services and platforms that enable machine learning to operate in production.{" "}
+          My interests center on{" "}
+          <span className="text-spotify-green">
+            systems and AI infrastructure
+          </span>
+          , including distributed services and platforms that enable machine
+          learning to operate in production.{" "}
         </span>
         <br />
         <br />
         <span>
-            View my latest writings{" "}
+          View my latest writings{" "}
           <a href="/blog" className="text-spotify-green underline">
             here.
           </a>{" "}
