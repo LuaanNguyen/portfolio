@@ -17,7 +17,7 @@ tags:
     "Silicon Valley",
   ]
 category: "Career & Experience"
-excerpt: "I was recently invited to OpenAI's DevDay as part of ChatGPT Lab's benefits, here's a recap of th experience, including meeting awesome people, learning about new technologies, and getting a signature from Co-founder at OpenAI."
+excerpt: "I was recently invited to OpenAI's DevDay as part of ChatGPT Lab, here's a recap of the experience, including meeting awesome people, learning about new technologies, and getting a signature from Greg Brockman."
 ---
 
 ## How I got into the Lab
@@ -40,7 +40,7 @@ After dinner, a few of us decided to explore the city, which was probably not th
 
 ![Dinner at China Live](/blogs/dinner.jpg)
 
-## OpenAI DevDay 2025
+## Event Day
 
 The next morning, my friend and I took a Waymo to the venue. It was my first time riding in one even though I see them all the time in Arizona.
 
