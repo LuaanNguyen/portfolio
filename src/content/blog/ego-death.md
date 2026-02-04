@@ -23,9 +23,7 @@ Jealousy does not sharpen you. It makes you fragile. It pulls attention outward 
 
 To move forward in life, you must experience ego death.
 
-People talk about ego death as something induced, something external. But the ego can undo itself without drugs, without spectacle. Ego death doesn't have to be dramatic. It is a small surrender repeated. Choosing motion over measurement. Choosing depth over display. Allowing yourself to be unfinished without interpreting that as failure. To be ridiculed for not knowing things. To move through challenges without internal resistance.
-
-It means living unapologetically to yourself, immersed in the grand universe without needing to prove your place in it. Not measuring yourself against others. Not keeping score. Just doing the work, learning, growing - without the constant need for validation.
+The ego can undo itself without drugs. Ego death doesn't have to be dramatic. It is a small surrender repeated. Choosing motion over measurement. Choosing depth over display. Allowing yourself to be unfinished without interpreting that as failure. To be ridiculed for not knowing things. To move through challenges without internal resistance, living unapologetically to yourself, immersed in the grand universe without needing to prove your place in it. Not measuring yourself against others. Not keeping score. Just doing the work, learning, growing - without the constant need for validation.
 
 There is relief in that.
 
