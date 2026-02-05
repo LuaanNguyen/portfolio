@@ -18,13 +18,13 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover  transition-transform duration-300"
+            className="object-cover md:transition-transform md:duration-300"
           />
         </div>
 
         {/* Content */}
         <div className="p-6">
-          <h2 className="text-xl font-semibold text-spotify-white mb-3 group-hover:text-spotify-green transition-colors duration-200">
+          <h2 className="text-xl font-semibold text-spotify-white mb-3 md:group-hover:text-spotify-green md:transition-colors md:duration-200">
             {post.title}
           </h2>
 
