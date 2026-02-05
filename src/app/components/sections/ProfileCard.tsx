@@ -38,7 +38,8 @@ function PersonalStatement() {
         </p>
       </div>
       <h4 className="text-sm">
-        Welcome to my portfolio. I hope your stay is short and beautiful.
+        Welcome. I hope your visit is short and beautiful, and that something
+        here stays with you.
         <br />
         <br />
         I&apos;m currently working as a software engineer intern on the

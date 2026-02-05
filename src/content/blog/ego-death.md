@@ -3,7 +3,7 @@ title: "Ego Death"
 description: ""
 date: "Jan 25, 2026"
 readTime: "5 min read"
-image: "/blogs/ego-death.jpg"
+image: "/blogs/ego-death.jpeg"
 slug: "ego-death"
 author: "Luan Nguyen"
 tags: ["Reflection"]
