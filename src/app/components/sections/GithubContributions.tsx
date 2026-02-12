@@ -40,6 +40,11 @@ const GithubContributions: React.FC = () => {
             blockSize={11} // Size of each block
             blockMargin={2} // Margin between blocks
             fontSize={12} // Font size for the text
+            colorScheme="dark"
+            theme={{
+              dark: ['#161616', '#0e4429', '#006d32', '#26a641', '#39d353'],
+              light: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39']
+            }}
           />
         </div>
       )}
