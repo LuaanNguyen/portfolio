@@ -78,7 +78,7 @@ export async function getPostData(
 
     // Use remark to convert markdown into HTML string
     const processedContent = await remark()
-      .use(html, { sanitize: false })
+      .use(html, { sanitize: true })
       .process(matterResult.content);
 
     let contentHtml = processedContent.toString();

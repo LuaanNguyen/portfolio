@@ -1,13 +1,10 @@
 // layout.tsx
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import { Analytics } from "@vercel/analytics/next";
 import { GeneralProvider } from "./contexts/generalContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://luannguyen.net"),
@@ -72,18 +69,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="icon"
-          href="/icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/apple-icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
         {/* Structured data for rich Google search results */}
         <script
           type="application/ld+json"
@@ -109,7 +94,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className="font-sans">
         <GeneralProvider>
           <Navigation />
           {children}

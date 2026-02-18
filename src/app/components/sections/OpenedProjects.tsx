@@ -62,6 +62,7 @@ export default function OpenedExperienceItem({
             target="_blank"
             key={project.title}
             href={project.href}
+            rel="noopener noreferrer"
             className="group"
           >
             <ProjectCard

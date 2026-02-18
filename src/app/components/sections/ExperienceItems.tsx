@@ -74,6 +74,7 @@ function Positions() {
             <a
               href={position.url}
               target="_blank"
+              rel="noopener noreferrer"
               className="text-spotify-green text-sm font-semibold mb-0.5 bg-spotify-green/20 rounded-md transition-all duration-200 w-fit px-2 py-0.5 hover:bg-spotify-green/10 cursor-pointer"
             >
               {position.companyName}

@@ -9,6 +9,7 @@ export default function Footer() {
           href="https://x.com/luaan_ng"
           className="text-spotify-green font-semibold underline"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Luan
         </a>
@@ -20,6 +21,7 @@ export default function Footer() {
           target="_blank"
           href="https://github.com/LuaanNguyen/portfolio"
           className="text-spotify-green font-semibold underline"
+          rel="noopener noreferrer"
         >
           here
         </a>

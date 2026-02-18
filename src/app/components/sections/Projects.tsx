@@ -57,7 +57,11 @@ const projectLists: {
     description:
       "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025 and won Best Self-Hosted Inference.",
     content: (
-      <a target="_blank" href="https://www.brainrotmastervaultovercooked.tech/">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.brainrotmastervaultovercooked.tech/"
+      >
         <Image
           src={`/gallery.jpg`}
           alt="Brainrot Master Vault Website"
@@ -72,7 +76,7 @@ const projectLists: {
     description:
       "Community-driven platform where students can rate and review 100+ college organizations, just like Rate My Professor",
     content: (
-      <a target="_blank" href="https://rateourclub.com">
+      <a target="_blank" rel="noopener noreferrer" href="https://rateourclub.com">
         <Image
           src={`/rateourclub.png`}
           alt="rateourclub.com"
@@ -88,7 +92,11 @@ const projectLists: {
     description:
       "My first hackathon win. Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu. It won Best UI/UX Design at the Codédex Hackathon.",
     content: (
-      <a target="_blank" href="https://board-game-cafe-website.vercel.app/">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://board-game-cafe-website.vercel.app/"
+      >
         <Image
           src={`/codedex-hackathon.jpeg`}
           alt="Sip n Play Cafe Website"
@@ -103,7 +111,11 @@ const projectLists: {
     description:
       "Mine Alliance is a platform that connects Arizona’s mining communities, corporations, and regulators through real-time data and environmental insights.",
     content: (
-      <a target="_blank" href="https://github.com/LuaanNguyen/epics-mern">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/LuaanNguyen/epics-mern"
+      >
         <Image
           src={`/Mine_Alliance.png`}
           alt="Mine Alliance"
