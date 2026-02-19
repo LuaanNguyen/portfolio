@@ -27,12 +27,14 @@ export default function BlogHeader({
       </Link>
 
       <div className="mb-0">
-        <h1 className="text-2xl md:text-4xl font-semibold text-spotify-white mb-4">
-          {title}
-        </h1>
-        {subtitle && (
+        {title ? (
+          <h1 className="text-2xl md:text-4xl font-semibold text-spotify-white mb-4">
+            {title}
+          </h1>
+        ) : null}
+        {subtitle ? (
           <p className="text-lg text-spotify-white/70 max-w-2xl">{subtitle}</p>
-        )}
+        ) : null}
       </div>
     </div>
   );

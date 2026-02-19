@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import { Analytics } from "@vercel/analytics/next";
-import { GeneralProvider } from "./contexts/generalContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
@@ -95,11 +94,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
-        <GeneralProvider>
-          <Navigation />
-          {children}
-          <Analytics />
-        </GeneralProvider>
+        <Navigation />
+        {children}
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>

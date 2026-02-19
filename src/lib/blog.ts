@@ -14,6 +14,10 @@ export interface BlogPost {
   readTime: string;
   image: string;
   slug: string;
+  author?: string;
+  tags?: string[];
+  category?: string;
+  excerpt?: string;
   content?: string;
 }
 
@@ -127,9 +131,15 @@ function applyCustomStyling(html: string): string {
     '<p class="mb-5 leading-[1.7] text-spotify-white/95 text-sm md:text-base lg:text-lg font-light tracking-wide">'
   );
 
-  // Enhanced links with Spotify-style hover effects
+  // Enhanced internal links
   styledHtml = styledHtml.replace(
-    /<a href="([^"]*)">/g,
+    /<a href="(\/[^"]*)">/g,
+    '<a href="$1" class="text-spotify-green hover:text-green-300 font-medium underline decoration-2 underline-offset-4 decoration-spotify-green/60 hover:decoration-green-300 transition-all duration-300 ease-out hover:bg-spotify-green/10 px-1 py-0.5 rounded-sm">'
+  );
+
+  // Enhanced external links
+  styledHtml = styledHtml.replace(
+    /<a href="((?:https?:\/\/|mailto:|tel:)[^"]*)">/g,
     '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-spotify-green hover:text-green-300 font-medium underline decoration-2 underline-offset-4 decoration-spotify-green/60 hover:decoration-green-300 transition-all duration-300 ease-out hover:bg-spotify-green/10 px-1 py-0.5 rounded-sm">'
   );
 

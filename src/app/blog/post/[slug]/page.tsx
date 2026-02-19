@@ -1,6 +1,4 @@
 import React from "react";
-import { FaArrowLeft } from "react-icons/fa";
-import Link from "next/link";
 import Footer from "../../../components/Footer";
 import { notFound } from "next/navigation";
 import { getPostData, getAllPostSlugs } from "../../../../lib/blog";
@@ -8,10 +6,27 @@ import BlogHeader from "../../../components/blog/BlogHeader";
 import BlogPostContent from "../../../components/blog/BlogPostContent";
 import type { Metadata } from "next";
 
+const SITE_URL = "https://luannguyen.net";
+const DEFAULT_AUTHOR = "Luan Nguyen";
+
 interface BlogPostPageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+function toIsoDate(dateString: string): string | undefined {
+  const parsed = new Date(dateString);
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed.toISOString();
+}
+
+function getSeoDescription(post: Awaited<ReturnType<typeof getPostData>>) {
+  if (!post) {
+    return "The requested blog post could not be found.";
+  }
+
+  const plainText = post.content.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  return post.excerpt || post.description || `${plainText.slice(0, 160)}...`;
 }
 
 // Generate dynamic metadata for each blog post
@@ -28,76 +43,56 @@ export async function generateMetadata({
     };
   }
 
-  // Create a clean excerpt from description or content preview
-  const excerpt =
-    post.description ||
-    post.content.replace(/<[^>]*>/g, "").substring(0, 160) + "...";
-
-  // Extract keywords from title and content
+  const excerpt = getSeoDescription(post);
   const titleWords = post.title.split(" ").filter((word) => word.length > 3);
-  const contentKeywords = [
-    "AWS",
-    "Software Engineering",
-    "Internship",
-    "Technology",
-    "Programming",
-  ];
+  const tags = post.tags && post.tags.length > 0 ? post.tags : ["Technology", "Programming"];
+  const author = post.author || DEFAULT_AUTHOR;
+  const publishedTime = toIsoDate(post.date);
+  const canonicalPath = `/blog/post/${post.slug}`;
+  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
 
   return {
-    title: `${post.title} | Luan Nguyen`,
+    title: `${post.title} | ${DEFAULT_AUTHOR}`,
     description: excerpt,
     keywords: [
-      "Luan Nguyen",
+      DEFAULT_AUTHOR,
       "Software Engineer",
       "Blog",
-      "AWS",
-      "Technology",
+      ...tags,
       ...titleWords,
-      ...contentKeywords,
     ],
-    authors: [{ name: "Luan Nguyen", url: "https://luannguyen.net" }],
-    creator: "Luan Nguyen",
-    publisher: "Luan Nguyen",
-
-    // Open Graph metadata for social sharing
+    authors: [{ name: author, url: SITE_URL }],
+    creator: author,
+    publisher: DEFAULT_AUTHOR,
     openGraph: {
       type: "article",
       locale: "en_US",
-      url: `/blog/post/${post.slug}`,
+      url: canonicalUrl,
       title: post.title,
       description: excerpt,
       siteName: "Luan Nguyen's Portfolio",
       images: [
         {
-          url: post.image,
+          url: post.image.startsWith("http") ? post.image : `${SITE_URL}${post.image}`,
           width: 1200,
           height: 630,
           alt: post.title,
           type: "image/jpeg",
         },
       ],
-      authors: ["Luan Nguyen"],
-      publishedTime: new Date(post.date).toISOString(),
-      tags: [
-        "Technology",
-        "Programming",
-        "AWS",
-        "Software Engineering",
-        "Career",
-      ],
+      authors: [author],
+      publishedTime,
+      section: post.category || "Technology",
+      tags,
     },
-
-    // Twitter Card metadata
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: excerpt,
       images: [post.image],
-      creator: "@luannguyen", // Replace with your actual Twitter handle
-      site: "@luannguyen", // Replace with your site's Twitter handle
+      creator: "@luaan_ng",
+      site: "@luaan_ng",
     },
-
-    // Additional metadata
     robots: {
       index: true,
       follow: true,
@@ -109,19 +104,14 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
-
-    // Canonical URL
     alternates: {
-      canonical: `/blog/post/${post.slug}`,
+      canonical: canonicalPath,
     },
-
-    // Article-specific metadata
     other: {
-      "article:author": "Luan Nguyen",
-      "article:published_time": new Date(post.date).toISOString(),
-      "article:modified_time": new Date().toISOString(),
-      "article:section": "Technology",
-      "article:tag": "Software Engineering, AWS, Internship, Technology",
+      "article:author": author,
+      ...(publishedTime ? { "article:published_time": publishedTime } : {}),
+      "article:section": post.category || "Technology",
+      "article:tag": tags.join(", "),
     },
   };
 }
@@ -136,9 +126,43 @@ export default async function IndividualBlogPostPage({
     notFound();
   }
 
+  const publishedTime = toIsoDate(post.date);
+  const articleUrl = `${SITE_URL}/blog/post/${post.slug}`;
+  const articleDescription = getSeoDescription(post);
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: articleDescription,
+    image: post.image.startsWith("http") ? post.image : `${SITE_URL}${post.image}`,
+    datePublished: publishedTime,
+    dateModified: publishedTime,
+    author: {
+      "@type": "Person",
+      name: post.author || DEFAULT_AUTHOR,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Person",
+      name: DEFAULT_AUTHOR,
+      url: SITE_URL,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
+    articleSection: post.category || "Technology",
+    keywords: (post.tags || []).join(", "),
+  };
+
   return (
     <div className="min-h-screen text-white">
       <div className="max-md:mx-4 max-md:mt-2 mx-40 mt-4">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        />
         <BlogHeader title="" backLink="/blog" backText="Back to Writings" />
         <BlogPostContent post={post} />
         <div className="mt-16">

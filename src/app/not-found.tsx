@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { FaCode } from "react-icons/fa6";
 
 export default function NotFound() {
   return (

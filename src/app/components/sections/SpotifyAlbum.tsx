@@ -6,6 +6,7 @@ const SpotifyAlbum: React.FC = () => {
       <iframe
         className="w-full h-full rounded-xl"
         src="https://open.spotify.com/embed/album/3Dx1IXTwJVIMkEzVMSSSrp?utm_source=generator"
+        title="Spotify album player"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
         style={{ height: "100%", width: "100%" }}

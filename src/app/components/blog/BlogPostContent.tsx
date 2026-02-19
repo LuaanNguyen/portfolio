@@ -8,6 +8,11 @@ interface BlogPostContentProps {
 }
 
 export default function BlogPostContent({ post }: BlogPostContentProps) {
+  const parsedDate = new Date(post.date);
+  const isoDate = Number.isNaN(parsedDate.getTime())
+    ? undefined
+    : parsedDate.toISOString();
+
   return (
     <article className="max-w-4xl mx-auto">
       {/* Hero Image */}
@@ -31,11 +36,11 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
         {/* Meta Info */}
         <div className="flex items-center space-x-6 text-sm text-spotify-white/50 pb-6 border-b border-spotify-green/10">
           <div className="flex items-center space-x-2">
-            <FaCalendarAlt className="w-4 h-4" />
-            <span>{post.date}</span>
+            <FaCalendarAlt className="w-4 h-4" aria-hidden="true" />
+            <time dateTime={isoDate}>{post.date}</time>
           </div>
           <div className="flex items-center space-x-2">
-            <FaClock className="w-4 h-4" />
+            <FaClock className="w-4 h-4" aria-hidden="true" />
             <span>{post.readTime}</span>
           </div>
         </div>
