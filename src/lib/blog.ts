@@ -5,6 +5,7 @@ import { remark } from "remark";
 import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "src/content/blog");
+const HIDDEN_POST_SLUGS = new Set(["ego-death", "be-intentional"]);
 
 export interface BlogPost {
   id: string;
@@ -31,6 +32,7 @@ export function getSortedPostsData(): BlogPost[] {
 
   const allPostsData = fileNames
     .filter((name) => name.endsWith(".md"))
+    .filter((name) => !HIDDEN_POST_SLUGS.has(name.replace(/\.md$/, "")))
     .map((fileName) => {
       // Remove ".md" from file name to get id
       const id = fileName.replace(/\.md$/, "");
@@ -62,6 +64,7 @@ export function getAllPostSlugs() {
 
   return fileNames
     .filter((name) => name.endsWith(".md"))
+    .filter((name) => !HIDDEN_POST_SLUGS.has(name.replace(/\.md$/, "")))
     .map((fileName) => {
       return {
         slug: fileName.replace(/\.md$/, ""),
@@ -72,6 +75,10 @@ export function getAllPostSlugs() {
 export async function getPostData(
   slug: string
 ): Promise<BlogPostWithContent | null> {
+  if (HIDDEN_POST_SLUGS.has(slug)) {
+    return null;
+  }
+
   const fullPath = path.join(postsDirectory, `${slug}.md`);
 
   try {
@@ -202,6 +209,10 @@ function applyCustomStyling(html: string): string {
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {
+  if (HIDDEN_POST_SLUGS.has(slug)) {
+    return null;
+  }
+
   const posts = getSortedPostsData();
   return posts.find((post) => post.slug === slug) || null;
 }
