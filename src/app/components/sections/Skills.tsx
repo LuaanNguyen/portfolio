@@ -109,10 +109,10 @@ const skillItems: { quote: ReactNode; name: string }[] = [
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
         width={40}
         height={40}
-        alt="PostreSQL"
+        alt="PostgreSQL"
       />
     ),
-    name: "PostreSQL",
+    name: "PostgreSQL",
   },
   {
     quote: (
@@ -131,10 +131,10 @@ const skillItems: { quote: ReactNode; name: string }[] = [
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
         width={40}
         height={40}
-        alt="MongoDB"
+        alt="MySQL"
       />
     ),
-    name: "MongoDB",
+    name: "MySQL",
   },
   {
     quote: (
