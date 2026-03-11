@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useRef, useState, useMemo } from "react";
-import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -12,33 +11,43 @@ export const StickyScroll = ({
     title: string;
     description: string;
     content?: React.ReactNode | any;
+    backgroundGradient?: string;
+    backgroundColor?: string;
   }[];
   contentClassName?: string;
 }) => {
   const [activeCard, setActiveCard] = React.useState(0);
   const ref = useRef<any>(null);
-  const { scrollYProgress } = useScroll({
-    // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
-    // target: ref
-    container: ref,
-    offset: ["start start", "end start"],
-  });
   const cardLength = content.length;
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const cardsBreakpoints = content.map((_, index) => index / cardLength);
-    const closestBreakpointIndex = cardsBreakpoints.reduce(
-      (acc, breakpoint, index) => {
-        const distance = Math.abs(latest - breakpoint);
-        if (distance < Math.abs(latest - cardsBreakpoints[acc])) {
-          return index;
-        }
-        return acc;
-      },
-      0
-    );
-    setActiveCard(closestBreakpointIndex);
-  });
+  useEffect(() => {
+    const container = ref.current;
+    if (!container || cardLength <= 1) {
+      return;
+    }
+
+    const updateActiveCard = () => {
+      const maxScroll = container.scrollHeight - container.clientHeight;
+      if (maxScroll <= 0) {
+        setActiveCard(0);
+        return;
+      }
+
+      const progress = container.scrollTop / maxScroll;
+      const nextCard = Math.min(
+        cardLength - 1,
+        Math.round(progress * (cardLength - 1))
+      );
+      setActiveCard(nextCard);
+    };
+
+    updateActiveCard();
+    container.addEventListener("scroll", updateActiveCard, { passive: true });
+
+    return () => {
+      container.removeEventListener("scroll", updateActiveCard);
+    };
+  }, [cardLength]);
 
   const backgroundColors = ["#6DC5D1", "#8CCDEB", "#90D26D", "#FDAF7B"];
   const linearGradients = useMemo(
@@ -53,15 +62,21 @@ export const StickyScroll = ({
   const [backgroundGradient, setBackgroundGradient] = useState(
     linearGradients[0]
   );
+  const activeBackgroundColor =
+    content[activeCard]?.backgroundColor ??
+    backgroundColors[activeCard % backgroundColors.length];
 
   useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  }, [activeCard, linearGradients]);
+    setBackgroundGradient(
+      content[activeCard]?.backgroundGradient ??
+        linearGradients[activeCard % linearGradients.length]
+    );
+  }, [activeCard, content, linearGradients]);
 
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+        backgroundColor: activeBackgroundColor,
         opacity: "95%",
       }}
       className="h-[38.5rem] overflow-y-auto flex justify-center relative space-x-4 rounded-md py-6 px-4"
