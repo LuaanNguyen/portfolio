@@ -1,8 +1,6 @@
 import { StickyScroll } from "../ui/sticky-scroll-reveal";
 import Image from "next/image";
-import Link from "next/link";
 import { ProjectsProps } from "../../page";
-import { BackgroundGradient } from "../ui/background-gradient";
 import { GrLinkNext } from "react-icons/gr";
 import { FaArrowDown } from "react-icons/fa6";
 
@@ -53,6 +51,25 @@ const projectLists: {
   content?: React.ReactNode | any;
 }[] = [
   {
+    title: "🧑‍🧑‍🧒‍🧒 ASU Network (asunetwork.com)",
+    description:
+      "A community directory and social graph for ASU builders, engineers, designers, and creators, making it easier to discover people by skill, role, and connections.",
+    content: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://asunetwork.com"
+      >
+        <Image
+          src={`/blogs/asunetwork.png`}
+          alt="ASU Network"
+          width={500}
+          height={300}
+        />
+      </a>
+    ),
+  },
+  {
     title: "Brainrot Master Vault (HackPrinceton 2025 Winner 🏆)",
     description:
       "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025 and won Best Self-Hosted Inference.",
@@ -71,22 +88,26 @@ const projectLists: {
       </a>
     ),
   },
-  {
-    title: " 📚 rateourclub.com",
-    description:
-      "Community-driven platform where students can rate and review 100+ college organizations, just like Rate My Professor",
-    content: (
-      <a target="_blank" rel="noopener noreferrer" href="https://rateourclub.com">
-        <Image
-          src={`/rateourclub.png`}
-          alt="rateourclub.com"
-          loading="lazy"
-          width={500}
-          height={300}
-        />
-      </a>
-    ),
-  },
+  // {
+  //   title: " 📚 rateourclub.com",
+  //   description:
+  //     "Community-driven platform where students can rate and review 100+ college organizations, just like Rate My Professor",
+  //   content: (
+  //     <a
+  //       target="_blank"
+  //       rel="noopener noreferrer"
+  //       href="https://rateourclub.com"
+  //     >
+  //       <Image
+  //         src={`/rateourclub.png`}
+  //         alt="rateourclub.com"
+  //         loading="lazy"
+  //         width={500}
+  //         height={300}
+  //       />
+  //     </a>
+  //   ),
+  // },
   {
     title: "🍵 Sip n Play Café Website (Codédex Hackathon Winner 🏆)",
     description:
@@ -106,24 +127,24 @@ const projectLists: {
       </a>
     ),
   },
-  {
-    title: "Mine Alliance ⛏️ (Principled Innovation Hackathon Winner 🏆)",
-    description:
-      "Mine Alliance is a platform that connects Arizona’s mining communities, corporations, and regulators through real-time data and environmental insights.",
-    content: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/LuaanNguyen/epics-mern"
-      >
-        <Image
-          src={`/Mine_Alliance.png`}
-          alt="Mine Alliance"
-          loading="lazy"
-          width={500}
-          height={300}
-        />
-      </a>
-    ),
-  },
+  // {
+  //   title: "Mine Alliance ⛏️ (Principled Innovation Hackathon Winner 🏆)",
+  //   description:
+  //     "Mine Alliance is a platform that connects Arizona’s mining communities, corporations, and regulators through real-time data and environmental insights.",
+  //   content: (
+  //     <a
+  //       target="_blank"
+  //       rel="noopener noreferrer"
+  //       href="https://github.com/LuaanNguyen/epics-mern"
+  //     >
+  //       <Image
+  //         src={`/Mine_Alliance.png`}
+  //         alt="Mine Alliance"
+  //         loading="lazy"
+  //         width={500}
+  //         height={300}
+  //       />
+  //     </a>
+  //   ),
+  // },
 ];

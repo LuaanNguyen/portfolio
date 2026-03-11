@@ -10,6 +10,23 @@ export type personalProjectType = {
 
 export const personalProjects: personalProjectType = [
   {
+    href: "https://asunetwork.com",
+    imageSrc: `/blogs/asunetwork.png`,
+    imageAlt: "ASU Network",
+    title: "🧑‍🧑‍🧒‍🧒 ASU Network",
+    description:
+      "A community directory and social graph for ASU builders, engineers, designers, and creators. It helps people discover who is building what, search by skill, and navigate connections across the ASU ecosystem.",
+    tech: [
+      "Codex",
+      "Codex App",
+      "Vercel Skills",
+      "NextJS",
+      "TypeScript",
+      "TailwindCSS",
+      "Network Graph",
+    ],
+  },
+  {
     href: "https://github.com/LuaanNguyen/AnglerSpots",
     imageSrc: `/angler_spots.png`,
     imageAlt: "Angler Spots 🎣",
@@ -194,7 +211,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "Neutral Lens 🎥",
     title: "Neutral Lens 🎥 (Social Bias Hackathon Winner 🥇)",
     description:
-      'A browser extension that aims to reduce political bias in Youtube videos. This tool analyzes news content, identifying biased language and categorize it into 3 different types: Generalization, Unfairness, and Stereotypes.',
+      "A browser extension that aims to reduce political bias in Youtube videos. This tool analyzes news content, identifying biased language and categorize it into 3 different types: Generalization, Unfairness, and Stereotypes.",
     tech: [
       "GUS-Net Bias Detection LLM",
       "Google's BERT",
