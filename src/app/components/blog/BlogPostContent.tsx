@@ -14,7 +14,7 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
     : parsedDate.toISOString();
 
   return (
-    <article className="max-w-4xl mx-auto">
+    <article className="max-w-4xl mx-auto lowercase">
       {/* Hero Image */}
       <div className="aspect-video bg-spotify-light-dark relative overflow-hidden rounded-xl mb-8">
         <Image

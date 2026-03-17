@@ -153,14 +153,14 @@ function applyCustomStyling(html: string): string {
   // Enhanced code blocks with Spotify dark theme
   styledHtml = styledHtml.replace(
     /<pre><code>/g,
-    '<div class="my-6"><pre class="bg-black/90 rounded-xl p-6 overflow-x-auto border border-spotify-green/30 shadow-2xl shadow-spotify-green/10 backdrop-blur-sm"><code class="text-sm text-spotify-green leading-[1.6] font-mono tracking-wide">'
+    '<div class="my-6"><pre class="bg-black/90 rounded-xl p-6 overflow-x-auto border border-spotify-green/30 shadow-2xl shadow-spotify-green/10 backdrop-blur-sm normal-case"><code class="text-sm text-spotify-green leading-[1.6] font-mono tracking-wide normal-case">'
   );
   styledHtml = styledHtml.replace(/<\/code><\/pre>/g, "</code></pre></div>");
 
   // Enhanced inline code with better contrast
   styledHtml = styledHtml.replace(
     /<code>/g,
-    '<code class="bg-black/80 px-3 py-1.5 rounded-md text-spotify-green text-sm font-mono border border-spotify-green/30 shadow-sm">'
+    '<code class="bg-black/80 px-3 py-1.5 rounded-md text-spotify-green text-sm font-mono border border-spotify-green/30 shadow-sm normal-case">'
   );
 
   // Enhanced bold text with better visual weight
@@ -203,7 +203,7 @@ function applyCustomStyling(html: string): string {
   );
 
   // Add overall container styling for better content flow
-  styledHtml = `<div class="prose-spotify max-w-none">${styledHtml}</div>`;
+  styledHtml = `<div class="prose-spotify max-w-none lowercase">${styledHtml}</div>`;
 
   return styledHtml;
 }

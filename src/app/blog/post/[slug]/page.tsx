@@ -157,7 +157,7 @@ export default async function IndividualBlogPostPage({
   };
 
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen text-white lowercase">
       <div className="max-md:mx-4 max-md:mt-2 mx-40 mt-4">
         <script
           type="application/ld+json"
