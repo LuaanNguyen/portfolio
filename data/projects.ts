@@ -189,22 +189,22 @@ export const personalProjects: personalProjectType = [
       "Webhooks",
     ],
   },
-  {
-    href: "https://voxel51.codestacx.com/",
-    imageSrc: `/bulbasaur.png`,
-    imageAlt: "🌱 Bulbasaur",
-    title: "🌱 Bulbasaur",
-    description:
-      "Bulbasaur is an AI-driven platform for real-time wildfire detection, leveraging satellite imagery and environmental data. Built with TensorFlow, PyTorch, Flask, and React, it visualizes wildfire risks through a sleek Mapbox-powered interface.",
-    tech: [
-      "TensorFlow",
-      "PyTorch",
-      "ReactJS",
-      "Flask",
-      "Mapbox API",
-      "TailwindCSS",
-    ],
-  },
+  // {
+  //   href: "https://voxel51.codestacx.com/",
+  //   imageSrc: `/bulbasaur.png`,
+  //   imageAlt: "🌱 Bulbasaur",
+  //   title: "🌱 Bulbasaur",
+  //   description:
+  //     "Bulbasaur is an AI-driven platform for real-time wildfire detection, leveraging satellite imagery and environmental data. Built with TensorFlow, PyTorch, Flask, and React, it visualizes wildfire risks through a sleek Mapbox-powered interface.",
+  //   tech: [
+  //     "TensorFlow",
+  //     "PyTorch",
+  //     "ReactJS",
+  //     "Flask",
+  //     "Mapbox API",
+  //     "TailwindCSS",
+  //   ],
+  // },
   {
     href: "https://github.com/LuaanNguyen/neutral-lens",
     imageSrc: `/Neutral_Lens.png`,
@@ -241,24 +241,24 @@ export const personalProjects: personalProjectType = [
       "OpenAI",
     ],
   },
-  {
-    href: "https://github.com/LuaanNguyen/static-site-generator",
-    imageSrc: `/staticsitegenerator_infrastructure.jpg`,
-    imageAlt: "Static Site Generator",
-    title: "Static Site Generator ♺",
-    description:
-      "Static Site Generator is a Python-based tool that converts raw content—like Markdown and images—into fully rendered static websites using HTML and CSS. Designed with object-oriented principles for easy extensibility.",
-    tech: ["Python", "OOP", "HTML/CSS"],
-  },
-  {
-    href: "https://github.com/LuaanNguyen/asteroids",
-    imageSrc: `/asteroids.png`,
-    imageAlt: "Asteroids Game",
-    title: "Asteroids Game ☄️",
-    description:
-      "Asteroids Game is a simplified remake of the classic arcade game, built using Pygame to strengthen object-oriented programming concepts. It marked my first hands-on experience with game development in Python.",
-    tech: ["Pygame", "Python", "OOP"],
-  },
+  // {
+  //   href: "https://github.com/LuaanNguyen/static-site-generator",
+  //   imageSrc: `/staticsitegenerator_infrastructure.jpg`,
+  //   imageAlt: "Static Site Generator",
+  //   title: "Static Site Generator ♺",
+  //   description:
+  //     "Static Site Generator is a Python-based tool that converts raw content—like Markdown and images—into fully rendered static websites using HTML and CSS. Designed with object-oriented principles for easy extensibility.",
+  //   tech: ["Python", "OOP", "HTML/CSS"],
+  // },
+  // {
+  //   href: "https://github.com/LuaanNguyen/asteroids",
+  //   imageSrc: `/asteroids.png`,
+  //   imageAlt: "Asteroids Game",
+  //   title: "Asteroids Game ☄️",
+  //   description:
+  //     "Asteroids Game is a simplified remake of the classic arcade game, built using Pygame to strengthen object-oriented programming concepts. It marked my first hands-on experience with game development in Python.",
+  //   tech: ["Pygame", "Python", "OOP"],
+  // },
   {
     href: "https://thesoda.io/",
     imageSrc: `/thesodaio.png`,
@@ -322,24 +322,24 @@ export const personalProjects: personalProjectType = [
       "Official site for Ethical Spectacle, highlighting ongoing projects, publications, and member leaderboards.",
     tech: ["NEXTJS", "JavaScript", "Python", "Flask", "MySQL", "TailwindCSS"],
   },
-  {
-    href: "https://www.unionize101.org",
-    imageSrc: `/unionize101.png`,
-    imageAlt: "unionize101.org ",
-    title: "unionize101.org 💻",
-    description:
-      "unionize101.org is an educational platform designed to guide workers and union leaders through the process of starting a union. Built by a team of 6 interns during my time at Pinear LLC, the site combines Next.js, GhostCMS, and Docker to deliver a polished, SEO-optimized experience.",
-    tech: [
-      "NEXTJS",
-      "TypeScript",
-      "GhostCMS",
-      "Docker",
-      "Figma",
-      "TailwindCSS",
-      "Google Analytics",
-      "SEO",
-    ],
-  },
+  // {
+  //   href: "https://www.unionize101.org",
+  //   imageSrc: `/unionize101.png`,
+  //   imageAlt: "unionize101.org ",
+  //   title: "unionize101.org 💻",
+  //   description:
+  //     "unionize101.org is an educational platform designed to guide workers and union leaders through the process of starting a union. Built by a team of 6 interns during my time at Pinear LLC, the site combines Next.js, GhostCMS, and Docker to deliver a polished, SEO-optimized experience.",
+  //   tech: [
+  //     "NEXTJS",
+  //     "TypeScript",
+  //     "GhostCMS",
+  //     "Docker",
+  //     "Figma",
+  //     "TailwindCSS",
+  //     "Google Analytics",
+  //     "SEO",
+  //   ],
+  // },
   {
     href: "https://github.com/LuaanNguyen/HelpSystem",
     imageSrc: `/helpsystem.jpg`,
