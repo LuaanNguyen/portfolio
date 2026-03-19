@@ -116,19 +116,19 @@ function applyCustomStyling(html: string): string {
   // Style headers with enhanced Spotify-like design and better spacing
   styledHtml = styledHtml.replace(
     /<h1>/g,
-    '<div class="pt-8 pb-2"><h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight leading-tight bg-gradient-to-r from-spotify-green to-green-400 bg-clip-text text-transparent">'
+    '<div class="pt-6 first:pt-0 pb-2"><h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight leading-tight bg-gradient-to-r from-spotify-green to-green-400 bg-clip-text text-transparent">'
   );
   styledHtml = styledHtml.replace(/<\/h1>/g, "</h1></div>");
 
   styledHtml = styledHtml.replace(
     /<h2>/g,
-    '<div class="pt-8 pb-1"><h2 class="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight border-l-4 border-spotify-green pl-4 bg-spotify-light-dark/30 py-3 rounded-r-lg">'
+    '<div class="pt-4 first:pt-0 pb-1"><h2 class="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight border-l-4 border-spotify-green pl-4 bg-spotify-light-dark/30 py-2 rounded-r-lg">'
   );
   styledHtml = styledHtml.replace(/<\/h2>/g, "</h2></div>");
 
   styledHtml = styledHtml.replace(
     /<h3>/g,
-    '<div class="pt-6 pb-1"><h3 class="text-xl md:text-2xl font-semibold text-spotify-white mb-3 tracking-tight border-l-2 border-spotify-green/60 pl-3">'
+    '<div class="pt-4 first:pt-0 pb-1"><h3 class="text-xl md:text-2xl font-semibold text-spotify-white mb-2 tracking-tight border-l-2 border-spotify-green/60 pl-3">'
   );
   styledHtml = styledHtml.replace(/<\/h3>/g, "</h3></div>");
 

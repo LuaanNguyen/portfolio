@@ -75,15 +75,17 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
       </div>
 
       {/* Article Header */}
-      <header className="mb-8">
+      <header className="mb-6">
         <h1 className="text-4xl md:text-5xl font-bold text-spotify-white mb-4">
           {post.title}
         </h1>
 
-        <p className="text-lg text-spotify-white/70 mb-6">{post.description}</p>
+        {post.description ? (
+          <p className="text-lg text-spotify-white/70 mb-6">{post.description}</p>
+        ) : null}
 
         {/* Meta Info */}
-        <div className="flex items-center space-x-6 text-sm text-spotify-white/50 pb-6 border-b border-spotify-green/10">
+        <div className="flex items-center space-x-6 text-sm text-spotify-white/50 pb-4 border-b border-spotify-green/10">
           <div className="flex items-center space-x-2">
             <FaCalendarAlt className="w-4 h-4" aria-hidden="true" />
             <time dateTime={isoDate}>{post.date}</time>
@@ -103,19 +105,19 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
               return (
                 <figure
                   key={`${segment.src}-${index}`}
-                  className="my-8 mx-auto max-w-2xl group"
+                  className="my-6 mx-auto max-w-2xl"
                 >
-                  <div className="relative overflow-hidden rounded-xl shadow-2xl shadow-black/30 hover:shadow-spotify-green/20 transition-all duration-500">
+                  <div className="relative overflow-hidden rounded-xl shadow-2xl shadow-black/30">
                     <Image
                       src={segment.src}
                       alt={segment.alt}
                       width={1200}
                       height={800}
                       sizes="(max-width: 768px) 100vw, 896px"
-                      className="max-w-full h-auto w-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                      className="max-w-full h-auto w-full"
                     />
                   </div>
-                  <figcaption className="text-center text-sm text-spotify-white/70 mt-4 italic font-medium tracking-wide bg-spotify-light-dark/20 rounded-lg py-2 px-4 mx-auto max-w-md">
+                  <figcaption className="text-center text-sm text-spotify-white/70 mt-2 italic font-medium tracking-wide bg-spotify-light-dark/20 rounded-lg py-2 px-4 mx-auto max-w-md">
                     {segment.caption}
                   </figcaption>
                 </figure>
