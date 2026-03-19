@@ -7,11 +7,58 @@ interface BlogPostContentProps {
   post: BlogPostWithContent;
 }
 
+type ContentSegment =
+  | { type: "html"; value: string }
+  | {
+      type: "image";
+      src: string;
+      alt: string;
+      caption: string;
+    };
+
+function parseContentSegments(content: string): ContentSegment[] {
+  const pattern =
+    /<blog-image data-src="([^"]*)" data-alt="([^"]*)" data-caption="([^"]*)"><\/blog-image>/g;
+  const segments: ContentSegment[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = pattern.exec(content)) !== null) {
+    const [fullMatch, src, alt, caption] = match;
+
+    if (match.index > lastIndex) {
+      segments.push({
+        type: "html",
+        value: content.slice(lastIndex, match.index),
+      });
+    }
+
+    segments.push({
+      type: "image",
+      src,
+      alt,
+      caption,
+    });
+
+    lastIndex = match.index + fullMatch.length;
+  }
+
+  if (lastIndex < content.length) {
+    segments.push({
+      type: "html",
+      value: content.slice(lastIndex),
+    });
+  }
+
+  return segments;
+}
+
 export default function BlogPostContent({ post }: BlogPostContentProps) {
   const parsedDate = new Date(post.date);
   const isoDate = Number.isNaN(parsedDate.getTime())
     ? undefined
     : parsedDate.toISOString();
+  const contentSegments = parseContentSegments(post.content);
 
   return (
     <article className="max-w-4xl mx-auto lowercase">
@@ -21,7 +68,9 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
           src={post.image}
           alt={post.title}
           fill
+          sizes="(max-width: 768px) 100vw, 896px"
           className="object-cover"
+          priority
         />
       </div>
 
@@ -48,10 +97,39 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
 
       {/* Article Content */}
       <div className="max-w-none">
-        <div
-          className="text-base md:text-lg text-spotify-white/80 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+        <div className="text-base md:text-lg text-spotify-white/80 leading-relaxed">
+          {contentSegments.map((segment, index) => {
+            if (segment.type === "image") {
+              return (
+                <figure
+                  key={`${segment.src}-${index}`}
+                  className="my-8 mx-auto max-w-2xl group"
+                >
+                  <div className="relative overflow-hidden rounded-xl shadow-2xl shadow-black/30 hover:shadow-spotify-green/20 transition-all duration-500">
+                    <Image
+                      src={segment.src}
+                      alt={segment.alt}
+                      width={1200}
+                      height={800}
+                      sizes="(max-width: 768px) 100vw, 896px"
+                      className="max-w-full h-auto w-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    />
+                  </div>
+                  <figcaption className="text-center text-sm text-spotify-white/70 mt-4 italic font-medium tracking-wide bg-spotify-light-dark/20 rounded-lg py-2 px-4 mx-auto max-w-md">
+                    {segment.caption}
+                  </figcaption>
+                </figure>
+              );
+            }
+
+            return (
+              <div
+                key={`html-${index}`}
+                dangerouslySetInnerHTML={{ __html: segment.value }}
+              />
+            );
+          })}
+        </div>
       </div>
     </article>
   );

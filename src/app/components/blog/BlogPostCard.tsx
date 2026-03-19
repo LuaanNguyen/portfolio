@@ -18,6 +18,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
             src={post.image}
             alt={post.title}
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover md:transition-transform md:duration-300"
           />
         </div>

@@ -17,6 +17,7 @@ export default function ProfileCard() {
             alt="Luan Nguyen"
             width={400}
             height={400}
+            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 400px"
             className="rounded-[25px] object-cover"
             priority
           />

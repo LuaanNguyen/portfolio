@@ -98,6 +98,7 @@ function ProjectCard({
           alt={project.imageAlt}
           width={400}
           height={400}
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           className="rounded-lg w-full aspect-video object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 sm:group-hover:opacity-100 transition-opacity bg-black/20">

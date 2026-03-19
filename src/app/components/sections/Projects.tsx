@@ -65,6 +65,7 @@ const projectLists: {
           alt="ASU Network"
           width={500}
           height={300}
+          sizes="500px"
         />
       </a>
     ),
@@ -84,6 +85,7 @@ const projectLists: {
           alt="Brainrot Master Vault Website"
           width={500}
           height={500}
+          sizes="500px"
         />
       </a>
     ),
@@ -123,6 +125,7 @@ const projectLists: {
           alt="Sip n Play Cafe Website"
           width={500}
           height={500}
+          sizes="500px"
         />
       </a>
     ),

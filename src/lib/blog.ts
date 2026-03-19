@@ -199,7 +199,7 @@ function applyCustomStyling(html: string): string {
   // Enhanced images with better styling and captions
   styledHtml = styledHtml.replace(
     /<img src="([^"]*)" alt="([^"]*)"( ?\/?)?>/g,
-    '<figure class="my-8 mx-auto max-w-2xl group"><div class="relative overflow-hidden rounded-xl shadow-2xl shadow-black/30 hover:shadow-spotify-green/20 transition-all duration-500"><img src="$1" alt="$2" class="max-w-full h-auto transform group-hover:scale-105 transition-transform duration-700 ease-out" loading="lazy" /></div><figcaption class="text-center text-sm text-spotify-white/70 mt-4 italic font-medium tracking-wide bg-spotify-light-dark/20 rounded-lg py-2 px-4 mx-auto max-w-md">$2</figcaption></figure>'
+    '<blog-image data-src="$1" data-alt="$2" data-caption="$2"></blog-image>'
   );
 
   // Add overall container styling for better content flow
