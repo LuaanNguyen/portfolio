@@ -28,24 +28,12 @@ export const experienceLists: experienceListsProps[] = [
     companyName: "Wireless Intelligence Lab",
     url: "https://www.wi-lab.net",
     positionTitle: "Software Engineer",
-    date: "September 2024 - January 2025",
-  },
-  {
-    companyName: "Ethical Spectacle Research",
-    url: "https://www.linkedin.com/company/ethicalspectacle/",
-    positionTitle: "Developer Relations Intern",
-    date: "August 2024 - December 2024",
+    date: "Sep 2024 - May 2025",
   },
   {
     companyName: "ASU Enterprise Technology",
     url: "https://tech.asu.edu",
     positionTitle: "IT Consultant",
     date: "May 2024 – August 2024",
-  },
-  {
-    companyName: "Pinear",
-    url: "https://www.linkedin.com/company/pinearllc/",
-    positionTitle: "Software Engineer Intern",
-    date: "March 2024 - May 2024",
   },
 ];
