@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     siteName: "Luan Nguyen's Portfolio",
     images: [
       {
-        url: `/luan_aws.png`,
-        width: 1200,
-        height: 630,
+        url: "/portfolio_highres.png",
+        width: 1920,
+        height: 1440,
         alt: "Luan Nguyen Portfolio",
       },
     ],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Luan Nguyen | Software Engineer",
     description:
       "Software Engineer",
-    images: [`/luan_aws.png`],
+    images: ["/portfolio_highres.png"],
   },
   robots: {
     index: true,
@@ -77,7 +77,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "Luan Nguyen",
               url: "https://luannguyen.net",
-              image: "https://luannguyen.net/luan_aws.png",
+              image: "https://luannguyen.net/portfolio_highres.png",
               sameAs: [
                 "https://www.linkedin.com/in/luanthiennguyen",
                 "https://github.com/LuaanNguyen",
