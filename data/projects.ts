@@ -13,7 +13,7 @@ export const personalProjects: personalProjectType = [
     href: "https://asunetwork.com",
     imageSrc: `/blogs/asunetwork.png`,
     imageAlt: "ASU Network",
-    title: "🧑‍🧑‍🧒‍🧒 ASU Network",
+    title: "🌎 ASU Network",
     description:
       "A community directory and social graph for ASU builders, engineers, designers, and creators. It helps people discover who is building what, search by skill, and navigate connections across the ASU ecosystem.",
     tech: [
@@ -23,7 +23,6 @@ export const personalProjects: personalProjectType = [
       "NextJS",
       "TypeScript",
       "TailwindCSS",
-      "Network Graph",
     ],
   },
   {

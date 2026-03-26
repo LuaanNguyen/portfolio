@@ -51,7 +51,7 @@ const projectLists: {
   content?: React.ReactNode | any;
 }[] = [
   {
-    title: "🧑‍🧑‍🧒‍🧒 ASU Network (asunetwork.com)",
+    title: "🌎 ASU Network",
     description:
       "A community directory and social graph for ASU builders, engineers, designers, and creators, making it easier to discover people by skill, role, and connections.",
     content: (
