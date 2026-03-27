@@ -139,7 +139,7 @@ function ProjectCard({
         <div className="flex gap-1.5 flex-wrap">
           {project.tech.map((el) => (
             <div
-              className="text-[10px] bg-spotify-green px-2 py-1 rounded-md"
+              className="text-[10px] bg-[#2b2b2b] text-spotify-light-gray px-2 py-1 rounded-md"
               key={el}
             >
               {el}
