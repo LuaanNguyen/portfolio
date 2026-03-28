@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, stagger, useAnimate, useInView } from "framer-motion";
+import { motion, stagger, useAnimate, useInView, useReducedMotion } from "framer-motion";
 import { useEffect } from "react";
 
 export const TypewriterEffect = ({
@@ -26,6 +26,7 @@ export const TypewriterEffect = ({
 
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope);
+  const shouldReduceMotion = useReducedMotion();
   useEffect(() => {
     if (isInView) {
       animate(
@@ -35,14 +36,12 @@ export const TypewriterEffect = ({
           opacity: 1,
           width: "fit-content",
         },
-        {
-          duration: 0.3,
-          delay: stagger(0.1),
-          ease: "easeInOut",
-        }
+        shouldReduceMotion
+          ? { duration: 0 }
+          : { duration: 0.3, delay: stagger(0.1), ease: "easeInOut" }
       );
     }
-  }, [isInView, animate]);
+  }, [isInView, animate, shouldReduceMotion]);
 
   const renderWords = () => {
     return (
