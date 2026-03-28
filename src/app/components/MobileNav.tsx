@@ -1,7 +1,7 @@
 "use client";
 
 import SocialLinks from "./SocialLinks";
-import { LuNewspaper } from "react-icons/lu";
+import { LuNewspaper, LuFileSearch } from "react-icons/lu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -71,6 +71,23 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
           >
             <LuNewspaper className="text-xl" aria-hidden="true" />
             <span>Blog</span>
+          </Link>
+        </li>
+        <li
+          className="hover:bg-spotify-green/10 rounded-lg transition-all duration-200 ease-in-out hover:translate-x-2 animate-in slide-in-from-left-2 border-spotify-green/10"
+          style={{
+            animationDelay: "0ms",
+            animationFillMode: "both",
+          }}
+        >
+          <Link
+            href="/resume-review"
+            className="flex items-center space-x-3 p-4 text-spotify-white text-lg font-semibold hover:text-spotify-green transition-colors duration-200"
+            onClick={handleMobile}
+            aria-label="Book a resume review session"
+          >
+            <LuFileSearch className="text-xl" aria-hidden="true" />
+            <span>Resume Review</span>
           </Link>
         </li>
       </ul>

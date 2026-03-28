@@ -6,7 +6,7 @@ import { ReactNode } from "react";
 import { PiLineVerticalThin } from "react-icons/pi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import { LuNewspaper } from "react-icons/lu";
+import { LuNewspaper, LuFileSearch } from "react-icons/lu";
 import SocialLinks from "./SocialLinks";
 import MobileNav from "./MobileNav";
 import { TypewriterEffect } from "./ui/type-writer-effect";
@@ -64,6 +64,14 @@ export default function Navigation(): ReactNode {
               aria-label="View blog posts"
             >
               <LuNewspaper className="" />
+            </Link>
+            <PiLineVerticalThin className="text-spotify-gray text-4xl" />
+            <Link
+              href="/resume-review"
+              className="text-3xl hover:text-spotify-green transition-colors duration-200"
+              aria-label="Book a resume review session"
+            >
+              <LuFileSearch className="" />
             </Link>
 
           </section>
