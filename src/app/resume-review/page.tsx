@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Footer from "../components/Footer";
 import BlogHeader from "../components/blog/BlogHeader";
-import { FaArrowRight, FaHeart } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa6";
 import { FiCheckCircle } from "react-icons/fi";
-import { BsStars } from "react-icons/bs";
+import { SiEbay } from "react-icons/si";
+import Image from "next/image";
 
 // ─── Replace these before going live ─────────────────────────────────────────
 const BOOKING_URL = "https://cal.com/placeholder"; // TODO: replace with your booking link
@@ -37,15 +37,9 @@ export const metadata: Metadata = {
   },
 };
 
-// ─── CTA Buttons ─────────────────────────────────────────────────────────────
+// ─── Buttons ──────────────────────────────────────────────────────────────────
 
-function PrimaryButton({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
+function PrimaryButton({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <a
       href={href}
@@ -58,13 +52,7 @@ function PrimaryButton({
   );
 }
 
-function SecondaryButton({
-  href,
-  children,
-}: {
-  href: string;
-  children: React.ReactNode;
-}) {
+function SecondaryButton({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <a
       href={href}
@@ -84,24 +72,18 @@ function Hero() {
     <section className="py-12 md:py-16">
       <div className="max-w-2xl">
         <p className="text-spotify-green text-sm font-semibold tracking-widest uppercase mb-4">
-          1:1 resume review
+          1:1 resume review · 30 min
         </p>
         <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5 normal-case">
           Get honest feedback on your SWE internship resume.
         </h1>
         <p className="text-spotify-light-gray text-base md:text-lg leading-relaxed mb-8 max-w-xl">
-          practical, line-by-line resume feedback for students and early-career
-          candidates. sessions are pay-what-you-can, and proceeds go directly to
-          a cancer-related fundraiser through gofundme.
+          practical, line-by-line feedback for students targeting software engineering internships.
+          pay-what-you-can — proceeds go to a cancer-related fundraiser on gofundme.
         </p>
-        <div className="flex flex-wrap gap-3">
-          <PrimaryButton href={BOOKING_URL}>
-            book a session <FaArrowRight className="text-xs" />
-          </PrimaryButton>
-          <SecondaryButton href={GOFUNDME_URL}>
-            <FaHeart className="text-xs text-spotify-green" /> support the fundraiser
-          </SecondaryButton>
-        </div>
+        <PrimaryButton href={BOOKING_URL}>
+          <FaHeart className="text-xs" /> book a session
+        </PrimaryButton>
       </div>
     </section>
   );
@@ -109,7 +91,32 @@ function Hero() {
 
 // ─── Credibility ─────────────────────────────────────────────────────────────
 
-const companies = ["amazon web services", "fox corporation", "ebay"];
+const companies = [
+  {
+    label: "amazon web services",
+    logo: (
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+        alt="Amazon Web Services"
+        width={40}
+        height={40}
+        className="object-contain"
+      />
+    ),
+  },
+  {
+    label: "fox corporation",
+    logo: (
+      <span className="text-white font-black text-xl tracking-tighter leading-none" aria-hidden="true">
+        FOX
+      </span>
+    ),
+  },
+  {
+    label: "ebay",
+    logo: <SiEbay className="text-3xl text-[#E53238]" aria-hidden="true" />,
+  },
+];
 
 function Credibility() {
   return (
@@ -118,38 +125,30 @@ function Credibility() {
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <div className="space-y-4 text-spotify-light-gray text-sm leading-relaxed">
           <p>
-            i&apos;ve been through the internship grind — submitted over 1,000
-            applications, survived the rejection cycles, and eventually landed
-            roles at companies i genuinely wanted to work at.
+            i&apos;ve been through the internship grind — 1,000+ applications, plenty of rejections,
+            and eventually roles at companies i genuinely wanted. i&apos;m not a recruiter or coach,
+            just a cs student who figured out what works and wants to help others do the same.
           </p>
           <p>
-            i&apos;m not a recruiter or a career coach. i&apos;m a cs student who figured
-            out what works through a lot of trial, error, and honest feedback
-            from people who helped me. this is me paying that forward.
-          </p>
-          <p>
-            i&apos;ve reviewed resumes informally for friends and peers, and i know
-            what makes a candidate look credible vs. forgettable on paper —
-            especially for swe internship roles at mid-size to large companies.
+            i&apos;ve reviewed resumes informally for friends and know what makes a candidate look
+            credible vs. forgettable on paper, especially for swe roles at mid-to-large companies.
           </p>
         </div>
-        <div className="space-y-3">
+        <div>
           <p className="text-spotify-light-gray text-xs uppercase tracking-widest mb-4">
-            internship experience at
+            interned at
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-3">
             {companies.map((c) => (
-              <span
-                key={c}
-                className="bg-spotify-light-dark border border-white/10 text-spotify-white text-xs font-medium px-4 py-2 rounded-full"
+              <div
+                key={c.label}
+                aria-label={c.label}
+                className="flex items-center justify-center bg-spotify-light-dark border border-white/10 rounded-xl px-5 py-3 min-w-[80px] h-14"
               >
-                {c}
-              </span>
+                {c.logo}
+              </div>
             ))}
           </div>
-          <p className="text-spotify-light-gray/60 text-xs pt-2">
-            + research and ai lab experience at arizona state university
-          </p>
         </div>
       </div>
     </section>
@@ -161,31 +160,27 @@ function Credibility() {
 const offerings = [
   {
     title: "line-by-line feedback",
-    description:
-      "we go through every bullet, section, and word on your resume together. nothing gets skipped.",
+    description: "every bullet, section, and word — nothing skipped.",
   },
   {
     title: "stronger bullets",
-    description:
-      "i&apos;ll help you rewrite weak or vague bullets into action-driven, quantifiable impact statements.",
+    description: "rewrite weak bullets into action-driven, quantifiable statements.",
   },
   {
     title: "internship positioning",
-    description:
-      "advice on how to frame your experience, projects, and skills specifically for swe intern roles.",
+    description: "frame your experience and projects for swe intern roles specifically.",
   },
   {
     title: "honest assessment",
-    description:
-      "i&apos;ll tell you what&apos;s working and what isn&apos;t — including the things most people are too polite to say.",
+    description: "what&apos;s working, what isn&apos;t — including the things people don&apos;t usually say.",
   },
 ];
 
 function WhatYouGet() {
   return (
     <section className="py-10 border-t border-white/10">
-      <h2 className="text-xl font-semibold text-white mb-8">what you get</h2>
-      <div className="grid sm:grid-cols-2 gap-4">
+      <h2 className="text-xl font-semibold text-white mb-6">what you get</h2>
+      <div className="grid sm:grid-cols-2 gap-3">
         {offerings.map((item) => (
           <div
             key={item.title}
@@ -194,60 +189,11 @@ function WhatYouGet() {
             <div className="flex items-start gap-3">
               <FiCheckCircle className="text-spotify-green text-lg mt-0.5 shrink-0" />
               <div>
-                <h3 className="text-white font-semibold text-sm mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-spotify-light-gray text-sm leading-relaxed">
-                  {item.description}
-                </p>
+                <h3 className="text-white font-semibold text-sm mb-1">{item.title}</h3>
+                <p className="text-spotify-light-gray text-sm leading-relaxed"
+                   dangerouslySetInnerHTML={{ __html: item.description }} />
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-// ─── How It Works ─────────────────────────────────────────────────────────────
-
-const steps = [
-  {
-    number: "01",
-    title: "book a slot",
-    description:
-      "pick a time that works for you through the booking link. sessions are 30–45 minutes.",
-  },
-  {
-    number: "02",
-    title: "send your resume",
-    description:
-      "share a pdf of your current resume before the session so i can review it in advance.",
-  },
-  {
-    number: "03",
-    title: "get feedback",
-    description:
-      "we meet, go through your resume together, and you leave with specific, actionable notes.",
-  },
-];
-
-function HowItWorks() {
-  return (
-    <section className="py-10 border-t border-white/10">
-      <h2 className="text-xl font-semibold text-white mb-8">how it works</h2>
-      <div className="grid sm:grid-cols-3 gap-4">
-        {steps.map((step) => (
-          <div key={step.number} className="bg-spotify-light-dark rounded-xl p-5 border border-white/5">
-            <p className="text-spotify-green font-bold text-2xl mb-3 font-mono">
-              {step.number}
-            </p>
-            <h3 className="text-white font-semibold text-sm mb-2">
-              {step.title}
-            </h3>
-            <p className="text-spotify-light-gray text-sm leading-relaxed">
-              {step.description}
-            </p>
           </div>
         ))}
       </div>
@@ -261,29 +207,20 @@ function Fundraiser() {
   return (
     <section className="py-10 border-t border-white/10">
       <div className="bg-spotify-light-dark rounded-xl p-6 md:p-8 border border-spotify-green/20">
-        <div className="flex items-center gap-2 mb-4">
-          <FaHeart className="text-spotify-green text-lg" />
+        <div className="flex items-center gap-2 mb-3">
+          <FaHeart className="text-spotify-green" />
           <p className="text-spotify-green text-sm font-semibold uppercase tracking-widest">
             the fundraiser
           </p>
         </div>
-        <h2 className="text-xl md:text-2xl font-bold text-white mb-4 normal-case">
+        <h2 className="text-xl font-bold text-white mb-3 normal-case">
           this is about more than resumes.
         </h2>
-        <div className="space-y-3 text-spotify-light-gray text-sm leading-relaxed max-w-2xl mb-6">
-          <p>
-            all proceeds from these sessions go directly to a cancer-related
-            fundraiser through gofundme. i wanted to find a way to do something
-            useful with my time while raising money for a cause that is close to
-            my heart.
-          </p>
-          <p>
-            i&apos;m not charging a fixed rate. if you can contribute something for
-            the session, please donate what feels right to the gofundme link
-            below. if you genuinely can&apos;t afford to donate, reach out anyway —
-            i&apos;ll still do the session.
-          </p>
-        </div>
+        <p className="text-spotify-light-gray text-sm leading-relaxed max-w-2xl mb-6">
+          all proceeds go directly to a cancer-related fundraiser through gofundme —
+          a cause that&apos;s close to my heart. there&apos;s no fixed rate. donate what feels right.
+          if you genuinely can&apos;t, reach out anyway — i&apos;ll still do the session.
+        </p>
         <SecondaryButton href={GOFUNDME_URL}>
           <FaHeart className="text-xs" /> donate to the fundraiser
         </SecondaryButton>
@@ -297,39 +234,32 @@ function Fundraiser() {
 const faqs = [
   {
     q: "who is this for?",
-    a: "students and early-career candidates applying for software engineering internships or new grad roles. if you have less than 2 years of industry experience, this is probably useful for you.",
-  },
-  {
-    q: "what kind of resumes can you help with?",
-    a: "cs, software engineering, and adjacent technical fields. i&apos;m most useful for people targeting intern or new grad roles at tech companies — startups, mid-size, or large.",
+    a: "students and early-career candidates applying for swe internships or new grad roles.",
   },
   {
     q: "will this guarantee me an interview?",
-    a: "no. i&apos;ll help you put your best resume forward, but hiring decisions involve a lot of factors i can&apos;t control. what i can do is help make sure your resume isn&apos;t the reason you&apos;re getting filtered out.",
+    a: "no. i&apos;ll help you put your best foot forward, but hiring decisions involve factors i can&apos;t control. what i can do is make sure your resume isn&apos;t the reason you&apos;re getting filtered out.",
   },
   {
     q: "how does the donation work?",
-    a: "after booking a session, please make a donation of whatever amount feels right directly to the gofundme link. there's no enforced minimum — this is pay-what-you-can. 100% of donations go to the fundraiser.",
+    a: "after booking, donate whatever feels right directly to the gofundme. no enforced minimum — 100% goes to the fundraiser.",
   },
   {
     q: "what if i can&apos;t afford to donate?",
-    a: "reach out to me directly. i&apos;ll still do the session. the fundraiser matters to me, but so does actually helping people who need it.",
+    a: "reach out to me directly. i&apos;ll still do the session.",
   },
 ];
 
 function FAQ() {
   return (
     <section className="py-10 border-t border-white/10">
-      <h2 className="text-xl font-semibold text-white mb-8">
-        common questions
-      </h2>
-      <div className="space-y-0 divide-y divide-white/10">
+      <h2 className="text-xl font-semibold text-white mb-6">common questions</h2>
+      <div className="divide-y divide-white/10">
         {faqs.map((faq) => (
           <div key={faq.q} className="py-5">
-            <h3 className="text-white font-semibold text-sm mb-2">{faq.q}</h3>
-            <p className="text-spotify-light-gray text-sm leading-relaxed">
-              {faq.a}
-            </p>
+            <h3 className="text-white font-semibold text-sm mb-1">{faq.q}</h3>
+            <p className="text-spotify-light-gray text-sm leading-relaxed"
+               dangerouslySetInnerHTML={{ __html: faq.a }} />
           </div>
         ))}
       </div>
@@ -348,18 +278,17 @@ function FinalCTA() {
             ready to get started?
           </h2>
           <p className="text-spotify-light-gray text-sm">
-            book a 30–45 min session. bring your resume and your questions.
+            30 min. bring your resume and your questions.
           </p>
         </div>
         <PrimaryButton href={BOOKING_URL}>
-          book a session <FaArrowRight className="text-xs" />
+          <FaHeart className="text-xs" /> book a session
         </PrimaryButton>
       </div>
-      <p className="text-spotify-light-gray/50 text-xs mt-8 max-w-2xl leading-relaxed border-t border-white/5 pt-6">
-        disclaimer: this is practical guidance based on my own experience
-        recruiting for and landing software engineering internships. it is not
-        an official recruiting service, and sessions do not guarantee interview
-        outcomes or job offers.
+      <p className="text-spotify-light-gray/40 text-xs mt-8 max-w-2xl leading-relaxed border-t border-white/5 pt-6">
+        disclaimer: this is practical guidance based on my own experience recruiting for and landing
+        software engineering internships. not an official recruiting service. sessions do not
+        guarantee interview outcomes or job offers.
       </p>
     </section>
   );
@@ -371,15 +300,10 @@ export default function ResumeReviewPage() {
   return (
     <div className="min-h-screen text-white lowercase">
       <div className="max-md:mx-4 max-md:mt-2 mx-40 mt-4">
-        <BlogHeader
-          title=""
-          backLink="/"
-          backText="back to portfolio"
-        />
+        <BlogHeader title="" backLink="/" backText="back to portfolio" />
         <Hero />
         <Credibility />
         <WhatYouGet />
-        <HowItWorks />
         <Fundraiser />
         <FAQ />
         <FinalCTA />
