@@ -65,6 +65,7 @@ export default function Navigation(): ReactNode {
             >
               <LuNewspaper className="" />
             </Link>
+            <PiLineVerticalThin className="text-spotify-gray text-4xl" />
             <Link
               href="/resume-review"
               className="text-3xl hover:text-spotify-green transition-colors duration-200"
