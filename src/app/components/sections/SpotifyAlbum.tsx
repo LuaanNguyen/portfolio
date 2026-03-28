@@ -2,7 +2,7 @@ import React from "react";
 
 const SpotifyAlbum: React.FC = () => {
   return (
-    <div className="max-md:hidden max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-2 col-start-5 row-start-7 bg-spotify-black rounded-xl">
+    <div className="max-md:hidden max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-2 col-start-5 row-start-7 bg-spotify-black rounded-xl min-h-[152px]">
       <iframe
         className="w-full h-full rounded-xl"
         src="https://open.spotify.com/embed/album/3Dx1IXTwJVIMkEzVMSSSrp?utm_source=generator"
