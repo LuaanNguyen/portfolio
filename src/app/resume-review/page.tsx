@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import BlogHeader from "../components/blog/BlogHeader";
 import { FaHeart } from "react-icons/fa6";
 import { FiCheckCircle } from "react-icons/fi";
-import { SiEbay, SiOpenai, SiFox } from "react-icons/si";
+import { SiOpenai, SiFox } from "react-icons/si";
 import Image from "next/image";
 
 // ─── Replace these before going live ─────────────────────────────────────────
@@ -115,7 +115,14 @@ const companies = [
   },
   {
     label: "ebay",
-    logo: <SiEbay className="text-3xl text-[#E53238]" aria-hidden="true" />,
+    logo: (
+      <span className="font-black text-xl tracking-tight leading-none" aria-hidden="true">
+        <span style={{ color: "#E53238" }}>e</span>
+        <span style={{ color: "#0064D2" }}>b</span>
+        <span style={{ color: "#F5AF02" }}>a</span>
+        <span style={{ color: "#86B817" }}>y</span>
+      </span>
+    ),
   },
 ];
 
