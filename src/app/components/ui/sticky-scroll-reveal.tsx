@@ -36,7 +36,7 @@ export const StickyScroll = ({
       const progress = container.scrollTop / maxScroll;
       const nextCard = Math.min(
         cardLength - 1,
-        Math.round(progress * (cardLength - 1))
+        Math.round(progress * (cardLength - 1)),
       );
       setActiveCard(nextCard);
     };
@@ -49,18 +49,18 @@ export const StickyScroll = ({
     };
   }, [cardLength]);
 
-  const backgroundColors = ["#6DC5D1", "#8CCDEB", "#90D26D", "#FDAF7B"];
+  const backgroundColors = ["#90D26D", "#6DC5D1", "#FDAF7B"];
   const linearGradients = useMemo(
     () => [
       "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
       "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
       "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
     ],
-    []
+    [],
   );
 
   const [backgroundGradient, setBackgroundGradient] = useState(
-    linearGradients[0]
+    linearGradients[0],
   );
   const activeBackgroundColor =
     content[activeCard]?.backgroundColor ??
@@ -69,7 +69,7 @@ export const StickyScroll = ({
   useEffect(() => {
     setBackgroundGradient(
       content[activeCard]?.backgroundGradient ??
-        linearGradients[activeCard % linearGradients.length]
+        linearGradients[activeCard % linearGradients.length],
     );
   }, [activeCard, content, linearGradients]);
 
@@ -117,7 +117,7 @@ export const StickyScroll = ({
         style={{ background: backgroundGradient }}
         className={cn(
           "hidden lg:block h-fit rounded-xl bg-white sticky top-14",
-          contentClassName
+          contentClassName,
         )}
       >
         {content[activeCard].content ?? null}
