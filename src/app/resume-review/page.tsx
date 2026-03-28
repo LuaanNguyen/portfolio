@@ -52,19 +52,6 @@ function PrimaryButton({ href, children }: { href: string; children: React.React
   );
 }
 
-function SecondaryButton({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 border border-[#727272] hover:border-white text-white font-bold px-6 py-3 rounded-full transition-all duration-200 hover:scale-105 text-sm hover:bg-white hover:text-black"
-    >
-      {children}
-    </a>
-  );
-}
-
 // ─── Hero + Fundraiser ────────────────────────────────────────────────────────
 
 function Hero() {
@@ -83,7 +70,7 @@ function Hero() {
         <div className="flex items-start gap-3 bg-spotify-light-dark border border-spotify-green/20 rounded-xl px-5 py-4 mb-8 max-w-xl">
           <FaHeart className="text-spotify-green mt-0.5 shrink-0" />
           <p className="text-spotify-light-gray text-sm leading-relaxed">
-            pay-what-you-can — all proceeds go to a cancer-related fundraiser on gofundme,
+            pay-what-you-can. all proceeds go to a cancer-related fundraiser on gofundme,
             a cause that&apos;s close to my heart.{" "}
             <a
               href={GOFUNDME_URL}
@@ -95,14 +82,9 @@ function Hero() {
             </a>
           </p>
         </div>
-        <div className="flex flex-wrap gap-3">
-          <PrimaryButton href={BOOKING_URL}>
-            <FaHeart className="text-xs" /> book a session
-          </PrimaryButton>
-          <SecondaryButton href={GOFUNDME_URL}>
-            <FaHeart className="text-xs" /> support the fundraiser
-          </SecondaryButton>
-        </div>
+        <PrimaryButton href={BOOKING_URL}>
+          <FaHeart className="text-xs" /> book a session
+        </PrimaryButton>
       </div>
     </section>
   );
@@ -144,13 +126,20 @@ function Credibility() {
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <div className="space-y-4 text-spotify-light-gray text-sm leading-relaxed">
           <p>
-            i&apos;ve been through the internship grind — 1,000+ applications, plenty of rejections,
-            and eventually roles at companies i genuinely wanted. i&apos;m not a recruiter or coach,
-            just a cs student who figured out what works and wants to help others do the same.
+            i know what it feels like to want something and not know how to show it on paper.
+            i submitted over a thousand applications before things started clicking. a lot of
+            silence, some rejections, and eventually a few yeses from places i genuinely
+            wanted to be. i learned that what you&apos;ve done matters less than how you say it.
           </p>
           <p>
-            i&apos;ve reviewed resumes informally for friends and know what makes a candidate look
-            credible vs. forgettable on paper, especially for swe roles at mid-to-large companies.
+            i&apos;m not a recruiter or a career coach. i&apos;m a cs student who figured things out
+            slowly, with help from people who were honest with me when they didn&apos;t have to be.
+            this is me doing that for someone else.
+          </p>
+          <p>
+            i&apos;ve looked at enough resumes, for myself and for friends, to know what makes
+            someone look credible on paper versus forgettable. i&apos;ll tell you which one yours
+            looks like right now, and how to change it.
           </p>
         </div>
         <div>
@@ -179,7 +168,7 @@ function Credibility() {
 const offerings = [
   {
     title: "line-by-line feedback",
-    description: "every bullet, section, and word — nothing skipped.",
+    description: "every bullet, section, and word. nothing skipped.",
   },
   {
     title: "stronger bullets",
@@ -191,7 +180,7 @@ const offerings = [
   },
   {
     title: "honest assessment",
-    description: "what&apos;s working, what isn&apos;t — including the things people don&apos;t usually say.",
+    description: "what&apos;s working and what isn&apos;t, including the things people don&apos;t usually say.",
   },
 ];
 
@@ -235,10 +224,10 @@ const faqs = [
   },
   {
     q: "how does the donation work?",
-    a: "after booking, donate whatever feels right directly to the gofundme. no enforced minimum — 100% goes to the fundraiser.",
+    a: "after booking, donate whatever feels right directly to the gofundme. no enforced minimum. 100% goes to the fundraiser.",
   },
   {
-    q: "what if i can&apos;t afford to donate?",
+    q: "what if i can't afford to donate?",
     a: "reach out to me directly. i&apos;ll still do the session.",
   },
 ];
