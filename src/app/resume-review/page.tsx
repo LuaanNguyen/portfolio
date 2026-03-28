@@ -6,9 +6,8 @@ import { FiCheckCircle } from "react-icons/fi";
 import { SiOpenai, SiFox } from "react-icons/si";
 import Image from "next/image";
 
-// ─── Replace these before going live ─────────────────────────────────────────
-const BOOKING_URL = "https://cal.com/placeholder"; // TODO: replace with your booking link
 const GOFUNDME_URL = "https://gofundme.com/placeholder"; // TODO: replace with your GoFundMe link
+const EMAIL = "luanthiennguyen2003@gmail.com";
 const SITE_URL = "https://luannguyen.net";
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -91,21 +90,6 @@ const jsonLd = {
   },
 };
 
-// ─── Button ───────────────────────────────────────────────────────────────────
-
-function PrimaryButton({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 bg-spotify-green hover:bg-spotify-dark-green text-black font-bold px-6 py-3 rounded-full transition-all duration-200 hover:scale-105 text-sm"
-    >
-      {children}
-    </a>
-  );
-}
-
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 
 function Hero() {
@@ -139,9 +123,15 @@ function Hero() {
             </a>
           </p>
         </div>
-        <PrimaryButton href={BOOKING_URL}>
-          <FaHeart className="text-xs" aria-hidden="true" /> book a session
-        </PrimaryButton>
+        <p className="text-spotify-light-gray text-sm">
+          interested?{" "}
+          <a
+            href={`mailto:${EMAIL}`}
+            className="text-spotify-green hover:text-green-400 underline underline-offset-2 transition-colors duration-200"
+          >
+            {EMAIL}
+          </a>
+        </p>
       </div>
     </section>
   );
