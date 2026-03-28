@@ -97,7 +97,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
-        <Navigation />
+        <header>
+          <Navigation />
+        </header>
         {children}
         <Analytics />
         <SpeedInsights />
