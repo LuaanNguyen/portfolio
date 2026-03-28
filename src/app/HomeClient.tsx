@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense, lazy } from "react";
+import { useState, useEffect, Suspense, lazy } from "react";
 import Footer from "./components/Footer";
 import Loader from "./components/ui/Loader";
 import GithubContributions from "./components/sections/GithubContributions";
@@ -22,10 +22,21 @@ const OpenedProjects = lazy(
 
 export default function HomeClient() {
   const [experienceSection, setExperienceSection] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
 
   function handleSetExperienceSection() {
     setExperienceSection((prev) => !prev);
   }
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
 
   return (
     <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-6 grid-rows-8 max-md:gap-4 gap-4 max-lg:flex max-lg:flex-col max-md:px-2 mb-10">
