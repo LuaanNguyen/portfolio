@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getSortedPostsData } from "@/lib/blog";
+import { getSortedPostsData } from "@/src/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getSortedPostsData();
