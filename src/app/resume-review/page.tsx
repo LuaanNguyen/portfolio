@@ -124,12 +124,12 @@ function Hero() {
           </p>
         </div>
         <p className="text-spotify-light-gray text-sm">
-          interested?{" "}
+          interested? email me at{" "}
           <a
             href={`mailto:${EMAIL}`}
             className="text-spotify-green hover:text-green-400 underline underline-offset-2 transition-colors duration-200"
           >
-            {EMAIL}
+            luanthiennguyen2003 at gmail dot com
           </a>
         </p>
       </div>
