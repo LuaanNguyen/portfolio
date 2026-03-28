@@ -55,6 +55,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: "https://luannguyen.net",
+  },
   verification: {
     google: "",
   },
