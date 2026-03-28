@@ -89,7 +89,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: excerpt,
-      images: [post.image],
+      images: [post.image.startsWith("http") ? post.image : `${SITE_URL}${post.image}`],
       creator: "@luaan_ng",
       site: "@luaan_ng",
     },
