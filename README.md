@@ -6,6 +6,9 @@
 
 A modern, responsive portfolio website featuring a design, inspired by Spotify.
 
+If you want the reusable starter version without my personal content, use the
+[spotify-portfolio template](https://github.com/LuaanNguyen/spotify-portfolio).
+
 This website is powered by [Next.js 15](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [Aceternity UI](https://ui.aceternity.com/). To develop, run:
 
 ```bash

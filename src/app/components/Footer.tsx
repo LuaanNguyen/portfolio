@@ -19,6 +19,18 @@ export default function Footer() {
         </a>
         .
       </p>
+      <p className="text-spotify-light-gray max-md:text-sm mt-3">
+        Want the website template? Use{" "}
+        <a
+          target="_blank"
+          href="https://github.com/LuaanNguyen/spotify-portfolio"
+          className="text-spotify-green font-semibold underline"
+          rel="noopener noreferrer"
+        >
+          spotify-portfolio
+        </a>
+        .
+      </p>
     </footer>
   );
 }
