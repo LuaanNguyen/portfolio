@@ -95,8 +95,7 @@ export const personalProjects: personalProjectType = [
       "Java",
       "Python",
       "TypeScript",
-      "CDK",
-      "AWS",
+      "AWS CDK",
       "ECS",
       "Fargate",
       "Step Functions",
@@ -218,7 +217,6 @@ export const personalProjects: personalProjectType = [
       "TypeScript",
       "Flask",
       "Python",
-      "Chrome Extension",
     ],
   },
   {
@@ -237,7 +235,6 @@ export const personalProjects: personalProjectType = [
       "Flask",
       "Python",
       "SQLAlchemy",
-      "OpenAI",
     ],
   },
   // {
@@ -285,12 +282,13 @@ export const personalProjects: personalProjectType = [
     description:
       "This is a Spotify-inspired site I built in under 24 hours to showcase my work and identity. Built with Next.js, TailwindCSS, and TypeScript, it's deployed with AWS S3 + CloudFront and features Vercel Analytics for insights.",
     tech: [
-      "NEXTJS",
+      "NextJS",
       "AceternityUI",
       "TailwindCSS",
       "TypeScript",
       "Vercel Analytics",
-      "AWS S3 + CloudFront",
+      "AWS S3",
+      "AWS CloudFront",
     ],
   },
   {
@@ -310,7 +308,7 @@ export const personalProjects: personalProjectType = [
     title: "🥑 Fiber (CalHacks 2024)",
     description:
       "An AI-powered mobile application to scan the barcodes of groceries, providing comprehensive nutritional value, additives, and organic dimension for the users. This allows users to easily identify healthier options while grocery shopping.",
-    tech: ["React Native", "Expo", "Python", "Flask", "OpenAI"],
+    tech: ["React Native", "Expo", "Python", "Flask"],
   },
   {
     href: "https://ethicalspectacle.com/",
