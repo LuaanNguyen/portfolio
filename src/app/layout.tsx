@@ -13,12 +13,9 @@ export const metadata: Metadata = {
   creator: "Luan Nguyen",
   authors: [{ name: "Luan Nguyen" }],
   icons: {
-    icon: "/luan_aws.png",
-    shortcut: "/luan_aws.png",
-    apple: [
-      { url: "/luan_aws.png" },
-      { url: "/luan_aws.png", sizes: "180x180", type: "image/svg+xml" },
-    ],
+    icon: [{ url: "/gradient.jpeg", type: "image/jpeg" }],
+    shortcut: "/gradient.jpeg",
+    apple: [{ url: "/gradient.jpeg", type: "image/jpeg" }],
   },
   openGraph: {
     type: "website",
