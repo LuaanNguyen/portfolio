@@ -21,9 +21,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://luannguyen.net",
-    title: "Luan Nguyen | Software Engineer",
-    description:
-      "Software Engineer",
+    title: "Luan Nguyen",
+    description: "Software Engineer",
     siteName: "Luan Nguyen's Portfolio",
     images: [
       {
@@ -36,9 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luan Nguyen | Software Engineer",
-    description:
-      "Software Engineer",
+    title: "Luan Nguyen",
+    description: "Software Engineer",
     images: ["/portfolio_highres.png"],
   },
   robots: {
@@ -87,8 +85,7 @@ export default function RootLayout({
                 "@type": "Organization",
                 name: "FOX Corporation",
               },
-              description:
-                "Software Engineer",
+              description: "Software Engineer",
             }),
           }}
         />
