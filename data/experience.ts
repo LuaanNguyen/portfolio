@@ -10,7 +10,7 @@ export const experienceLists: experienceListsProps[] = [
     companyName: "eBay",
     url: "https://www.ebay.com/",
     positionTitle: "Software Engineer Intern",
-    date: "May 2026 - August 2026",
+    date: "May 2026 - Present",
   },
   {
     companyName: "OpenAI",

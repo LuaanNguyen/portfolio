@@ -19,15 +19,14 @@ export default function ExperienceItem() {
       <div className="bg-spotify-gray px-6 py-4">
         <h2 className="text-xl font-semibold mb-1">Professional Experience</h2>
         <p className="flex items-center gap-1.5 text-spotify-grey text-sm">
-          <CiGlobe className="text-lg" />
-          5 positions • 2 internships
+          <CiGlobe className="text-lg" />6 positions • 3 internships
         </p>
       </div>
 
       <div className="px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <button 
+            <button
               className="rounded-full bg-spotify-green p-3.5 hover:scale-105 transition-transform"
               aria-label="Play experience showcase"
             >

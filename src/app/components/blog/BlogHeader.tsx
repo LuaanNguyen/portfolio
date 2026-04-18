@@ -16,7 +16,7 @@ export default function BlogHeader({
   backText,
 }: BlogHeaderProps) {
   return (
-    <div className="pt-8 lowercase">
+    <div className="pt-8">
       <Link
         href={backLink}
         className="inline-flex items-center space-x-2 text-spotify-green hover:text-green-400 transition-colors duration-200 mb-8"

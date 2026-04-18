@@ -11,7 +11,7 @@ interface BlogPostCardProps {
 export default function BlogPostCard({ post }: BlogPostCardProps) {
   return (
     <Link href={`/blog/post/${post.slug}`} aria-label={`Read blog post: ${post.title}`}>
-      <article className="group cursor-pointer bg-spotify-light-dark rounded-xl overflow-hidden lowercase">
+      <article className="group cursor-pointer bg-spotify-light-dark rounded-xl overflow-hidden">
         {/* Image */}
         <div className="aspect-video bg-spotify-light-dark relative overflow-hidden">
           <Image

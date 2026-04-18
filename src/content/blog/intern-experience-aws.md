@@ -2,7 +2,7 @@
 title: "My Internship Experience at AWS ☁️"
 description: ""
 date: "August 14, 2025"
-readTime: "9 min read"
+readTime: "13 min read"
 image: "/blogs/aws.jpeg"
 slug: "intern-experience-aws"
 author: "Luan Nguyen"

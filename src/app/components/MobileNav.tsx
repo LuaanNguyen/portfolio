@@ -73,7 +73,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
             <span>Blog</span>
           </Link>
         </li>
-        <li
+        {/* <li
           className="hover:bg-spotify-green/10 rounded-lg transition-all duration-200 ease-in-out hover:translate-x-2 animate-in slide-in-from-left-2 border-spotify-green/10"
           style={{
             animationDelay: "0ms",
@@ -89,7 +89,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
             <LuFileSearch className="text-xl" aria-hidden="true" />
             <span>Resume Review</span>
           </Link>
-        </li>
+        </li> */}
       </ul>
 
       {/* Social Links and Resume */}

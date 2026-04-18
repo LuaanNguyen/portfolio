@@ -203,7 +203,7 @@ function applyCustomStyling(html: string): string {
   );
 
   // Add overall container styling for better content flow
-  styledHtml = `<div class="prose-spotify max-w-none lowercase">${styledHtml}</div>`;
+  styledHtml = `<div class="prose-spotify max-w-none">${styledHtml}</div>`;
 
   return styledHtml;
 }

@@ -31,7 +31,9 @@ export default function Navigation(): ReactNode {
             type="button"
             onClick={handleMobile}
             className="sm:hidden"
-            aria-label={mobile ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              mobile ? "Close navigation menu" : "Open navigation menu"
+            }
             aria-expanded={mobile}
             aria-controls="mobile-navigation"
           >
@@ -65,15 +67,15 @@ export default function Navigation(): ReactNode {
             >
               <LuNewspaper className="" />
             </Link>
+            {/*
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
-            <Link
+             <Link
               href="/resume-review"
               className="text-3xl hover:text-spotify-green transition-colors duration-200"
               aria-label="Book a resume review session"
             >
               <LuFileSearch className="" />
-            </Link>
-
+            </Link> */}
           </section>
         </section>
         {mobile && <MobileNav handleMobile={handleMobile} />}

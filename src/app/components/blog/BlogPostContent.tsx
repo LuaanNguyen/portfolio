@@ -61,7 +61,7 @@ export default function BlogPostContent({ post }: BlogPostContentProps) {
   const contentSegments = parseContentSegments(post.content);
 
   return (
-    <article className="max-w-4xl mx-auto lowercase">
+    <article className="max-w-4xl mx-auto">
       {/* Hero Image */}
       <div className="aspect-video bg-spotify-light-dark relative overflow-hidden rounded-xl mb-8">
         <Image
