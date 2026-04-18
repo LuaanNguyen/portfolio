@@ -202,6 +202,15 @@ function applyCustomStyling(html: string): string {
     '<blog-image data-src="$1" data-alt="$2" data-caption="$2"></blog-image>'
   );
 
+  // remark wraps standalone images in a <p>. Unwrap them so the <blog-image>
+  // placeholder isn't rendered inside a paragraph — otherwise splitting on it
+  // produces unbalanced <p>/</p> fragments that the browser silently rebalances,
+  // breaking hydration.
+  styledHtml = styledHtml.replace(
+    /<p[^>]*>\s*(<blog-image[^>]*><\/blog-image>)\s*<\/p>/g,
+    "$1"
+  );
+
   // Add overall container styling for better content flow
   styledHtml = `<div class="prose-spotify max-w-none">${styledHtml}</div>`;
 
