@@ -51,19 +51,33 @@ Here’s the motivation behind the project: On a Sunday football game, FOX broad
 
 The question our team was trying to answer: _how do we verify content correctness across affiliates, independent of ad insertions and latency differences, instead of just measuring signal health?_ And it had to be automated and scalable, because FOX’s infrastructure spans 15+ stations and 200+ affiliates.
 
-_(More technical detail coming soon - still thinking through what I can share.)_
+So we built an automated system to do exactly that. At a high level, it ingests both the upstream FOX feed and the downstream affiliate feeds in parallel, runs a series of analyses across video, audio, and auxiliary data, and decides whether they line up. Everything is containerized with Docker and deployed as a set of services, which lets us iterate on the matching logic without bringing the system down.
+
+The hard part isn’t telling whether a feed is broken. It’s telling whether two valid feeds are actually showing the same thing. Two affiliates can air the same game, cut to different local ads, sit a few seconds apart in latency, and still be "correct." A naïve pixel comparison falls apart immediately. So instead of relying on one signal, we compared across four.
+
+CLIP neural embeddings handle the semantic side - does this look like the same scene, even if framed or compressed differently. Perceptual hashing (pHash) handles the opposite end, checking for near pixel-level similarity between individual frames. Chromaprint audio fingerprinting verifies that the audio track lines up with the upstream feed. And CEA-608/708 caption extraction checks whether the closed captions are saying the same thing. Each signal has its own blind spots, but together they’re hard to fool.
+
+The system weighs them and emits a structured verdict - MATCH, MISMATCH, or UNCERTAIN - along with a confidence score, measured latency in milliseconds, and fault flags for things like black frames or freezes. The architecture supports 1:N comparisons, where one upstream source can be checked against many downstream feeds at once, which is what makes it usable across FOX’s 200+ affiliates instead of collapsing under the scale.
+
+![Project Architecture](/blogs/content_verification_system_architecture.png)
+
+By the end of the internship, the system was positioned to become a 24/7 monitoring service with REST endpoints that other internal tools can consume. The matching engine is proven accurate on both file-based recordings and live stream inputs. What’s left for full production readiness is mostly the connective tissue: integration with Slack , persistent storage of verification history, scale testing across more affiliate feeds, and data center deployment.
+
+![Control Plane](/blogs/control_plane.PNG)
+
+![Broadcast Stream Viewer](/blogs/stream_viewer.PNG)
+
+![Analysis Dashboard](/blogs/verification_dashboard.PNG)
 
 ## Conclusion
 
-I closed out the internship with a final presentation to my team and my future manager. Being asked to lead it meant a lot. I covered what we shipped and what still felt unsolved about the project, and I could tell there was real trust in the room. That trust came from doing the work - this wasn’t a simple project, and I’d put the hours in to deliver it.
+We closed out the internship with a final presentation to my team and my future manager. I covered what we shipped and what still felt unsolved about the project, and I could tell there was real trust in the room. That trust came from doing the work - this wasn’t a simple project, and we’d put the hours in to deliver it.
 
-Both managers rated the project 5/5 and 10/5 (lol). We were offered to come back and stay on for as long as we wanted until graduation. We wrote up comprehensive documentation, and on the last day we went to The Cheesecake Factory. I handed out copies of my [100 Chats](https://chatgpt.com/use-cases/students/) book to my managers and colleagues, said my goodbyes, and hoped to see them again in the fall.
+Both managers rated the project 5/5 and 10/5 (lol). We received offers to return in the Summer. We wrapped up with some final documentation, and on the last day we went to The Cheesecake Factory. I handed out copies of my [100 Chats](https://chatgpt.com/use-cases/students/) book to my managers and colleagues and said my goodbyes.
 
-The culture at FOX is overwhelmingly positive. I felt safe to show up at my best. Every interaction I had left an impression. If I had to distill the most useful advice I got from the experience, it would be this: never cut corners, and be easy to work with. Managers care a lot more about someone who can acknowledge their flaws than someone trying to impress. How you look at yourself is how you look at the world.
+The culture at FOX is overwhelmingly positive - I felt safe to show up at my best. If I had to distill the most useful advice I got from the experience, it would be this: _never cut corners, and be easy to work with_. Managers care a lot more about someone who can acknowledge their flaws than someone trying to impress. How you look at yourself is how you look at the world.
 
-Looking back at both internships (AWS vs. FOX) side by side, they taught me almost opposite lessons. At AWS I was surrounded by some of the sharpest engineers I’ve ever met, and the summer was a long exercise in stretching to keep up. Most of what I learned came from being the least experienced person in almost every room. At FOX, I was often the one carrying the most context on the AI side of things, and the challenge was the inverse: how do you carry that fluency without making people feel like you’re talking past them. How do you make your work legible to a team whose expertise runs in a different direction entirely.
-
-I don’t think I would have learned either lesson from the other internship. Being humbled and being trusted both ask different things of you, and I got to sit with both in the span of a year. Combined with the rhythm of balancing FOX with school, I’m leaving this spring with a clearer sense of how I want to work: sustainably, collaboratively, without needing to prove anything to anyone in the room.
+Being humbled and being trusted both ask different things of you. Combined with the rhythm of balancing FOX with school, I’m leaving this spring with a clearer sense of how I want to work: sustainably, collaboratively, without needing to prove anything to anyone in the room.
 
 _Thank you to my team at FOX for a spring of learning and growth._
 
