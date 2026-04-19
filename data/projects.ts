@@ -15,7 +15,7 @@ export const personalProjects: personalProjectType = [
     imageAlt: "FOX Broadcast Content & Latency Verification System",
     title: "📺 FOX Broadcast Content & Latency Verification System",
     description:
-      "A multi-modal verification system that checks whether FOX's 200+ affiliate stations are broadcasting the correct content in real time. It compares upstream and downstream feeds using CLIP semantic embeddings, perceptual hashing, Chromaprint audio fingerprinting, and CEA-608/708 caption extraction to produce a MATCH/MISMATCH/UNCERTAIN verdict with confidence scores, latency measurements, and fault detection for black frames or freezes.",
+      "A multi-modal verification system that checks whether FOX's 200+ affiliate stations are broadcasting the correct content in real time.",
     tech: [
       "Python",
       "PyTorch",
