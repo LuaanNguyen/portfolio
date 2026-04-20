@@ -8,7 +8,7 @@ export interface ProjectsProps {
 export const metadata: Metadata = {
   title: "Luan Nguyen",
   description:
-    "Software Engineer at FOX Corporation. Previously interned at AWS and a member of OpenAI's ChatGPT Lab.",
+    "Software Engineer Intern at eBay & Member of ChatGPT Lab at OpenAI. Previously interned at Amazon Bedrock and Fox Corporation",
   alternates: {
     canonical: "https://luannguyen.net",
   },
