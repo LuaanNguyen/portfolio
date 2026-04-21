@@ -23,7 +23,9 @@ _Note: I did sign an NDA, so I can’t go too deep into certain details, but I�
 
 ## Internship Search
 
-The FOX internship found me more than I found it. When the email from the campus team showed up, I had completely forgotten I applied. It turned out the role was actually for Spring 2026. I got advice from a friend, spent two weeks reading up on the company, and ended up with an offer on December 23rd, the day before Christmas, for the Broadcast Engineering team. The interview itself was relaxed and grounded in practical experience. We spent most of it talking about my AWS project and how it mapped to the work at FOX. A few technical questions came up in the mix, but it felt more like a vibe check than a coding interview.
+The FOX internship found me more than I found it. When the email from the campus team showed up, I had completely forgotten I applied. It turned out the role was actually for Spring 2026. I got advice from a friend, spent two weeks reading up on the company, and ended up with an offer on December 23rd, the day before Christmas, for the Broadcast Engineering team. 
+
+The interview itself was relaxed and focused on practical experience. We spent most of it talking about my AWS project and how it mapped to the work at FOX. A few technical questions came up in the mix, but it felt more like a vibe check than a coding interview.
 
 After coming back from Seattle, I’d planned to spend the spring heads-down on school and personal projects. Taking this on meant stacking a full-time commitment on top of a full course load, and it was the first time I’d really had to decide what I was willing to sacrifice to keep everything moving. It stretched me in a way since there was no clean container for it - just overlapping priorities I had to sort out week by week.
 
@@ -33,7 +35,7 @@ The FOX Technology office handles the entire company’s media infrastructure. I
 
 On my first day, my manager walked me around the office and introduced me to the other interns on the team. It’s an open, modern space with lots of amenities: foosball, a PS5, a gym, a coffee machine, a Starbucks. Broadcast interns received an HP laptop, which was its own adjustment since I hadn’t touched a Windows machine since 2018. 
 
-I tried sparkling water for the first time that week, and it’s slowly become one of my go-to drinks.
+I tried sparkling water for the first time that week, and it became one of my favorite drinks.
 
 ![FOX Tech office](/blogs/foxtech.jpeg)
 
@@ -73,9 +75,9 @@ By the end of the internship, the system was positioned to become a 24/7 monitor
 
 We closed out the internship with a final presentation to my team and future manager. I covered what we shipped and what still felt unsolved about the project.
 
-Both managers rated the project 5/5 and 10/5 (lol). We received offers to return in the Summer. We wrapped up with some final documentation, and on the last day we went to The Cheesecake Factory. I handed out copies of my [100 Chats](https://chatgpt.com/use-cases/students/) to my managers and colleagues and said my goodbyes.
+Both managers were satisfied with the project. We received offers to return in the Summer. On the last day we went to The Cheesecake Factory. I handed out copies of my [100 Chats](https://chatgpt.com/use-cases/students/) to everyone and said my goodbyes.
 
-Perosnally, I felt that the culture at FOX is very positive. I felt safe to show up at my best. If I had to distill the most useful advice I got from the experience, it would be this: _never cut corners, and be easy to work with_. Managers care a lot more about someone who can acknowledge their flaws than someone trying to impress. How you look at yourself is how you look at the world.
+Personally, I felt that the culture at FOX is very positive. I felt safe to show up at my best. If I had to distill the most useful advice I got from the experience, it would be this: _never cut corners_, and _be easy to work with_. Managers care a lot more about someone who can acknowledge their flaws than someone trying to impress. How you look at yourself is how you look at the world.
 
 Being humbled and being trusted both ask different things of you. Combined with the rhythm of balancing FOX with school, I’m leaving this spring with a clearer sense of how I want to work: sustainably, collaboratively, without needing to prove anything to anyone in the room.
 
