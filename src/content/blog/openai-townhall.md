@@ -34,7 +34,7 @@ Spending time in the office was surreal in its own way. The space reflected a st
 
 ![Figma SF HQ, image by Sanghyo Yee](/blogs/figma-office.png)
 
-After that, I took the train over to OpenAI [Mission Bay HQ](https://maps.app.goo.gl/DztjtA8wTT3MkeUQ8). Walking in felt different from [DevDay](/blog/post/openai-devday). I was less nervous this time, mostly because I already knew many of the Lab members in the room. While Figma's office leaned expressive and artistic, OpenAI’s environment emphasized restraint, clarity, and a balance between technical precision and human warmth. Simple, intentional, and quietly powerful.
+After that, I took the train over to OpenAI [Mission Bay HQ](https://maps.app.goo.gl/DztjtA8wTT3MkeUQ8). While Figma's office leaned expressive and artistic, OpenAI’s environment emphasized restraint, clarity, and a balance between technical precision and human warmth: Simple, intentional, and quietly powerful.
 
 That contrast stayed with me as the room filled and the conversation began.
 
@@ -43,8 +43,6 @@ When it was my turn to speak, I asked Sam for advice on how to build and stay re
 ![](/blogs/ask-sam-question.jpg)
 
 After the discussion, I spent time talking with other ChatGPT Lab members. We talked about how AI is showing up differently on each campus, how students are using it, where they are confused or skeptical, and what responsibility looks like when you’re helping introduce powerful tools into educational spaces. The conversations were grounded and honest, much less about hype and much more about trust, ethics, and long-term impact.
-
-That part mattered to me the most.
 
 It’s easy for AI conversations to swing to extremes, either fear-driven or blindly optimistic. Being in a room full of people who cared about nuance, stewardship, and community made the future feel less abstract and more human.
 
