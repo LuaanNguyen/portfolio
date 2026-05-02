@@ -27,6 +27,29 @@ export const personalProjects: personalProjectType = [
     ],
   },
   {
+    href: "https://github.com/LuaanNguyen/fraud-detection",
+    imageSrc: `/banking_fraud_detection.png`,
+    imageAlt:
+      "Banking fraud detection — tabular + graph ML and GNN pipeline with React dashboard",
+    title: "💳 Banking Fraud Detection with Graph Databases",
+    description:
+      "End-to-end fraud detection system on the dataset: SMOTE-ENN balancing, leakage-safe time-based splits, baselines (Logistic Regression, SVM, Random Forest, XGBoost) with tuning, Neo4j/graph-derived features with networkx fallbacks, hybrid models, GraphSAGE with PyTorch Geometric, embedding-based RF/MLP, unsupervised clustering (K-Means, DBSCAN), and a React dashboard for metrics and plots.",
+    tech: [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "XGBoost",
+      "imbalanced-learn",
+      "Neo4j",
+      "NetworkX",
+      "PyTorch",
+      "PyTorch Geometric",
+      "React",
+      "Matplotlib",
+      "seaborn",
+    ],
+  },
+  {
     href: "https://asunetwork.com",
     imageSrc: `/blogs/asunetwork.png`,
     imageAlt: "ASU Network",

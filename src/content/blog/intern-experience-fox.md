@@ -47,6 +47,7 @@ My days usually started around 9AM and wrapped up by 2PM, with the rest of the a
 
 ![Pickleballing](/blogs/picklr.jpg)
 
+
 ## Project
 
 Here’s the motivation behind the project: On a Sunday football game, FOX broadcasts a national feed out to its affiliate stations across the country. With 200+ affiliates airing the same game at the same time, if one of them shows the wrong content, there’s no automated way to catch it. We usually only find out once a customer complains, and by then we’ve already lost money.
