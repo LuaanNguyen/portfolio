@@ -43,9 +43,12 @@ function PersonalStatement() {
         here stays with you.
         <br />
         <br />
-        I&apos;m an incoming software engineer intern on the Public APIs &
-        Developer Ecosystem team at{" "}
-        <a href="https://www.fox.com/" className="text-spotify-green underline">
+        I&apos;m an software engineer intern on the Public APIs & Developer
+        Ecosystem team at{" "}
+        <a
+          href="https://www.ebay.com/"
+          className="text-spotify-green underline"
+        >
           eBay.
         </a>{" "}
         <br />
