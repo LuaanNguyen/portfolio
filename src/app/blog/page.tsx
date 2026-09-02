@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Luan Nguyen's Portfolio",
     images: [
       {
-        url: "/luan_aws.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Luan Nguyen blog",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Writings | Luan Nguyen",
     description:
       "Essays and notes on software engineering, AI systems, internships, and personal growth.",
-    images: ["/luan_aws.png"],
+    images: ["/og-image.png"],
     creator: "@luaan_ng",
   },
 };

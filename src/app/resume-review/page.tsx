@@ -6,7 +6,6 @@ import { FiCheckCircle } from "react-icons/fi";
 import { SiOpenai, SiFox } from "react-icons/si";
 import Image from "next/image";
 
-const GOFUNDME_URL = "https://gofundme.com/placeholder"; // TODO: replace with your GoFundMe link
 const EMAIL = "luanthiennguyen2003@gmail.com";
 const SITE_URL = "https://luannguyen.net";
 // ─────────────────────────────────────────────────────────────────────────────
@@ -44,9 +43,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: `${SITE_URL}/portfolio_highres.png`,
-        width: 1920,
-        height: 1440,
+        url: `${SITE_URL}/og-image.png`,
+        width: 1200,
+        height: 630,
         alt: "Luan Nguyen — 1:1 Resume Review for SWE Internships",
       },
     ],
@@ -56,7 +55,7 @@ export const metadata: Metadata = {
     title: "Get honest resume feedback for SWE internships — Luan Nguyen",
     description:
       "30-min 1:1 sessions for CS students. Pay-what-you-can. Proceeds support a cancer-related GoFundMe fundraiser.",
-    images: [`${SITE_URL}/portfolio_highres.png`],
+    images: [`${SITE_URL}/og-image.png`],
     creator: "@luaan_ng",
     site: "@luaan_ng",
   },
@@ -111,16 +110,8 @@ function Hero() {
         <div className="flex items-start gap-3 bg-spotify-light-dark border border-spotify-green/20 rounded-xl px-5 py-4 mb-8 max-w-xl">
           <FaHeart className="text-spotify-green mt-0.5 shrink-0" aria-hidden="true" />
           <p className="text-spotify-light-gray text-sm leading-relaxed">
-            pay-what-you-can. all proceeds go to a cancer-related fundraiser on gofundme,
-            a cause that&apos;s close to my heart.{" "}
-            <a
-              href={GOFUNDME_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-spotify-green hover:text-green-400 underline underline-offset-2 transition-colors duration-200"
-            >
-              donate here.
-            </a>
+            pay-what-you-can. donation details are shared after booking, and all
+            proceeds go to a cancer-related fundraiser that&apos;s close to my heart.
           </p>
         </div>
         <p className="text-spotify-light-gray text-sm">

@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     siteName: "Luan Nguyen's Portfolio",
     images: [
       {
-        url: "/portfolio_highres.png",
-        width: 1920,
-        height: 1440,
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
         alt: "Luan Nguyen Portfolio",
       },
     ],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Luan Nguyen",
     description: "Software Engineer",
-    images: ["/portfolio_highres.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
