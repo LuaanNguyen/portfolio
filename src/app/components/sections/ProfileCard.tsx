@@ -54,6 +54,13 @@ function PersonalStatement() {
         <br />
         <br />
         <span>
+          At <span className="text-spotify-green">OpenAI</span>, I&apos;m a
+          Product Lab member, exploring how people live, learn, and create with
+          AI, carrying those human stories toward what comes next.
+        </span>
+        <br />
+        <br />
+        <span>
           View my latest writings{" "}
           <a href="/blog" className="text-spotify-green underline">
             here.

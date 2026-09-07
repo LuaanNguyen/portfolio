@@ -9,9 +9,7 @@ import GithubContributions from "./components/sections/GithubContributions";
 const ProfileCard = lazy(() => import("./components/sections/ProfileCard"));
 const Skills = lazy(() => import("./components/sections/Skills"));
 const Projects = lazy(() => import("./components/sections/Projects"));
-const ProgrammingLanguages = lazy(
-  () => import("./components/sections/ProgrammingLanguages")
-);
+const FavoriteReads = lazy(() => import("./components/sections/FavoriteReads"));
 const SpotifyAlbum = lazy(() => import("./components/sections/SpotifyAlbum"));
 const ExperienceItem = lazy(
   () => import("./components/sections/ExperienceItems")
@@ -51,7 +49,7 @@ export default function HomeClient() {
           <>
             <ExperienceItem />
             <Projects onSetExperienceSection={handleSetExperienceSection} />
-            <ProgrammingLanguages />
+            <FavoriteReads />
           </>
         )}
         <OpenedProjects className="block md:hidden" />
