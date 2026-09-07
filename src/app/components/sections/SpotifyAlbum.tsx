@@ -5,8 +5,8 @@ const SpotifyAlbum: React.FC = () => {
     <div className="max-md:hidden max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-2 col-start-5 row-start-7 bg-spotify-black rounded-xl min-h-[152px]">
       <iframe
         className="w-full h-full rounded-xl"
-        src="https://open.spotify.com/embed/album/6tDWxFwFa678P6qTiuyUqg?utm_source=generator"
-        title="Spotify album player"
+        src="https://open.spotify.com/embed/track/0a32EBPjqAe47cYDPE5Ia5?utm_source=generator&si=4c7e752b6e1b4ac1"
+        title="Spotify track player"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
         style={{ height: "100%", width: "100%" }}

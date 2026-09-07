@@ -7,19 +7,19 @@ export type experienceListsProps = {
 
 export const experienceLists: experienceListsProps[] = [
   {
-    companyName: "eBay",
-    url: "https://www.ebay.com/",
-    positionTitle: "Software Engineer Intern",
-    date: "May 2026 - August",
-  },
-  {
     companyName: "OpenAI",
     url: "https://openai.com",
     positionTitle: "ChatGPT Lab Member",
     date: "May 2025 - Present",
   },
   {
-    companyName: "FOX Corporation",
+    companyName: "eBay",
+    url: "https://www.ebay.com/",
+    positionTitle: "Software Engineer Intern",
+    date: "May 2026 - August 2026",
+  },
+  {
+    companyName: "FOX",
     url: "https://www.foxcorporation.com/",
     positionTitle: "Software Engineer Intern",
     date: "February 2026 - April 2026",
