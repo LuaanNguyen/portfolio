@@ -36,7 +36,7 @@ const favoriteReads = [
 export default function FavoriteReads() {
   return (
     <section
-      className="h-[222px] max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-2 col-start-3 row-start-5 rounded-xl bg-spotify-light-dark overflow-hidden"
+      className="h-[222px] col-span-1 row-span-1 col-start-2 row-start-2 xl:col-span-2 xl:row-span-2 xl:col-start-3 xl:row-start-5 rounded-xl bg-spotify-light-dark overflow-hidden"
       id="favorite-reads"
       aria-labelledby="favorite-reads-heading"
     >

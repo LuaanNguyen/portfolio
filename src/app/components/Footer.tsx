@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="max-lg:col-span-1  max-lg:row-span-1 col-span-6 items-center text-center mb-10">
+    <footer className="col-span-2 xl:col-span-6 items-center text-center mb-10">
       <p className="text-spotify-light-gray max-md:text-sm">
         &copy; {new Date().getFullYear()} Luan
       </p>

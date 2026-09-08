@@ -7,7 +7,7 @@ import { BackgroundGradient } from "../ui/background-gradient";
 export default function ProfileCard() {
   return (
     <div
-      className="relative col-span-2 row-span-6 bg-spotify-light-dark rounded-xl p-4 max-md:p-3"
+      className="relative col-span-1 row-span-2 col-start-1 row-start-1 xl:col-span-2 xl:row-span-6 bg-spotify-light-dark rounded-xl p-4 max-md:p-3"
       id="#profile"
     >
       <div className="flex flex-col gap-7 max-md:gap-5">

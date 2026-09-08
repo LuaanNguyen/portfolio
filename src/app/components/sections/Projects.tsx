@@ -7,7 +7,7 @@ import { FaArrowDown } from "react-icons/fa6";
 export default function Projects({ onSetExperienceSection }: ProjectsProps) {
   return (
     <div
-      className="max-md:hidden max-lg:col-span-1 max-lg:row-span-1 col-span-2 row-span-6 col-start-5 bg-spotify-light-dark rounded-xl overflow-hidden"
+      className="max-md:hidden col-span-2 row-span-1 col-start-1 row-start-3 xl:col-span-2 xl:row-span-6 xl:col-start-5 xl:row-start-1 bg-spotify-light-dark rounded-xl overflow-hidden"
       id="projects"
     >
       <div className="p-4">
