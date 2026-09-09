@@ -11,6 +11,7 @@ import SocialLinks from "./SocialLinks";
 import MobileNav from "./MobileNav";
 import { TypewriterEffect } from "./ui/type-writer-effect";
 import Link from "next/link";
+import ScrollProgress from "./ui/ScrollProgress";
 
 export default function Navigation(): ReactNode {
   const [mobile, setMobile] = useState<boolean>(false);
@@ -22,7 +23,7 @@ export default function Navigation(): ReactNode {
   return (
     <nav aria-label="Primary navigation">
       <div
-        className={`flex flex-col bg-spotify-light-dark max-md:mx-2 max-md:mt-2 mx-32 mt-4 p-2 rounded-full max-md:rounded-xl
+        className={`relative flex flex-col overflow-hidden bg-spotify-light-dark max-md:mx-2 max-md:mt-2 mx-32 mt-4 p-2 rounded-full max-md:rounded-xl
          `}
       >
         <section className="flex flex-row w-full justify-between items-center max-md:px-4 max-md:py-1">
@@ -62,7 +63,7 @@ export default function Navigation(): ReactNode {
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
             <Link
               href="/blog"
-              className="text-3xl hover:text-spotify-green transition-colors duration-200"
+              className="text-3xl md:hover:text-spotify-green transition-colors duration-200"
               aria-label="View blog posts"
             >
               <LuNewspaper className="" />
@@ -71,7 +72,7 @@ export default function Navigation(): ReactNode {
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
              <Link
               href="/resume-review"
-              className="text-3xl hover:text-spotify-green transition-colors duration-200"
+              className="text-3xl md:hover:text-spotify-green transition-colors duration-200"
               aria-label="Book a resume review session"
             >
               <LuFileSearch className="" />
@@ -79,6 +80,7 @@ export default function Navigation(): ReactNode {
           </section>
         </section>
         {mobile && <MobileNav handleMobile={handleMobile} />}
+        <ScrollProgress />
       </div>
     </nav>
   );

@@ -118,7 +118,7 @@ function Hero() {
           interested? email me at{" "}
           <a
             href={`mailto:${EMAIL}`}
-            className="text-spotify-green hover:text-green-400 underline underline-offset-2 transition-colors duration-200"
+            className="text-spotify-green md:hover:text-green-400 underline underline-offset-2 transition-colors duration-200"
           >
             luanthiennguyen2003 at gmail dot com
           </a>
@@ -241,7 +241,7 @@ function WhatYouGet() {
         {offerings.map((item) => (
           <li
             key={item.title}
-            className="bg-spotify-light-dark rounded-xl p-5 border border-white/5 hover:border-spotify-green/30 transition-colors duration-200"
+            className="bg-spotify-light-dark rounded-xl p-5 border border-white/5 md:hover:border-spotify-green/30 transition-colors duration-200"
           >
             <div className="flex items-start gap-3">
               <FiCheckCircle

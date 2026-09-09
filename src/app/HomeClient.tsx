@@ -29,7 +29,7 @@ export default function HomeClient() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 400);
 
     return () => clearTimeout(timer);
   }, []);
@@ -37,7 +37,7 @@ export default function HomeClient() {
   if (loading) return <Loader />;
 
   return (
-    <main className="w-screen max-w-[1600px] mx-auto pt-6 px-32 grid grid-cols-2 grid-rows-none xl:grid-cols-6 xl:grid-rows-8 max-md:gap-4 gap-4 max-lg:flex max-lg:flex-col max-md:px-2 mb-10">
+    <main className="mx-auto mb-10 grid w-full min-w-0 max-w-[1600px] grid-cols-2 grid-rows-none gap-4 px-32 pt-6 max-lg:flex max-lg:flex-col max-md:px-2 xl:grid-cols-6 xl:grid-rows-8">
       <Suspense fallback={<Loader />}>
         <ProfileCard />
         {experienceSection ? (

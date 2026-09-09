@@ -3,11 +3,12 @@ import Image from "next/image";
 import { ProjectsProps } from "../../page";
 import { GrLinkNext } from "react-icons/gr";
 import { FaArrowDown } from "react-icons/fa6";
+import type { ProjectStatus } from "../ui/ProjectStatusBadge";
 
 export default function Projects({ onSetExperienceSection }: ProjectsProps) {
   return (
     <div
-      className="max-md:hidden col-span-2 row-span-1 col-start-1 row-start-3 xl:col-span-2 xl:row-span-6 xl:col-start-5 xl:row-start-1 bg-spotify-light-dark rounded-xl overflow-hidden"
+      className="max-md:hidden col-span-2 row-span-1 col-start-1 row-start-3 animate-card-reveal [animation-delay:140ms] motion-reduce:animate-none xl:col-span-2 xl:row-span-6 xl:col-start-5 xl:row-start-1 bg-spotify-light-dark rounded-xl overflow-hidden"
       id="projects"
     >
       <div className="p-4">
@@ -15,9 +16,9 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
           {/* Primary Button (Green) */}
           <button
             className="flex items-center justify-center text-sm font-bold 
-            bg-spotify-green/10 border-spotify-green hover:scale-105 
+            bg-spotify-green/10 border-spotify-green md:hover:scale-105
             px-5 py-2 rounded-xl gap-2 
-            min-w-[180px] text-spotify-green mb-0.5 transition-all duration-200 w-fit hover:bg-spotify-green/10 cursor-pointer"
+            min-w-[180px] text-spotify-green mb-0.5 transition-all duration-200 w-fit md:hover:bg-spotify-green/10 cursor-pointer"
             aria-label="View featured projects below"
           >
             Featured Projects
@@ -27,10 +28,10 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
           {/* Secondary Button (White Border) */}
           <button
             className="flex items-center justify-center text-sm font-bold 
-            border border-[#727272] hover:border-white hover:scale-105 
+            border border-[#727272] md:hover:border-white md:hover:scale-105
             text-white px-5 py-3 rounded-xl gap-2 transition-all duration-200
-            animate-pulse hover:animate-none hover:bg-white hover:text-black
-            shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
+            animate-pulse md:hover:animate-none md:hover:bg-white md:hover:text-black
+            shadow-[0_0_15px_rgba(255,255,255,0.3)] md:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
             min-w-[180px]"
             onClick={onSetExperienceSection}
             aria-label="Explore all projects in expanded view"
@@ -48,10 +49,12 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
 const projectLists: {
   title: string;
   description: string;
-  content?: React.ReactNode | any;
+  content?: React.ReactNode;
+  status: ProjectStatus;
 }[] = [
   {
     title: "🍵 Sip n Play Café Website (Codédex Hackathon Winner 🏆)",
+    status: "Winner",
     description:
       "My first hackathon win. Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu. It won Best UI/UX Design at the Codédex Hackathon.",
     content: (
@@ -72,6 +75,7 @@ const projectLists: {
   },
   {
     title: "Brainrot Master Vault (HackPrinceton 2025 Winner 🏆)",
+    status: "Winner",
     description:
       "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025 and won Best Self-Hosted Inference.",
     content: (
@@ -92,6 +96,7 @@ const projectLists: {
   },
   {
     title: "🌎 ASU Network",
+    status: "Live",
     description:
       "A community directory and social graph for ASU builders, engineers, designers, and creators, making it easier to discover people by skill, role, and connections.",
     content: (

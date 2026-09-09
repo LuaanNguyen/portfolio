@@ -20,7 +20,7 @@ export default function NotFound() {
         <div className="flex flex-col md:flex-row justify-center gap-4">
           <Link
             href="/"
-            className="bg-spotify-green hover:bg-spotify-dark-green text-spotify-black font-medium py-3 px-8 rounded-full transition-colors"
+            className="bg-spotify-green md:hover:bg-spotify-dark-green text-spotify-black font-medium py-3 px-8 rounded-full transition-colors"
           >
             Go to Home
           </Link>

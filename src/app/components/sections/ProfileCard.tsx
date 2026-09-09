@@ -7,18 +7,18 @@ import { BackgroundGradient } from "../ui/background-gradient";
 export default function ProfileCard() {
   return (
     <div
-      className="relative col-span-1 row-span-2 col-start-1 row-start-1 xl:col-span-2 xl:row-span-6 bg-spotify-light-dark rounded-xl p-4 max-md:p-3"
+      className="relative col-span-1 row-span-2 col-start-1 row-start-1 w-full min-w-0 animate-card-reveal motion-reduce:animate-none xl:col-span-2 xl:row-span-6 bg-spotify-light-dark rounded-xl p-4 max-md:p-3"
       id="#profile"
     >
       <div className="flex flex-col gap-7 max-md:gap-5">
-        <BackgroundGradient containerClassName="rounded-[40px] place-self-center">
+        <BackgroundGradient containerClassName="w-full max-w-[408px] rounded-[40px] place-self-center">
           <Image
             src="/luan_real.jpg"
             alt="Luan Nguyen"
             width={400}
             height={400}
             sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 400px"
-            className="rounded-[25px] object-cover"
+            className="h-auto w-full rounded-[25px] object-cover"
             priority
           />
         </BackgroundGradient>

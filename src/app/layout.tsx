@@ -91,7 +91,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
-        <header>
+        <header className="sticky top-0 z-50 bg-gradient-to-b from-spotify-black via-spotify-black/95 to-transparent pb-2">
           <Navigation />
         </header>
         {children}

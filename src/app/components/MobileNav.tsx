@@ -40,7 +40,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         {links.map((link, index) => (
           <li
             key={link.section}
-            className="hover:bg-spotify-green/10 rounded-lg transition-all duration-200 ease-in-out hover:translate-x-2 animate-in slide-in-from-left-2"
+            className="rounded-lg animate-in slide-in-from-left-2 active:bg-spotify-green/10"
             style={{
               animationDelay: `${(index + 1) * 100}ms`,
               animationFillMode: "both",
@@ -48,7 +48,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
           >
             <Link
               href={link.href}
-              className="block p-4 text-spotify-white text-lg font-semibold hover:text-spotify-green transition-colors duration-200"
+              className="block p-4 text-spotify-white text-lg font-semibold active:text-spotify-green"
               onClick={handleMobile}
             >
               {link.section}
@@ -57,7 +57,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         ))}
 
         <li
-          className="hover:bg-spotify-green/10 rounded-lg transition-all duration-200 ease-in-out hover:translate-x-2 animate-in slide-in-from-left-2 border-spotify-green/10"
+          className="rounded-lg animate-in slide-in-from-left-2 border-spotify-green/10 active:bg-spotify-green/10"
           style={{
             animationDelay: "0ms",
             animationFillMode: "both",
@@ -65,7 +65,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         >
           <Link
             href="/blog"
-            className="flex items-center space-x-3 p-4 text-spotify-white text-lg font-semibold hover:text-spotify-green transition-colors duration-200"
+            className="flex items-center space-x-3 p-4 text-spotify-white text-lg font-semibold active:text-spotify-green"
             onClick={handleMobile}
             aria-label="View blog posts"
           >
@@ -74,7 +74,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
           </Link>
         </li>
         {/* <li
-          className="hover:bg-spotify-green/10 rounded-lg transition-all duration-200 ease-in-out hover:translate-x-2 animate-in slide-in-from-left-2 border-spotify-green/10"
+          className="rounded-lg animate-in slide-in-from-left-2 border-spotify-green/10 active:bg-spotify-green/10"
           style={{
             animationDelay: "0ms",
             animationFillMode: "both",
@@ -82,7 +82,7 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
         >
           <Link
             href="/resume-review"
-            className="flex items-center space-x-3 p-4 text-spotify-white text-lg font-semibold hover:text-spotify-green transition-colors duration-200"
+            className="flex items-center space-x-3 p-4 text-spotify-white text-lg font-semibold active:text-spotify-green"
             onClick={handleMobile}
             aria-label="Book a resume review session"
           >

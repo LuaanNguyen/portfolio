@@ -2,6 +2,9 @@
 import React, { useEffect, useRef, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import ProjectStatusBadge, {
+  type ProjectStatus,
+} from "./ProjectStatusBadge";
 
 export const StickyScroll = ({
   content,
@@ -10,9 +13,10 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
-    content?: React.ReactNode | any;
+    content?: React.ReactNode;
     backgroundGradient?: string;
     backgroundColor?: string;
+    status?: ProjectStatus;
   }[];
   contentClassName?: string;
 }) => {
@@ -116,10 +120,15 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-fit rounded-xl bg-white sticky top-14",
+          "relative hidden h-fit rounded-xl bg-white lg:block sticky top-14",
           contentClassName,
         )}
       >
+        {content[activeCard].status ? (
+          <div className="absolute left-2 top-2 z-10">
+            <ProjectStatusBadge status={content[activeCard].status} />
+          </div>
+        ) : null}
         {content[activeCard].content ?? null}
       </div>
     </motion.div>

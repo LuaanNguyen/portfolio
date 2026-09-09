@@ -10,6 +10,9 @@ import Link from "next/link";
 import { IoPlayCircle } from "react-icons/io5"; // Import play icon
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import ProjectStatusBadge, {
+  type ProjectStatus,
+} from "../ui/ProjectStatusBadge";
 
 type ExperienceItemProps = {
   className?: string; // Optional className prop
@@ -33,7 +36,7 @@ export default function OpenedExperienceItem({
   return (
     <div
       id="project"
-      className={`${className} col-span-1 row-span-2 col-start-2 row-start-1 xl:col-span-4 xl:row-span-6 xl:col-start-3 bg-spotify-light-dark rounded-xl overflow-hidden flex flex-col sm:h-[800px]`}
+      className={`${className} col-span-1 row-span-2 col-start-2 row-start-1 animate-card-reveal [animation-delay:140ms] motion-reduce:animate-none xl:col-span-4 xl:row-span-6 xl:col-start-3 bg-spotify-light-dark rounded-xl overflow-hidden flex flex-col sm:h-[800px]`}
     >
       <div className="sticky top-0 bg-spotify-light-dark z-10">
         <div className="flex justify-between items-center px-6 py-4 bg-spotify-gray">
@@ -47,7 +50,7 @@ export default function OpenedExperienceItem({
 
           <button
             type="button"
-            className="p-3 hover:bg-[#282828] rounded-full transition-colors  max-md:hidden"
+            className="p-3 md:hover:bg-[#282828] rounded-full transition-colors max-md:hidden"
             onClick={onSetExperienceSection}
             aria-label="Close expanded projects view"
           >
@@ -91,7 +94,7 @@ function ProjectCard({
   onToggle: () => void;
 }) {
   return (
-    <div className="relative  sm:hover:bg-[#282828] transition-colors p-4 rounded-xl flex flex-col gap-3">
+    <div className="relative md:hover:bg-[#282828] transition-colors p-4 rounded-xl flex flex-col gap-3">
       <div className="relative">
         <Image
           src={project.imageSrc}
@@ -101,7 +104,10 @@ function ProjectCard({
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           className="rounded-lg w-full aspect-video object-cover"
         />
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 sm:group-hover:opacity-100 transition-opacity bg-black/20">
+        <div className="absolute left-2 top-2 z-10">
+          <ProjectStatusBadge status={getProjectStatus(project)} />
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 md:group-hover:opacity-100 transition-opacity bg-black/20">
           <IoPlayCircle className="text-spotify-green text-5xl drop-shadow-lg" />
         </div>
       </div>
@@ -120,9 +126,9 @@ function ProjectCard({
               ${
                 isExpanded
                   ? "bg-spotify-green/20 text-spotify-green"
-                  : "bg-[#232323] text-spotify-green hover:bg-spotify-green/10"
+                  : "bg-[#232323] text-spotify-green md:hover:bg-spotify-green/10"
               }
-              hover:shadow-md`}
+              md:hover:shadow-md`}
             onClick={(e) => {
               e.preventDefault();
               onToggle();
@@ -149,4 +155,18 @@ function ProjectCard({
       </div>
     </div>
   );
+}
+
+function getProjectStatus(project: SingleProjectType): ProjectStatus {
+  const title = project.title.toLowerCase();
+
+  if (title.includes("winner")) return "Winner";
+  if (title.includes("wireless model") || title.includes("fraud detection")) {
+    return "Research";
+  }
+  if (title.includes("hack")) return "Hackathon";
+  if (project.href.startsWith("/blog/")) return "Case Study";
+  if (project.href.includes("github.com")) return "Open Source";
+
+  return "Live";
 }

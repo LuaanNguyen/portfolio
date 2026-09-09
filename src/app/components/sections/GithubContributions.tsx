@@ -15,7 +15,7 @@ const GithubContributions: React.FC = () => {
 
   return (
     <div
-      className="flex py-2 px-3 col-span-1 row-span-1 col-start-1 xl:col-span-4 xl:row-span-2 xl:row-start-7 bg-spotify-light-dark rounded-xl h-fit"
+      className="flex py-2 px-3 col-span-1 row-span-1 col-start-1 animate-card-reveal [animation-delay:280ms] motion-reduce:animate-none xl:col-span-4 xl:row-span-2 xl:row-start-7 bg-spotify-light-dark rounded-xl h-fit"
       id="contribution"
     >
       {loading ? (
