@@ -74,7 +74,6 @@ export default function BlogListingPage() {
         />
         <BlogHeader
           title="Writings"
-          subtitle=""
           backLink="/"
           backText="Back to Portfolio"
         />

@@ -10,10 +10,14 @@ interface BlogPostCardProps {
 
 export default function BlogPostCard({ post }: BlogPostCardProps) {
   return (
-    <Link href={`/blog/post/${post.slug}`} aria-label={`Read blog post: ${post.title}`}>
-      <article className="group cursor-pointer bg-spotify-light-dark rounded-xl overflow-hidden">
+    <Link
+      href={`/blog/post/${post.slug}`}
+      aria-label={`Read blog post: ${post.title}`}
+      className="block h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-spotify-green"
+    >
+      <article className="group flex h-full cursor-pointer flex-col overflow-hidden rounded-xl bg-spotify-light-dark">
         {/* Image */}
-        <div className="aspect-video bg-spotify-light-dark relative overflow-hidden">
+        <div className="relative aspect-video shrink-0 overflow-hidden bg-spotify-light-dark">
           <Image
             src={post.image}
             alt={post.title}
@@ -24,17 +28,19 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
         </div>
 
         {/* Content */}
-        <div className="p-6">
-          <h2 className="text-xl font-semibold text-spotify-white mb-3 md:group-hover:text-spotify-green md:transition-colors md:duration-200">
+        <div className="p-5 sm:p-6">
+          <h2 className="mb-3 line-clamp-2 text-xl font-semibold text-spotify-white md:transition-colors md:duration-200 md:group-hover:text-spotify-green">
             {post.title}
           </h2>
 
-          <p className="text-spotify-white/70 text-sm mb-4 leading-relaxed">
-            {post.description}
-          </p>
+          {post.description ? (
+            <p className="mb-4 line-clamp-2 text-sm leading-relaxed text-spotify-white/70">
+              {post.description}
+            </p>
+          ) : null}
 
           {/* Meta Info */}
-          <div className="flex items-center space-x-4 text-xs text-spotify-white/50">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-spotify-white/50">
             <div className="flex items-center space-x-1">
               <FaCalendarAlt className="w-3 h-3" />
               <span>{post.date}</span>

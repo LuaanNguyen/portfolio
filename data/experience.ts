@@ -9,7 +9,7 @@ export const experienceLists: experienceListsProps[] = [
   {
     companyName: "OpenAI",
     url: "https://openai.com",
-    positionTitle: "ChatGPT Lab Member",
+    positionTitle: "Product Lab Member",
     date: "May 2025 - Present",
   },
   {
