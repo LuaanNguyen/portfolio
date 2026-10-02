@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import { getSortedPostsData } from "../../lib/blog";
 import BlogHeader from "../components/blog/BlogHeader";
 import BlogPostList from "../components/blog/BlogPostList";
+import InitialPageLoader from "../components/ui/InitialPageLoader";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -67,6 +68,7 @@ export default function BlogListingPage() {
 
   return (
     <div className="min-h-screen text-white">
+      <InitialPageLoader />
       <div className="max-md:mx-4 max-md:mt-2 mx-40 mt-4">
         <script
           type="application/ld+json"
