@@ -5,6 +5,7 @@ import { FaHeart } from "react-icons/fa6";
 import { FiCheckCircle } from "react-icons/fi";
 import { SiOpenai, SiFox } from "react-icons/si";
 import Image from "next/image";
+import { TrackedAnchor } from "../components/analytics/TrackedLink";
 
 const EMAIL = "luanthiennguyen2003@gmail.com";
 const SITE_URL = "https://luannguyen.net";
@@ -116,12 +117,14 @@ function Hero() {
         </div>
         <p className="text-spotify-light-gray text-sm">
           interested? email me at{" "}
-          <a
+          <TrackedAnchor
             href={`mailto:${EMAIL}`}
             className="text-spotify-green md:hover:text-green-400 underline underline-offset-2 transition-colors duration-200"
+            analyticsEvent="resume_review_email_click"
+            analyticsData={{ source: "resume_review_hero" }}
           >
             luanthiennguyen2003 at gmail dot com
-          </a>
+          </TrackedAnchor>
         </p>
       </div>
     </section>

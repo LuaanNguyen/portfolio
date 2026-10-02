@@ -4,6 +4,7 @@ import SocialLinks from "./SocialLinks";
 import { LuNewspaper, LuFileSearch } from "react-icons/lu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { TrackedLink } from "./analytics/TrackedLink";
 
 interface MobileNavProps {
   handleMobile: () => void;
@@ -63,15 +64,17 @@ export default function MobileNav({ handleMobile }: MobileNavProps) {
             animationFillMode: "both",
           }}
         >
-          <Link
+          <TrackedLink
             href="/blog"
             className="flex items-center space-x-3 p-4 text-spotify-white text-lg font-semibold active:text-spotify-green"
             onClick={handleMobile}
             aria-label="View blog posts"
+            analyticsEvent="blog_open"
+            analyticsData={{ source: "mobile_navigation" }}
           >
             <LuNewspaper className="text-xl" aria-hidden="true" />
             <span>Blog</span>
-          </Link>
+          </TrackedLink>
         </li>
         {/* <li
           className="rounded-lg animate-in slide-in-from-left-2 border-spotify-green/10 active:bg-spotify-green/10"

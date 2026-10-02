@@ -9,6 +9,7 @@ import {
   experienceLists,
   experienceListsProps,
 } from "../../../../data/experience";
+import { TrackedAnchor } from "../analytics/TrackedLink";
 
 export default function ExperienceItem() {
   return (
@@ -80,14 +81,16 @@ function Positions() {
             {index + 1}
           </span>
           <div className="flex flex-col gap-0.5">
-            <a
+            <TrackedAnchor
               href={position.url}
               target="_blank"
               rel="noopener noreferrer"
               className="text-spotify-green text-sm font-semibold mb-0.5 bg-spotify-green/20 rounded-md transition-all duration-200 w-fit px-2 py-0.5 md:hover:bg-spotify-green/10 cursor-pointer"
+              analyticsEvent="experience_company_open"
+              analyticsData={{ company: position.companyName }}
             >
               {position.companyName}
-            </a>
+            </TrackedAnchor>
             <p className="font-bold text-md mb-0.5">{position.positionTitle}</p>
             <p className="text-spotify-gray text-sm">{position.date}</p>
           </div>

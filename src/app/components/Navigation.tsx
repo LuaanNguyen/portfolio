@@ -12,6 +12,7 @@ import MobileNav from "./MobileNav";
 import { TypewriterEffect } from "./ui/type-writer-effect";
 import Link from "next/link";
 import ScrollProgress from "./ui/ScrollProgress";
+import { TrackedLink } from "./analytics/TrackedLink";
 
 export default function Navigation(): ReactNode {
   const [mobile, setMobile] = useState<boolean>(false);
@@ -61,13 +62,15 @@ export default function Navigation(): ReactNode {
           <section className="flex flex-row gap-4 items-center max-sm:hidden mx-4">
             <SocialLinks />
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
-            <Link
+            <TrackedLink
               href="/blog"
               className="text-3xl md:hover:text-spotify-green transition-colors duration-200"
               aria-label="View blog posts"
+              analyticsEvent="blog_open"
+              analyticsData={{ source: "desktop_navigation" }}
             >
               <LuNewspaper className="" />
-            </Link>
+            </TrackedLink>
             {/*
             <PiLineVerticalThin className="text-spotify-gray text-4xl" />
              <Link

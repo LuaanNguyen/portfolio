@@ -6,13 +6,13 @@ import {
   personalProjects,
   type personalProjectType,
 } from "../../../../data/projects";
-import Link from "next/link";
 import { IoPlayCircle } from "react-icons/io5"; // Import play icon
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import ProjectStatusBadge, {
   type ProjectStatus,
 } from "../ui/ProjectStatusBadge";
+import { TrackedLink } from "../analytics/TrackedLink";
 
 type ExperienceItemProps = {
   className?: string; // Optional className prop
@@ -61,12 +61,14 @@ export default function OpenedExperienceItem({
 
       <section className="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-4 p-6 pt-2 overflow-y-auto">
         {personalProjects.map((project, idx) => (
-          <Link
+          <TrackedLink
             target="_blank"
             key={project.title}
             href={project.href}
             rel="noopener noreferrer"
             className="group"
+            analyticsEvent="project_open"
+            analyticsData={{ project: project.title, source: "all_projects" }}
           >
             <ProjectCard
               project={project}
@@ -74,7 +76,7 @@ export default function OpenedExperienceItem({
               isExpanded={expandedIdx === idx}
               onToggle={() => setExpandedIdx(expandedIdx === idx ? null : idx)}
             />
-          </Link>
+          </TrackedLink>
         ))}
       </section>
     </div>

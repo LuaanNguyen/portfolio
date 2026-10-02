@@ -1,8 +1,8 @@
 import React from "react";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
-import Link from "next/link";
 import Image from "next/image";
 import { BlogPost } from "../../../lib/blog";
+import { TrackedLink } from "../analytics/TrackedLink";
 
 interface BlogPostCardProps {
   post: BlogPost;
@@ -10,10 +10,12 @@ interface BlogPostCardProps {
 
 export default function BlogPostCard({ post }: BlogPostCardProps) {
   return (
-    <Link
+    <TrackedLink
       href={`/blog/post/${post.slug}`}
       aria-label={`Read blog post: ${post.title}`}
       className="block h-full rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-spotify-green"
+      analyticsEvent="blog_post_open"
+      analyticsData={{ slug: post.slug, source: "blog_index" }}
     >
       <article className="group flex h-full cursor-pointer flex-col overflow-hidden rounded-xl bg-spotify-light-dark">
         {/* Image */}
@@ -52,6 +54,6 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
           </div>
         </div>
       </article>
-    </Link>
+    </TrackedLink>
   );
 }

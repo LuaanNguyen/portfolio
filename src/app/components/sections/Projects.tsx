@@ -4,6 +4,8 @@ import { ProjectsProps } from "../../page";
 import { GrLinkNext } from "react-icons/gr";
 import { FaArrowDown } from "react-icons/fa6";
 import type { ProjectStatus } from "../ui/ProjectStatusBadge";
+import { track } from "@vercel/analytics";
+import { TrackedAnchor } from "../analytics/TrackedLink";
 
 export default function Projects({ onSetExperienceSection }: ProjectsProps) {
   return (
@@ -33,7 +35,10 @@ export default function Projects({ onSetExperienceSection }: ProjectsProps) {
             animate-pulse md:hover:animate-none md:hover:bg-white md:hover:text-black
             shadow-[0_0_15px_rgba(255,255,255,0.3)] md:hover:shadow-[0_0_20px_rgba(255,255,255,0.5)]
             min-w-[180px]"
-            onClick={onSetExperienceSection}
+            onClick={() => {
+              track("projects_expand", { source: "featured_projects" });
+              onSetExperienceSection?.();
+            }}
             aria-label="Explore all projects in expanded view"
           >
             Explore All Projects
@@ -58,10 +63,12 @@ const projectLists: {
     description:
       "My first hackathon win. Sip & Play is an interactive website for a NYC board game café, featuring a 500+ game catalog and a 3D animated menu. It won Best UI/UX Design at the Codédex Hackathon.",
     content: (
-      <a
+      <TrackedAnchor
         target="_blank"
         rel="noopener noreferrer"
         href="https://board-game-cafe-website.vercel.app/"
+        analyticsEvent="project_open"
+        analyticsData={{ project: "Sip n Play Cafe", source: "featured" }}
       >
         <Image
           src={`/codedex-hackathon.jpeg`}
@@ -70,7 +77,7 @@ const projectLists: {
           height={500}
           sizes="500px"
         />
-      </a>
+      </TrackedAnchor>
     ),
   },
   {
@@ -79,10 +86,12 @@ const projectLists: {
     description:
       "BrainRot Master Vault turns short-form videos into AI-curated podcast episodes and knowledge graphs. Built at HackPrinceton 2025 and won Best Self-Hosted Inference.",
     content: (
-      <a
+      <TrackedAnchor
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.brainrotmastervaultovercooked.tech/"
+        analyticsEvent="project_open"
+        analyticsData={{ project: "Brainrot Master Vault", source: "featured" }}
       >
         <Image
           src={`/gallery.jpg`}
@@ -91,7 +100,7 @@ const projectLists: {
           height={500}
           sizes="500px"
         />
-      </a>
+      </TrackedAnchor>
     ),
   },
   {
@@ -100,10 +109,12 @@ const projectLists: {
     description:
       "A community directory and social graph for ASU builders, engineers, designers, and creators, making it easier to discover people by skill, role, and connections.",
     content: (
-      <a
+      <TrackedAnchor
         target="_blank"
         rel="noopener noreferrer"
         href="https://asunetwork.com"
+        analyticsEvent="project_open"
+        analyticsData={{ project: "ASU Network", source: "featured" }}
       >
         <Image
           src={`/blogs/asunetwork.png`}
@@ -112,7 +123,7 @@ const projectLists: {
           height={300}
           sizes="500px"
         />
-      </a>
+      </TrackedAnchor>
     ),
   },
 

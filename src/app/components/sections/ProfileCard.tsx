@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { BackgroundGradient } from "../ui/background-gradient";
+import { TrackedLink } from "../analytics/TrackedLink";
 
 export default function ProfileCard() {
   return (
@@ -62,9 +63,14 @@ function PersonalStatement() {
         <br />
         <span>
           View my latest writings{" "}
-          <a href="/blog" className="text-spotify-green underline">
+          <TrackedLink
+            href="/blog"
+            className="text-spotify-green underline"
+            analyticsEvent="blog_open"
+            analyticsData={{ source: "profile_card" }}
+          >
             here.
-          </a>{" "}
+          </TrackedLink>{" "}
         </span>
       </h4>
     </div>
