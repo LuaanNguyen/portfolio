@@ -31,6 +31,11 @@ const favoriteReads = [
     author: "Cormac McCarthy",
     cover: "/books/all-the-pretty-horses.webp",
   },
+  {
+    title: "The Inner Game of Tennis",
+    author: "W. Timothy Gallwey",
+    cover: "/books/the-inner-game-of-tennis.webp",
+  },
 ] as const;
 
 export default function FavoriteReads() {
